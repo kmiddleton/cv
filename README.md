@@ -1,1 +1,1 @@
-# cv
+My CV, using the vitae R package (https://github.com/ropenscilabs/vitae). With additions from https://github.com/robjhyndman/CV, https://github.com/mitchelloharawild/CV, and https://github.com/natbprice/cv.
