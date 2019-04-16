@@ -19,6 +19,12 @@ $else$
 \definecolor{headcolor}{HTML}{990000}
 $endif$
 
+$if(titlecolor)$
+\definecolor{titlecolor}{HTML}{$titlecolor$}
+$else$
+\definecolor{titlecolor}{HTML}{990000}
+$endif$
+
 \usepackage{ltxtable}
 \usepackage{multicol}
 
@@ -191,7 +197,7 @@ $if(fontawesome)$\usepackage{fontawesome}$endif$
 \def\maketitle{
 \vspace*{-1.4cm}
 \thispagestyle{empty}
-\centerline{\huge \bf $name$}
+\centerline{\huge \bf \color[HTML]{$titlecolor$}{$name$}}
 
 %job title
 $if(jobtitle)$\moveleft.5\hoffset\centerline{\large $jobtitle$}$endif$
@@ -215,8 +221,9 @@ $if(orcid)$\faicon{openid}\hspace{0.25 mm}\href{https://orcid.org/$orcid$}{orcid
 %website
 $if(web)$$if(fontawesome)$\faGlobe\hspace{0.25 mm}$else$\emph{Web:}$endif$ \href{http://$web$}{\tt $web$}\hspace{1 mm}$endif$ $if(updated)$ | \emph{Updated:} \today$endif$}
 
-\vspace{2 mm}
+\vspace{3 mm}
 \hrule
+\vspace{3 mm}
 }
 
 % Header and footer
@@ -233,38 +240,11 @@ $if(web)$$if(fontawesome)$\faGlobe\hspace{0.25 mm}$else$\emph{Web:}$endif$ \href
 
 % \makeatletter
 \def\name#1{\def\@name{#1}}
-% \def\info#1{\def\@info{#1}}
-% \makeatother
-% \newcommand{\shadebox}[3][.9]{\fcolorbox[gray]{0}{#1}{\parbox{#2}{#3}}}
-%
-% \usepackage{calc}
-% \newlength{\headerboxwidth}
-% \setlength{\headerboxwidth}{\textwidth}
-% %\addtolength{\headerboxwidth}{0.2cm}
-% \makeatletter
-% \def\maketitle{
-% \thispagestyle{plain}
-% \vspace*{-1.4cm}
-% \shadebox[0.9]{\headerboxwidth}{\sf\color{headcolor}\hfil
-% \hbox to 0.98\textwidth{\begin{tabular}{l}
-% \\[-0.3cm]
-% \LARGE\textbf{\@name}
-% $if(position)$\\[0.1cm]\large $position$\\[0.6cm]$else$\\[0.7cm]$endif$
-% \normalsize\textbf{$if(docname)$$docname$$else$Curriculum Vitae$endif$}\\
-% \normalsize $if(date)$$date$$else$\today$endif$
-% \end{tabular}
-% \hfill\hbox{\fontsize{9}{12}\sf
-% \begin{tabular}{@{}rl@{}}
-% \@info
-% \end{tabular}}}\hfil
-% }
-% \vspace*{0.2cm}}
-% \makeatother
-%
+
 % Section headings
 \titlelabel{}
 \titlespacing{\section}{0pt}{1.5ex}{0.5ex}
-\titleformat*{\section}{\large\sf\bfseries}
+\titleformat*{\section}{\color[HTML]{$headcolor$}\large\sf\bfseries}
 \titleformat*{\subsection}{\sf\bfseries}
 \titlespacing{\subsection}{0pt}{1ex}{0.5ex}
 

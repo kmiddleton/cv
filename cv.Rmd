@@ -12,10 +12,15 @@ orcid: 0000-0003-4704-1064
 scholar: Ziha7x8AAAAJ
 web: middletonlab.org
 date: "`r format(Sys.time(), '%B %Y')`"
+titlecolor: 033690
+headcolor: 0342B0
 output: function(...) vitae::cv_document(..., template = "cvtemplate.tex", citation_package = "biblatex")
 ---
 
 ```{r setup, include=FALSE}
+
+include_refs <- TRUE
+
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE, 
                       message = FALSE)
@@ -118,80 +123,100 @@ tribble(
 ## Dissertation
 
 ```{r thesis}
-bibliography_entries("Paperpile.bib") %>%
-  filter(bibtype == "PhdThesis")
+if (include_refs) {
+  bibliography_entries("Paperpile.bib") %>%
+    filter(bibtype == "PhdThesis")
+}
 ```
 
 ## Refereed Research Papers
 
 ```{r research-papers}
+if (include_refs) {
 bibliography_entries("Paperpile.bib") %>%
   filter(str_detect(keywords, "CV/Papers")) %>%
   arrange(year, author)
+}
 ```
 
 ## Manuscripts in Review
 
 ```{r in-review}
+if (include_refs) {
 bibliography_entries("Paperpile.bib") %>%
   filter(str_detect(keywords, "CV/In review")) %>%
   arrange(year, author)
+}
 ```
 
 ## Book Chapters
 
 ```{r book-chapters}
+if (include_refs) {
 bibliography_entries("Paperpile.bib") %>%
   filter(str_detect(keywords, "CV/Book chapters")) %>%
   arrange(year, author)
+}
 ```
 
 ## Invited Reviews
 
 ```{r invited-reviews}
+if (include_refs) {
 bibliography_entries("Paperpile.bib") %>%
   filter(str_detect(keywords, "CV/Reviews")) %>%
   arrange(year, author)
+}
 ```
 
 ## Book Reviews
 
 ```{r book-reviews}
+if (include_refs) {
 bibliography_entries("Paperpile.bib") %>%
   filter(str_detect(keywords, "CV/Book reviews")) %>%
   arrange(year, author)
+}
 ```
 
 ## Published Data Sets
 
 ```{r datasets}
+if (include_refs) {
 bibliography_entries("Paperpile.bib") %>%
   filter(str_detect(keywords, "CV/Datasets")) %>%
   arrange(year, author)
+}
 ```
 
 ## Manuscripts in Preparation
 
 ```{r in-prep}
+if (include_refs) {
 bibliography_entries("Paperpile.bib") %>%
   filter(str_detect(keywords, "CV/In prep")) %>%
   arrange(year, author)
+}
 ```
 
 ## Published Abstracts
 
 ```{r abstracts}
+if (include_refs) {
 bibliography_entries("Paperpile.bib") %>%
   filter(str_detect(keywords, "CV/Abstracts")) %>%
   arrange(year, author)
+}
 ```
 
 ## Other Presentations
 
 ```{r other}
+if (include_refs) {
 bibliography_entries("Paperpile.bib") %>%
   filter(str_detect(keywords, "CV/Other presentations")) %>%
   arrange(year, author)
+}
 ```
 
 # Teaching Experience
