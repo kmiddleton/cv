@@ -12,8 +12,8 @@ orcid: 0000-0003-4704-1064
 scholar: Ziha7x8AAAAJ
 web: middletonlab.org
 date: "`r format(Sys.time(), '%B %Y')`"
-titlecolor: 033690
-headcolor: 0342B0
+titlecolor: "0726B2"
+headcolor: "0342B0"
 output: function(...) vitae::cv_document(..., template = "cvtemplate.tex", citation_package = "biblatex")
 ---
 
