@@ -260,34 +260,13 @@ $if(web)$$if(fontawesome)$\faGlobe\hspace{0.25 mm}$else$\emph{Web:}$endif$ \href
 \setlist{itemsep=1pt}
 \setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
 
-% NBP: Use default bullets
-% Make nicer bullets
-% \renewcommand{\labelitemi}{\ding{228}}
-
 \usepackage{booktabs,fontawesome}
-%\usepackage[t1,scale=0.86]{sourcecodepro}
 
 \name{$name$}
-% \def\imagetop#1{\vtop{\null\hbox{#1}}}
-% \info{%
-% $if(address)$\raisebox{-0.05cm}{\imagetop{\faicon{map-marker}}} &  \imagetop{\begin{tabular}{@{}l@{}}$address$\end{tabular}}\\$endif$ %
-% $if(www)$\faicon{home} & \href{http://$www$}{$www$}\\$endif$% %
-% $if(phone)$\faicon{phone} & $phone$\\$endif$%
-% $if(email)$\faicon{envelope} & $email$\\$endif$%
-% $if(twitter)$\faicon{twitter} & \href{https://twitter.com/$twitter$}{@$twitter$}\\$endif$%
-% $if(github)$\faicon{github} & \href{https://github.com/$github$}{$github$}\\$endif$%
-% $if(linkedin)$\faicon{linkedin} & \href{https://www.linkedin.com/in/$linkedin$}{$linkedin$}\\$endif$%
-% $if(scholar)$\faicon{google} & \href{https://scholar.google.com/citations?user=$scholar$}{$scholar$}\\$endif$%
-% $if(orcid)$\faicon{openid} & \href{https://orcid.org/$orcid$}{$orcid$}\\$endif$%
-% }
-
-
-%\usepackage{inconsolata}
 
 $if(linestretch)$
 \usepackage{setspace}
 $endif$
-
 
 % Templates for detailed entries
 % Arguments: what when with where why
@@ -335,4 +314,23 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
+
+\vfill
+
+\vspace{3 mm}
+
+\hrule
+
+\vspace{3 mm}
+
+\begin{centering}
+
+Last updated: $date$
+
+Source: \href{http://$source$}{\tt $source$}
+
+Typeset with \href{https://github.com/ropenscilabs/vitae}{vitae}
+
+\end{centering}
+
 \end{document}
