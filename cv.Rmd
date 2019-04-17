@@ -13,13 +13,14 @@ scholar: Ziha7x8AAAAJ
 web: middletonlab.org
 date: "`r format(Sys.time(), '%B %Y')`"
 titlecolor: "0726B2"
-headcolor: "0342B0"
+headcolor: "0726B2"
+source: "github.com/kmiddleton/cv"
 output: function(...) vitae::cv_document(..., template = "cvtemplate.tex", citation_package = "biblatex")
 ---
 
 ```{r setup, include=FALSE}
 
-include_refs <- TRUE
+include_refs <- FALSE
 
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE, 
@@ -377,7 +378,7 @@ tribble(
 - Paleobios
 - PeerJ
 - PLoS One
-- PNAS
+- Proceedings of the National Academy of Sciences USA
 - Proceedings of the Royal Society (Biological Sciences)
 - Quarterly Review of Biology
 - Restoration Ecology
@@ -387,14 +388,26 @@ tribble(
 
 ## NSF Panel Service
 
-- Division of Evolutionary Biology -- Systematics and Biodiversity Science (2012)
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service,
+  "2012", "Division of Evolutionary Biology -- Systematics and Biodiversity Science"
+) %>% 
+  baretable()
+```
 
 ## NSF Ad Hoc Reviewer
 
-- National Science Foundation -- IOB (2009)
-- National Science Foundation -- DEB (2010)
-- National Science Foundation -- IOS (2012)
-- National Science Foundation -- IOS (2017)
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service,
+  "2009", "National Science Foundation -- IOB",
+  "2010", "National Science Foundation -- DEB",
+  "2012", "National Science Foundation -- IOB",
+  "2017", "National Science Foundation -- IOB"
+) %>% 
+  baretable()
+```
 
 ## University of Missouri Research Board
 
@@ -403,8 +416,8 @@ tribble(
 ## Reviewer (Textbooks)
 
 - Miller, KR and JS Levine. 2003. *Biology*. (Pearson-Prentice Hall)
-- Tate, P. 2010. *Anatomy and Physiology*}*. (McGraw Hill)
-- Biological Sciences Curriculum Studies. 2010. *BSCS Biology: A Human Approach*}*. 4th Edition. (Kendall Hunt Publishing)
+- Tate, P. 2010. *Anatomy and Physiology*. (McGraw Hill)
+- Biological Sciences Curriculum Studies. 2010. *BSCS Biology: A Human Approach*. 4th Edition. (Kendall Hunt Publishing)
 
 ## Reviewer for Deutsche Forschungsgemeinschaft (German Research Foundation)
 
