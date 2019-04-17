@@ -20,7 +20,7 @@ output: function(...) vitae::cv_document(..., template = "cvtemplate.tex", citat
 
 ```{r setup, include=FALSE}
 
-include_refs <- FALSE
+include_refs <- TRUE
 
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE, 
@@ -50,8 +50,8 @@ baretable <- function(
       comment = FALSE,
       latex.environments = NULL,
       floating = FALSE,
-      size=size,
-      add.to.row=add.to.row,
+      size = size,
+      add.to.row = add.to.row,
       sanitize.text.function = function(x) {
         x
       }
@@ -104,7 +104,7 @@ My research focuses on musculoskeletal physiology, form, and function in the con
 ```{r awards, results="asis"}
 tribble(
   ~ Year, ~ Award,
-  2017, "MU SOM Outstanding Preclinical Faculty Education",
+  2017, "MU School of Medicine Awawrd for Outstanding Preclinical Faculty Education",
   2017, "Ann K. Covington Award for Undergraduate Mentoring",
   2019, "Gold Chalk Award for Graduate Teaching"
 ) %>%
@@ -253,75 +253,88 @@ tribble(
 
 # Graduate Advisor
 
-University of Missori, unless otherwise specififed
-
-\begin{tabular}{ll}
-  2015--present & Sarah Peacock (Ph.D.)\\
-  2013--2018 & Amanda Smolinsky (Ph.D.)\\
-  2011--2012 & Katherine Johnson (M.S.; CSUSB)\\
-  2010--2012 & Brittney Coats (M.S.; CSUSB)\\
-  2008--2012 & Lauren English (M.S.; CSUSB)\\
-  & Susan Lujan, (M.S.; CSUSB)\\
-\end{tabular}
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2015-Present", "Sarah Peacock", "Ph.D. University of Missouri", "",
+  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently an Postdoctoral Research Associate at Rocky Vista University",
+  "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Currently a doctoral student at the University of California, Riverside",
+  "2010-2012", "Brittney Coats", "M.S., CSUSB", "",
+  "2008-2012", "Susan Lujan", "M.S., CSUSB", "Currently a lecturer at California State University, San Bernardino"
+) %>% 
+  detailed_entries(when = Dates, what = Name, with = Degree, where = Notes)
+```
 
 # Graduate Committee Member
 
-University of Missouri Department of Pathology and Anatomical Sciences unless otherwise specified
-
 ## Current
 
-\begin{tabular}{ll}
-    2019--present & Mikaela Pulsipher (M.S.; Geological Sciences)\\
-    2018--present & Sean Greer (Ph.D.)\\
-      & Ellee Cook (Ph.D.; Biological Sciences)\\
-    2017--present & Faye McGechie (Ph.D.)\\
-      & Rebecca Dirkes (Ph.D.; Nutrition \& Exercise Physiology)\\
-    2016--present & Kaleb Sellers (Ph.D.)\\
-      & Melanie Boeyer (Ph.D.)\\
-      & Samuel Sullivan (Ph.D.)\\
-      & Elizabeth Cho (Ph.D.; Anthropology)\\
-      & Deise Cruz (Ph.D.; Biological Sciences)\\
-    2015--present & Ian Cost (Ph.D.)\\
-      & Rob'yn Johnston (Ph.D.; Anthropology)\\
-      & Sharon Kuo (Ph.D.)\\
-\end{tabular}
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Name, ~ Notes,
+  "2019-Present", "Mikaela Pulsipher", "M.S.; Geological Sciences",
+  "2018-Present", "Sean Greer", "Ph.D.; Pathobiology",
+  "2018-Present", "Ellee Cook", "Ph.D.; Biological Sciences",
+  "2017-Present", "Faye McGechie", "Ph.D.; Pathobiology",
+  "2017-Present", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology",
+  "2016-Present", "Kaleb Sellers", "Ph.D.; Pathobiology",
+  "2016-Present", "Melanie Boeyer", "Ph.D.; Pathobiology",
+  "2016-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
+  "2016-Present", "Elizabeth Cho", "Ph.D.; Anthropology",
+  "2016-Present", "Deise Cruz", "Ph.D.; Biological Sciences",
+  "2015-Present", "Ian Cost", "Ph.D.; Pathobiology",
+  "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology",
+  "2015-Present", "Sharon Kuo", "Ph.D.; Pathobiology"
+) %>% 
+  detailed_entries(when = Dates, what = Name, with = Notes)
+```
 
 ## Past
 
-\begin{tabular}{ll}
-    2017--2018 & Landry Konan (M.S. Pathology)\\
-    & Stephanie Rosbach (M.S.; Geology)\\
-    2016--2018 & Tara Selly (Ph.D.; Geology)\\
-    2015--2017 & Edward Ramirez (M.S.; Biological Sciences)\\
-    2015--2017 & Steven Hanson (Ph.D.; Pathobiology)\\
-    2014--2017 & Lu\'esoni Johnson (M.S.; Biological Sciences)\\
-    2013--2016 & Elizabeth Moffett (Ph.D.)\\
-    2014--2015 & Kaleb Sellers (M.S.)\\
-    2012--2015 & Henry Tsai (Ph.D.)\\
-    2009--2012 & Kandee Bain (M.S.; CSUSB)\\
-    2008--2012 & Kim Scott (M.S.; CSUSB)\\
-    2007--2008 & Adam Huttenlocker (M.S.; CSUSB)\\
-    & Candace Reno (M.S.; CSUSB)\\
-\end{tabular}
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "",
+  "2017-2018", "Stephanie Rosbach", "M.S.; Geological Sciences", "",
+  "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "",
+  "2015-2017", "Edward Ramirez", "Ph.D.; Biological Sciences", "",
+  "2015-2017", "Steven Hanson", "Ph.D.; Pathobiology", "",
+  "2014-2017", "Luésoni Johnson", "Ph.D.; Biological Sciences", "",
+  "2013-2016", "Elizabeth Moffett", "Ph.D.; Biological Sciences", "Currently an Assistant Professor at Rocky Vista University",
+  "2014-2015", "Kaleb Sellers", "M.S.; Pathology", "",
+  "2012-2015", "Henry Tsai", "Ph.D.; Pathobiology", "Currently an Assistant Professor at Missouri State University",
+  "2009-2012", "Kandee Bain", "M.S.; Biology, CSUSB", "",
+  "2008-2012", "Kim Scott", "M.S.; Biology, CSUSB", "",
+  "2007-2008", "Adam Huttenlocker", "M.S.; Biology, CSUSB", "Currently an Assistant Professor at the University of Southern California",
+  "2007-2008", "Candace Reno", "M.S.; Biology, CSUSB", ""
+) %>% 
+  detailed_entries(when = Dates, what = Name, with = Degree, where = Notes)
+```
 
 # Undergraduate Mentoring
 
 University of Missouri only. 23 additional students} at Brown University and UC Riverside; 2003--2012
 
--  Joshua Fajardo, 2019-present
--  Alec Wilken, 2016-present
--  Kendra Lewis, 2018 (MU School of Medicine Summer Research Intern from Washington University in St. Louis)
--  Caitlyn Smith, 2016-2018
--  Rebecca Meyer, 2016-2018
--  Nicholas Ferrari, 2016-2017
--  Jake Cooper, 2016 (NSF Inside Dinosaurs Research Fellow)
--  Eva Herbst, 2016 (NSF Inside Dinosaurs Research Fellow)
--  Nicholas Bira, 2014-present (C$^3$ Hughes Research Fellow)
--  Kyle Kirkland, 2015 (MU School of Medicine Summer Research Intern from Michigan State University)
--  Imran Rashid, 2014-2015
--  Michael Sojka, 2014-2015 (C$^3$ Hughes Research Fellow, MU School of Journalism)
--  Tarrin Casey, 2014 (MU School of Medicine Summer Research Intern from Xavier University, New Orleans)
--  Diana Salas, 2013 (MU School of Medicine Summer Research Intern from Indiana University)
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Name, ~ Notes,
+  "2019-Present", "Joshua Fajardo", "",
+  "2018", "Kendra Lewis", "MU School of Medicine Summer Research Intern from Washington University in St. Louis",
+  "2016-Present", "Alec Wilken", "",
+  "2016-2018", "Caitlyn Smith", "",
+  "2016-2018", "Rebecca Meyer", "",
+  "2016-2017", "Nicholas Ferrari", "",
+  "2016", "Jake Cooper", "NSF Inside Dinosaurs Research Fellow",
+  "2016", "Eva Herbst", "NSF Inside Dinosaurs Research Fellow",
+  "2014-2018", "Nicholas Bira", "C3 Hughes Research Fellow",
+  "2015", "Kyle Kirkland", "MU School of Medicine Summer Research Intern from Michigan State University",
+  "2014-2015", "Imran Rashid", "",
+  "2014-2015", "Michael Sojka", "C3 Hughes Research Fellow, MU School of Journalism",
+  "2014", "Tarrin Casey", "MU School of Medicine Summer Research Intern from Xavier University, New Orleans",
+  "2013", "Diana Salas", "MU School of Medicine Summer Research Intern from Indiana University"
+) %>% 
+  detailed_entries(when = Dates, what = Name, where = Notes)
+```
 
 # Invited Seminars
 
