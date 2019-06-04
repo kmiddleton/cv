@@ -72,7 +72,7 @@ tribble(
   "Associate Professor", "CSU San Bernardino", "Department of Biology", "2011 - 2012",
   "Assistant Professor", "CSU San Bernardino", "Department of Biology", "2007 - 2011",
   "NIH NRSA Postdoctoral Fellow", "Brown University and University of California, Riverside", "Effects of Genetics, Exercise, and Age on Bone Mechanics", "2005 - 2007",
-  "Postdoctoral Research Associate", "Brown University", "Department of Ecology and Evolutionary Biology", "2005 - 2007"
+  "Postdoctoral Research Associate", "Brown University", "Department of Ecology and Evolutionary Biology", "2003 - 2005"
 ) %>% 
   detailed_entries(degree, dates, uni, loc)
 ```
