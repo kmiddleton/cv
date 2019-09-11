@@ -121,6 +121,16 @@ tribble(
 
 # Publications
 
+FIXME
+
+- AAA 2019
+- IADR talks
+- Cleft palate talks
+- SICB 2020 talks
+
+- Alec paper
+- Ian paper final
+
 ## Dissertation
 
 ```{r thesis}
@@ -256,10 +266,10 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
-  "2015-Present", "Sarah Peacock", "Ph.D. University of Missouri", "",
-  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently an Postdoctoral Research Associate at Rocky Vista University",
-  "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Currently a doctoral student at the University of California, Riverside",
-  "2010-2012", "Brittney Coats", "M.S., CSUSB", "",
+  "2015-2019", "Sarah Peacock", "Ph.D. University of Missouri", "Currently Outreach Coordinator at the Boston Museum of Science",
+  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently a Postdoctoral Research Associate at Rocky Vista University",
+  "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Completed doctoral studies at University of California, Riverside",
+  "2010-2012", "Brittney Coats", "M.S., CSUSB", "Completed doctoral studies at the University of Chicago",
   "2008-2012", "Susan Lujan", "M.S., CSUSB", "Currently a lecturer at California State University, San Bernardino"
 ) %>% 
   detailed_entries(when = Dates, what = Name, with = Degree, where = Notes)
@@ -274,7 +284,6 @@ tribble(
   ~ Dates, ~ Name, ~ Notes,
   "2019-Present", "Mikaela Pulsipher", "M.S.; Geological Sciences",
   "2018-Present", "Sean Greer", "Ph.D.; Pathobiology",
-  "2018-Present", "Ellee Cook", "Ph.D.; Biological Sciences",
   "2017-Present", "Faye McGechie", "Ph.D.; Pathobiology",
   "2017-Present", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology",
   "2016-Present", "Kaleb Sellers", "Ph.D.; Pathobiology",
@@ -282,7 +291,6 @@ tribble(
   "2016-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
   "2016-Present", "Elizabeth Cho", "Ph.D.; Anthropology",
   "2016-Present", "Deise Cruz", "Ph.D.; Biological Sciences",
-  "2015-Present", "Ian Cost", "Ph.D.; Pathobiology",
   "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology",
   "2015-Present", "Sharon Kuo", "Ph.D.; Pathobiology"
 ) %>% 
@@ -294,6 +302,8 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences",
+  "2015-2019", "Ian Cost", "Ph.D.; Pathobiology",
   "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "",
   "2017-2018", "Stephanie Rosbach", "M.S.; Geological Sciences", "",
   "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "",
