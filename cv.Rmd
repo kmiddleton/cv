@@ -127,6 +127,7 @@ FIXME
 - IADR talks
 - Cleft palate talks
 - SICB 2020 talks
+- Gieg AAOSM
 
 - Alec paper
 - Ian paper final
