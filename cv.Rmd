@@ -20,7 +20,7 @@ output: function(...) vitae::cv_document(..., template = "cvtemplate.tex", citat
 
 ```{r setup, include=FALSE}
 
-include_refs <- FALSE
+include_refs <- TRUE
 
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE, 
@@ -121,7 +121,7 @@ tribble(
 
 # Publications
 
-FIXME
+## FIXME
 
 - AAA 2019
 - IADR talks
