@@ -283,6 +283,7 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
+  "2019-Present", "Emily Lessner", "Ph.D.; Pathobiology",
   "2019-Present", "Mikaela Pulsipher", "M.S.; Geological Sciences",
   "2018-Present", "Sean Greer", "Ph.D.; Pathobiology",
   "2017-Present", "Faye McGechie", "Ph.D.; Pathobiology",
@@ -292,8 +293,7 @@ tribble(
   "2016-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
   "2016-Present", "Elizabeth Cho", "Ph.D.; Anthropology",
   "2016-Present", "Deise Cruz", "Ph.D.; Biological Sciences",
-  "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology",
-  "2015-Present", "Sharon Kuo", "Ph.D.; Pathobiology"
+  "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
 ) %>% 
   detailed_entries(when = Dates, what = Name, with = Notes)
 ```
@@ -303,8 +303,9 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
-  "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences",
-  "2015-2019", "Ian Cost", "Ph.D.; Pathobiology",
+  "2015-2019", "Sharon Kuo", "Ph.D.; Pathobiology", "",
+  "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences", "",
+  "2015-2019", "Ian Cost", "Ph.D.; Pathobiology", "",
   "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "",
   "2017-2018", "Stephanie Rosbach", "M.S.; Geological Sciences", "",
   "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "",
@@ -428,7 +429,8 @@ tribble(
   "2009", "National Science Foundation -- IOB",
   "2010", "National Science Foundation -- DEB",
   "2012", "National Science Foundation -- IOB",
-  "2017", "National Science Foundation -- IOB"
+  "2017", "National Science Foundation -- IOB",
+  "2019", "National Science Foundation -- IOB"
 ) %>% 
   baretable()
 ```
@@ -525,6 +527,7 @@ tribble(
 # Professional Organizations
 
 - American Association of Anatomists
+- International Association of Dental Research
 - International Society of Vertebrate Morphology
 - Society of Avian Paleontology and Evolution
 - Society of Integrative and Comparative Biology
