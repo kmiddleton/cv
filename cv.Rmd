@@ -303,9 +303,9 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
-  "2015-2019", "Sharon Kuo", "Ph.D.; Pathobiology", "",
+  "2015-2019", "Sharon Kuo", "Ph.D.; Pathobiology", "Currently postdoctoral research Associate at Pennsylvania State University",
   "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences", "",
-  "2015-2019", "Ian Cost", "Ph.D.; Pathobiology", "",
+  "2015-2019", "Ian Cost", "Ph.D.; Pathobiology", "Currently assistant professor at Albright College",
   "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "",
   "2017-2018", "Stephanie Rosbach", "M.S.; Geological Sciences", "",
   "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "",
