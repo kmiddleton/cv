@@ -127,6 +127,7 @@ tribble(
 - Cleft palate talks
 - SICB 2020 talks
 - Gieg AAOSM
+- AAA 2020
 
 ## Dissertation
 
