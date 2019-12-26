@@ -123,6 +123,7 @@ tribble(
 
 ## FIXME
 
+- ICVM 2019
 - IADR talks
 - Cleft palate talks
 - SICB 2020 talks
