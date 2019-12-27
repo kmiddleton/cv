@@ -210,47 +210,6 @@ bibliography_entries("Paperpile.bib") %>%
 }
 ```
 
-## Published Abstracts
-
-```{r abstracts}
-if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/Abstracts")) %>%
-  arrange(year, author)
-}
-```
-
-## Other Presentations
-
-```{r other}
-if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/Other presentations")) %>%
-  arrange(year, author)
-}
-```
-
-# Teaching Experience
-
-## University of Missouri
-
-\LTXtable{\textwidth}{teaching.tex}
-
-## California State University, San Bernardino
-
-```{r results="asis"}
-tribble(
-  ~ Dates, ~ Course,
-  "2007-2011", "Biology of the Chordates",
-  "2008-2012", "Human Physiology and Anatomy",
-  "2010-2012", "Biostatistics",
-  "2008, 2010, 2012", "Graduate Seminar",
-  "2008-2011", "Biology Seminar",
-  "2008", "Advanced Vertebrate Morphology"
-) %>% 
-  baretable()
-```
-
 # Postdoctoral Supervisor
 
 ```{r results="asis"}
@@ -346,6 +305,49 @@ tribble(
   "2013", "Diana Salas", "MU School of Medicine Summer Research Intern from Indiana University"
 ) %>% 
   detailed_entries(when = Dates, what = Name, where = Notes)
+```
+
+# Presentations
+
+## Published Abstracts
+
+```{r abstracts}
+if (include_refs) {
+bibliography_entries("Paperpile.bib") %>%
+  filter(str_detect(keywords, "CV/Abstracts")) %>%
+  arrange(year, author)
+}
+```
+
+## Other Presentations
+
+```{r other}
+if (include_refs) {
+bibliography_entries("Paperpile.bib") %>%
+  filter(str_detect(keywords, "CV/Other presentations")) %>%
+  arrange(year, author)
+}
+```
+
+# Teaching Experience
+
+## University of Missouri
+
+\LTXtable{\textwidth}{teaching.tex}
+
+## California State University, San Bernardino
+
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Course,
+  "2007-2011", "Biology of the Chordates",
+  "2008-2012", "Human Physiology and Anatomy",
+  "2010-2012", "Biostatistics",
+  "2008, 2010, 2012", "Graduate Seminar",
+  "2008-2011", "Biology Seminar",
+  "2008", "Advanced Vertebrate Morphology"
+) %>% 
+  baretable()
 ```
 
 # Invited Seminars
