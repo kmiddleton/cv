@@ -124,11 +124,8 @@ tribble(
 ```{r include=FALSE}
 ## FIXME
 
-# IADR talks
 # Cleft palate talks
-# SICB 2020 talks
 # Gieg AAOSM
-# AAA 2020
 ```
 
 ## Dissertation
@@ -493,6 +490,8 @@ tribble(
 
 ## Past
 
+### University of Missouri
+
 ```{r results="asis"}
 tribble(
   ~ Date, ~ Service,
@@ -513,7 +512,7 @@ tribble(
   baretable()
 ```
 
-*California State University, San Bernardino*
+### California State University, San Bernardino
 
 ```{r results="asis"}
 tribble(
