@@ -212,7 +212,7 @@ bibliography_entries("Paperpile.bib") %>%
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
-  "2015-2018", "Alida Bailleul, PhD", "Currently a postdoctoral research associate at the Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
+  "2015-2018", "Alida Bailleul, PhD", "Currently an Assistant Professor at the Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
 ) %>% 
   detailed_entries(when = Dates, what = Name, where = Notes)
 ```
@@ -238,6 +238,7 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
+  "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
   "2019-Present", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences",
   "2019-Present", "Emily Lessner", "Ph.D.; Pathobiology",
   "2019-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
@@ -246,7 +247,6 @@ tribble(
   "2017-Present", "Faye McGechie", "Ph.D.; Pathobiology",
   "2017-Present", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology",
   "2016-Present", "Kaleb Sellers", "Ph.D.; Pathobiology",
-  "2016-Present", "Melanie Boeyer", "Ph.D.; Pathobiology",
   "2016-Present", "Elizabeth Cho", "Ph.D.; Anthropology",
   "2016-Present", "Deise Cruz", "Ph.D.; Biological Sciences",
   "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
@@ -259,7 +259,8 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
-  "2015-2019", "Sharon Kuo", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at Pennsylvania State University",
+  "2016-2020", "Melanie Boeyer", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at the University of Missouri",
+  "2015-2020", "Sharon Kuo", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at Pennsylvania State University",
   "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences", "",
   "2015-2019", "Ian Cost", "Ph.D.; Pathobiology", "Currently assistant professor at Albright College",
   "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "",
