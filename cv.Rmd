@@ -20,6 +20,8 @@ output: function(...) vitae::cv_document(..., template = "cvtemplate.tex", citat
 
 ```{r setup, include=FALSE}
 
+# devtools::install_github("mitchelloharawild/vitae")
+
 include_refs <- TRUE
 
 knitr::opts_chunk$set(echo = FALSE, 
