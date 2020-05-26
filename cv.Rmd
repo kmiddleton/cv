@@ -16,6 +16,7 @@ titlecolor: "0726B2"
 headcolor: "0726B2"
 source: "github.com/kmiddleton/cv"
 output: function(...) vitae::cv_document(..., template = "cvtemplate.tex", citation_package = "biblatex")
+papersize: "letterpaper"
 ---
 
 ```{r setup, include=FALSE}
@@ -126,7 +127,7 @@ tribble(
 ```{r include=FALSE}
 ## FIXME
 
-# Cleft palate talks
+# Cleft palate talks 2020
 # Gieg AAOSM
 ```
 
@@ -241,7 +242,6 @@ tribble(
 tribble(
   ~ Dates, ~ Name, ~ Notes,
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
-  "2019-Present", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences",
   "2019-Present", "Emily Lessner", "Ph.D.; Pathobiology",
   "2019-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
   "2019-Present", "Mikaela Pulsipher", "M.S.; Geological Sciences",
@@ -261,6 +261,7 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2019-Present", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Currently doctoral student at University of Chicago",
   "2016-2020", "Melanie Boeyer", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at the University of Missouri",
   "2015-2020", "Sharon Kuo", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at Pennsylvania State University",
   "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences", "",
