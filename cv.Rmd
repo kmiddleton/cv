@@ -107,16 +107,18 @@ My research focuses on musculoskeletal physiology, form, and function in the con
 ```{r awards, results="asis"}
 tribble(
   ~ Year, ~ Award,
-  2017, "MU School of Medicine Awawrd for Outstanding Preclinical Faculty Education",
+  2017, "MU School of Medicine Award for Outstanding Preclinical Faculty Education",
   2017, "Ann K. Covington Award for Undergraduate Mentoring",
   2019, "Gold Chalk Award for Graduate Teaching"
 ) %>%
   baretable()
 ```
 
+```{r eval=FALSE, include=FALSE}
 # Grants in Review
 
 \LTXtable{\textwidth}{grants_in_review.tex}
+```
 
 # Current and Past Grants and Fellowships
 
@@ -226,7 +228,7 @@ tribble(
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
   "2015-2019", "Sarah Peacock", "Ph.D. University of Missouri", "Currently Assistant Teaching Professor at Northeastern University",
-  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently a Postdoctoral Research Associate at Rocky Vista University",
+  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently an Assistant Teaching Professor at Roanoke College",
   "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Completed doctoral studies at University of California, Riverside",
   "2010-2012", "Brittney Coats", "M.S., CSUSB", "Completed doctoral studies at the University of Chicago",
   "2008-2012", "Susan Lujan", "M.S., CSUSB", "Currently a lecturer at California State University, San Bernardino"
@@ -261,7 +263,7 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
-  "2019-Present", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Currently doctoral student at University of Chicago",
+  "2019-2020", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Currently doctoral student at University of Chicago",
   "2016-2020", "Melanie Boeyer", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at the University of Missouri",
   "2015-2020", "Sharon Kuo", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at Pennsylvania State University",
   "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences", "",
@@ -290,6 +292,7 @@ University of Missouri only. 23 additional students at Brown University and UC R
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
+  "2020-Present", "Madison LaChance", "MU Cherng Summer Scholar",
   "2019-Present", "Joshua Fajardo", "",
   "2018", "Kendra Lewis", "MU School of Medicine Summer Research Intern from Washington University in St. Louis",
   "2016-2019", "Alec Wilken", "Currently Master's student at the University of Missouri",
