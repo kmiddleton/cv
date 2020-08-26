@@ -398,6 +398,7 @@ tribble(
 - Current Biology
 - Evolution
 - IEEE Visualization & Graphics
+- Integrative Organismal Biology
 - International Journal of Primatology
 - Journal of Anatomy
 - Journal of Morphology
