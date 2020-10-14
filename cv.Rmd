@@ -131,6 +131,16 @@ tribble(
 
 # Cleft palate talks 2020
 # Gieg AAOSM
+
+# SVP 2020
+# Sellers
+
+# SICB 2021
+# McGechie
+
+# AAPA 2021
+# Cho
+# McGechie
 ```
 
 ## Dissertation
