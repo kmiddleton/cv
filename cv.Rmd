@@ -114,11 +114,9 @@ tribble(
   baretable()
 ```
 
-```{r eval=FALSE, include=FALSE}
 # Grants in Review
 
 \LTXtable{\textwidth}{grants_in_review.tex}
-```
 
 # Current and Past Grants and Fellowships
 
