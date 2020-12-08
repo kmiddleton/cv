@@ -131,6 +131,7 @@ tribble(
 
 # SICB 2021
 # McGechie
+# Others?
 
 # AAPA 2021
 # Cho
@@ -251,10 +252,8 @@ tribble(
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
   "2019-Present", "Emily Lessner", "Ph.D.; Pathobiology",
   "2019-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
-  "2019-Present", "Mikaela Pulsipher", "M.S.; Geological Sciences",
   "2018-Present", "Sean Greer", "Ph.D.; Pathobiology",
   "2017-Present", "Faye McGechie", "Ph.D.; Pathobiology",
-  "2017-Present", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology",
   "2016-Present", "Kaleb Sellers", "Ph.D.; Pathobiology",
   "2016-Present", "Elizabeth Cho", "Ph.D.; Anthropology",
   "2016-Present", "Deise Cruz", "Ph.D.; Biological Sciences",
@@ -268,6 +267,8 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2019-2020", "Mikaela Pulsipher", "M.S.; Geological Sciences",
+  "2017-2020", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology",
   "2019-2020", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Currently doctoral student at University of Chicago",
   "2016-2020", "Melanie Boeyer", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at the University of Missouri",
   "2015-2020", "Sharon Kuo", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at Pennsylvania State University",
