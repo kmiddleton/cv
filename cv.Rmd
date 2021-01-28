@@ -15,15 +15,17 @@ date: "`r format(Sys.time(), '%B %Y')`"
 titlecolor: "0726B2"
 headcolor: "0726B2"
 source: "github.com/kmiddleton/cv"
-output: function(...) vitae::cv_document(..., template = "cvtemplate.tex", citation_package = "biblatex")
+output:
+  vitae::cv_document:
+    template: cvtemplate.tex
 papersize: "letterpaper"
 ---
 
 ```{r setup, include=FALSE}
 
-# devtools::install_github("mitchelloharawild/vitae")
+# output: function(...) vitae::cv_document(..., template = "cvtemplate.tex", citation_package = "biblatex")
 
-include_refs <- TRUE
+include_refs <- FALSE
 
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE, 
@@ -42,8 +44,7 @@ baretable <- function(
   include.rownames = FALSE,
   hline.after = NULL,
   size = getOption("xtable.size", NULL),
-  add.to.row = getOption("xtable.add.to.row", NULL),
-  ...) {
+  add.to.row = getOption("xtable.add.to.row", NULL), ...) {
   tbl %>%
     xtable::xtable(digits = digits, ...) %>%
     print(
@@ -149,7 +150,7 @@ tribble(
 ```{r thesis}
 if (include_refs) {
   bibliography_entries("Paperpile.bib") %>%
-    filter(bibtype == "PhdThesis")
+    filter(str_detect(keyword, "CV/Dissertation"))
 }
 ```
 
@@ -157,9 +158,9 @@ if (include_refs) {
 
 ```{r research-papers}
 if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/Papers")) %>%
-  arrange(year, author)
+  bibliography_entries("Paperpile.bib") %>%
+    filter(str_detect(keyword, "CV/Papers")) %>%
+    arrange(issued, author)
 }
 ```
 
@@ -167,9 +168,9 @@ bibliography_entries("Paperpile.bib") %>%
 
 ```{r in-review}
 if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/In review")) %>%
-  arrange(year, author)
+  bibliography_entries("Paperpile.bib") %>%
+    filter(str_detect(keyword, "CV/In review")) %>%
+    arrange(issued, author)
 }
 ```
 
@@ -177,9 +178,9 @@ bibliography_entries("Paperpile.bib") %>%
 
 ```{r book-chapters}
 if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/Book chapters")) %>%
-  arrange(year, author)
+  bibliography_entries("Paperpile.bib") %>%
+    filter(str_detect(keyword, "CV/Book chapters")) %>%
+    arrange(issued, author)
 }
 ```
 
@@ -187,9 +188,9 @@ bibliography_entries("Paperpile.bib") %>%
 
 ```{r invited-reviews}
 if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/Reviews")) %>%
-  arrange(year, author)
+  bibliography_entries("Paperpile.bib") %>%
+    filter(str_detect(keyword, "CV/Reviews")) %>%
+    arrange(issued, author)
 }
 ```
 
@@ -197,9 +198,9 @@ bibliography_entries("Paperpile.bib") %>%
 
 ```{r book-reviews}
 if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/Book reviews")) %>%
-  arrange(year, author)
+  bibliography_entries("Paperpile.bib") %>%
+    filter(str_detect(keyword, "CV/Book reviews")) %>%
+    arrange(issued, author)
 }
 ```
 
@@ -207,9 +208,9 @@ bibliography_entries("Paperpile.bib") %>%
 
 ```{r datasets}
 if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/Datasets")) %>%
-  arrange(year, author)
+  bibliography_entries("Paperpile.bib") %>%
+    filter(str_detect(keyword, "CV/Datasets")) %>%
+    arrange(issued, author)
 }
 ```
 
@@ -217,9 +218,9 @@ bibliography_entries("Paperpile.bib") %>%
 
 ```{r in-prep}
 if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/In prep")) %>%
-  arrange(year, author)
+  bibliography_entries("Paperpile.bib") %>%
+    filter(str_detect(keyword, "CV/In prep")) %>%
+    arrange(author)
 }
 ```
 
@@ -329,9 +330,9 @@ tribble(
 
 ```{r abstracts}
 if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/Abstracts")) %>%
-  arrange(year, author)
+  bibliography_entries("Paperpile.bib") %>%
+    filter(str_detect(keyword, "CV/Abstracts")) %>%
+    arrange(issued, author)
 }
 ```
 
@@ -339,9 +340,9 @@ bibliography_entries("Paperpile.bib") %>%
 
 ```{r other}
 if (include_refs) {
-bibliography_entries("Paperpile.bib") %>%
-  filter(str_detect(keywords, "CV/Other presentations")) %>%
-  arrange(year, author)
+  bibliography_entries("Paperpile.bib") %>%
+    filter(str_detect(keyword, "CV/Other presentations")) %>%
+    arrange(issued, author)
 }
 ```
 
@@ -373,7 +374,7 @@ tribble(
   ~ Date, ~ Location,
   "2001", "University of Chicago",
   "2001", "American Museum of Natural History",
-	"2007", "CSU, San Bernardino",
+  "2007", "CSU, San Bernardino",
   "2007", "University of California, Riverside",
   "2007", "CSU, Fullerton",
   "2007", "Loma Linda University",
@@ -539,12 +540,12 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Date, ~ Service,
-	"2009-2012", "Institutional Animal Care and Use Committee",
-	"2008-2012", "NSF Mathematics and Science Scholars Mentor",
-	"2007-2012", "Pre-Dental Club Faculty Advisor",
-	"2007-2012", "Health Professions Advisory Committee",
-	"2007-2012", "Biology Department Webmaster",
-	"2009", "College of Natural Sciences Outstanding Students Evaluation Committee"
+  "2009-2012", "Institutional Animal Care and Use Committee",
+  "2008-2012", "NSF Mathematics and Science Scholars Mentor",
+  "2007-2012", "Pre-Dental Club Faculty Advisor",
+  "2007-2012", "Health Professions Advisory Committee",
+  "2007-2012", "Biology Department Webmaster",
+  "2009", "College of Natural Sciences Outstanding Students Evaluation Committee"
 ) %>% 
   baretable()
 ```
