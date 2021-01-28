@@ -1,0 +1,554 @@
+---
+name: Kevin Middleton, Ph.D.
+position: "Associate Professor"
+address: "Department of Pathology and Anatomical Sciences, University of Missouri School of Medicine"
+www: middletonlab.org
+email: "middletonk@missouri.edu"
+orcid: 0000-0003-4704-1064
+github: kmiddleton
+scholar: Ziha7x8AAAAJ
+headcolor: 414141 # use black color
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    pandoc_args: ["--lua-filter=multiple-bibliographies.lua"]
+    includes:
+      in_header: "preamble.tex"
+    keep_tex: yes
+csl: apa-cv.csl # change this if you want to use other citation styles
+bibliography_dissertation: "Dissertation.bib"
+bibliography_papers: "Papers.bib"
+bibliography_bookchapters: "Bookchapters.bib"
+bibliography_reviews: "Reviews.bib"
+bibliography_preprints: "Preprints.bib"
+bibliography_other: "Other.bib"
+bibliography_misc: "Misc.bib"
+bibliography_inprep: "Inprep.bib"
+bibliography_datasets: "Datasets.bib"
+bibliography_bookreviews: "Bookreviews.bib"
+bibliography_abstracts: "Abstracts.bib"
+nocite: '@*' # don't change this if you want to print out all the refs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae);library(tibble)
+
+# Process bib file
+
+baretable <- function(
+  tbl, digits = 0,
+  include.colnames = FALSE,
+  include.rownames = FALSE,
+  hline.after = NULL,
+  size = getOption("xtable.size", NULL),
+  add.to.row = getOption("xtable.add.to.row", NULL), ...) {
+  tbl %>%
+    xtable::xtable(digits = digits, ...) %>%
+    print(
+      include.colnames = include.colnames,
+      include.rownames = include.rownames,
+      hline.after = hline.after,
+      comment = FALSE,
+      latex.environments = NULL,
+      floating = FALSE,
+      size = size,
+      add.to.row = add.to.row,
+      sanitize.text.function = function(x) {
+        x
+      }
+    )
+}
+
+```
+
+# Professional Experience
+
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates,
+  "Associate Professor", "University of Missouri", "Department of Pathology & Anatomical Sciences", "2012 - Pres.",
+  "Associate Professor", "CSU San Bernardino", "Department of Biology", "2011 - 2012",
+  "Assistant Professor", "CSU San Bernardino", "Department of Biology", "2007 - 2011",
+  "NIH NRSA Postdoctoral Fellow", "Brown University and University of California, Riverside", "Effects of Genetics, Exercise, and Age on Bone Mechanics", "2005 - 2007",
+  "Postdoctoral Research Associate", "Brown University", "Department of Ecology and Evolutionary Biology", "2003 - 2005"
+) %>% 
+  detailed_entries(degree, dates, uni, loc)
+```
+
+# Education
+
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates,
+  "BS Biology", "Wake Forest University", "Summa Cum Laude", "1992 - 1995",
+  "PhD Ecology and Evolutionary Biology", "Brown University", "Morphology, evolution, and function of the avian hallux", "1996 - 2003"
+) %>% 
+  detailed_entries(degree, dates, uni, loc)
+```
+
+# Research Interests
+
+My research focuses on musculoskeletal physiology, form, and function in the contexts of animal locomotion, feeding, and vertebrate evolution. In my work, I integrate studies across multiple scales from micro-scale structural materials of bone to macro-scale whole bone morphology to evolutionary changes across vertebrate taxa and with comparisons to extinct organisms.
+
+## Current Projects
+
+- Effects of exercise and genetic background on skeletal form, physiology, and biomechanics using high activity mice as a model organism
+- Evolution of the avian head: integrating cranial biomechanics, muscle modeling, and brain evolution to understand avian cranial kinesis
+- Development of Bayesian and machine learning models for the prediction of craniofacial growth and form in humans
+- Evolution of wing-propelled diving in birds: exploring patterns of evolution in bone microstructure, feather biomechanics, functional morphology, and sensory systems
+
+# Awards
+
+```{r awards, results="asis"}
+tribble(
+  ~ Year, ~ Award,
+  2017, "MU School of Medicine Award for Outstanding Preclinical Faculty Education",
+  2017, "Ann K. Covington Award for Undergraduate Mentoring",
+  2019, "Gold Chalk Award for Graduate Teaching"
+) %>%
+  baretable()
+```
+
+# Grants in Review
+
+\LTXtable{\textwidth}{grants_in_review.tex}
+
+# Current and Past Grants and Fellowships
+
+\LTXtable{\textwidth}{grants.tex}
+
+# Publications
+
+```{r include=FALSE}
+## FIXME
+
+# Gieg AAOSM
+
+# SICB 2021
+# McGechie
+
+# AAPA 2021
+# Cho
+# McGechie
+
+# AAA 2021
+# Sellers
+# Holliday
+# McGechie
+# Fortner
+# Smolinsky
+```
+
+## Dissertation
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_dissertation}
+:::
+\endgroup
+
+## Refereed Research Papers
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_papers}
+:::
+\endgroup
+
+<!--
+## Manuscripts in Review
+-->
+
+## Book Chapters
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_bookchapters}
+:::
+\endgroup
+
+## Invited Reviews
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_reviews}
+:::
+\endgroup
+
+## Book Reviews
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_bookreviews}
+:::
+\endgroup
+
+## Published Data Sets
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_datasets}
+:::
+\endgroup
+
+## Manuscripts in Preparation
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_inprep}
+:::
+\endgroup
+
+# Postdoctoral Supervisor
+
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Name, ~ Notes,
+  "2015-2018", "Alida Bailleul, PhD", "Currently an Assistant Professor at the Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
+) %>% 
+  detailed_entries(when = Dates, with = Name, what = Notes)
+```
+
+# Graduate Advisor
+
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2015-2019", "Sarah Peacock", "Ph.D. University of Missouri", "Currently Assistant Teaching Professor at Northeastern University",
+  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently an Assistant Teaching Professor at Roanoke College",
+  "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Completed doctoral studies at University of California, Riverside",
+  "2010-2012", "Brittney Coats", "M.S., CSUSB", "Completed doctoral studies at the University of Chicago",
+  "2008-2012", "Susan Lujan", "M.S., CSUSB", "Currently a lecturer at California State University, San Bernardino"
+) %>% 
+  detailed_entries(when = Dates, with = Name, where = Degree, what = Notes)
+```
+
+# Graduate Committee Member
+
+## Current
+
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Name, ~ Notes,
+  "2020-Present", "Gabriel Jacobs", "Ph.D.; Geological Sciences",
+  "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
+  "2019-Present", "Emily Lessner", "Ph.D.; Pathobiology",
+  "2019-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
+  "2019-Present", "Mikaela Pulsipher", "M.S.; Geological Sciences",
+  "2018-Present", "Sean Greer", "Ph.D.; Pathobiology",
+  "2016-Present", "Kaleb Sellers", "Ph.D.; Pathobiology",
+  "2016-Present", "Elizabeth Cho", "Ph.D.; Anthropology",
+  "2016-Present", "Deise Cruz", "Ph.D.; Biological Sciences",
+  "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
+) %>% 
+  detailed_entries(when = Dates, with = Name, what = Notes)
+```
+
+## Past
+
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2017-2020", "Faye McGechie", "Ph.D.; Pathobiology", "Currently podtdoctoral researcher, University of Chicago",
+  "2017-2020", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology", "Currently pursuing certificate in nutrition, University of Missouri",
+  "2019-2020", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Currently doctoral student at University of Chicago",
+  "2016-2020", "Melanie Boeyer", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at the University of Missouri",
+  "2015-2020", "Sharon Kuo", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at Pennsylvania State University",
+  "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences", "",
+  "2015-2019", "Ian Cost", "Ph.D.; Pathobiology", "Currently assistant professor at Albright College",
+  "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "",
+  "2017-2018", "Stephanie Rosbach", "M.S.; Geological Sciences", "",
+  "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "Currently research associate at the University of Missouri",
+  "2015-2017", "Edward Ramirez", "Ph.D.; Biological Sciences", "",
+  "2015-2017", "Steven Hanson", "Ph.D.; Pathobiology", "",
+  "2014-2017", "Luésoni Johnson", "Ph.D.; Biological Sciences", "",
+  "2013-2016", "Elizabeth Moffett", "Ph.D.; Biological Sciences", "Currently an Assistant Professor at Rocky Vista University",
+  "2014-2015", "Kaleb Sellers", "M.S.; Pathology", "",
+  "2012-2015", "Henry Tsai", "Ph.D.; Pathobiology", "Currently an Assistant Professor at Missouri State University",
+  "2009-2012", "Kandee Bain", "M.S.; Biology, CSUSB", "",
+  "2008-2012", "Kim Scott", "M.S.; Biology, CSUSB", "",
+  "2007-2008", "Adam Huttenlocker", "M.S.; Biology, CSUSB", "Currently an Assistant Professor at the University of Southern California",
+  "2007-2008", "Candace Reno", "M.S.; Biology, CSUSB", ""
+) %>% 
+  detailed_entries(when = Dates, with = Name, where = Degree, what = Notes)
+```
+
+# Undergraduate Mentoring
+
+University of Missouri only. 23 additional students at Brown University and UC Riverside; 2003--2012
+
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Name, ~ Notes,
+  "2020-Present", "Madison LaChance", "MU Cherng Summer Scholar",
+  "2019-Present", "Joshua Fajardo", "",
+  "2018", "Kendra Lewis", "MU School of Medicine Summer Research Intern from Washington University in St. Louis",
+  "2016-2019", "Alec Wilken", "Currently Master's student at the University of Missouri",
+  "2016-2018", "Caitlyn Smith", "Currently a student in the University of Missouri School of Medicine",
+  "2016-2018", "Rebecca Meyer", "",
+  "2016-2017", "Nicholas Ferrari", "",
+  "2016", "Jake Cooper", "NSF Inside Dinosaurs Research Fellow",
+  "2016", "Eva Herbst", "NSF Inside Dinosaurs Research Fellow",
+  "2014-2018", "Nicholas Bira", "C3 Hughes Research Fellow",
+  "2015", "Kyle Kirkland", "MU School of Medicine Summer Research Intern from Michigan State University",
+  "2014-2015", "Imran Rashid", "",
+  "2014-2015", "Michael Sojka", "C3 Hughes Research Fellow, MU School of Journalism",
+  "2014", "Tarrin Casey", "Currently a student in the University of Missouri School of Medicine",
+  "2013", "Diana Salas", "MU School of Medicine Summer Research Intern from Indiana University"
+) %>% 
+  detailed_entries(when = Dates, with = Name, what = Notes)
+```
+
+# Presentations
+
+## Published Abstracts
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_abstracts}
+:::
+\endgroup
+
+## Other Presentations
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_other}
+:::
+\endgroup
+
+# Teaching Experience
+
+## University of Missouri
+
+\LTXtable{\textwidth}{teaching.tex}
+
+## California State University, San Bernardino
+
+```{r results="asis"}
+tribble(
+  ~ Dates, ~ Course,
+  "2007-2011", "Biology of the Chordates",
+  "2008-2012", "Human Physiology and Anatomy",
+  "2010-2012", "Biostatistics",
+  "2008, 2010, 2012", "Graduate Seminar",
+  "2008-2011", "Biology Seminar",
+  "2008", "Advanced Vertebrate Morphology"
+) %>% 
+  baretable()
+```
+
+# Invited Seminars
+
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Location,
+  "2001", "University of Chicago",
+  "2001", "American Museum of Natural History",
+  "2007", "CSU, San Bernardino",
+  "2007", "University of California, Riverside",
+  "2007", "CSU, Fullerton",
+  "2007", "Loma Linda University",
+  "2010", "Grove High School, Redlands, CA",
+  "2010", "CSU, Northridge",
+  "2011", "University of Missouri",
+  "2012", "La Sierra College",
+  "2012", "Grinnell College",
+  "2013", "MU Evolutionary Studies EvoBlitz",
+  "2013", "University of Texas at Austin",
+  "2013", "Saint Louis University",
+  "2013", "MU Division of Biological Sciences",
+  "2014", "Northeast Ohio Medical University",
+  "2014", "MU Math in Life Sciences Freshman Interest Group",
+  "2014", "MU LSUROP Evening Seminar Speaker",
+  "2017", "MU Saturday Morning Science",
+  "2018", "MU Department of Pathology and Anatomical Sciences"
+) %>% 
+  baretable()
+```
+
+# Professional Service
+
+## Referee
+
+- Acta Anatomica
+- Acta Palaeontologica Polonica
+- Acta Zoologica Sinica
+- Ameghiniana
+- American Journal of Physical Anthropology
+- Anatomical Record
+- Biology Letters
+- Comparative Biochemistry and Physiology
+- Current Biology
+- Evolution
+- IEEE Visualization & Graphics
+- Integrative Organismal Biology
+- International Journal of Primatology
+- Journal of Anatomy
+- Journal of Morphology
+- Journal of Vertebrate Paleontology
+- Journal of Zoology
+- Nature
+- Nature Communications
+- Naturwissenschaften
+- Palaeontology
+- Paleobiology
+- Paleobios
+- PeerJ
+- PLoS One
+- Proceedings of the National Academy of Sciences USA
+- Proceedings of the Royal Society (Biological Sciences)
+- Quarterly Review of Biology
+- Restoration Ecology
+- Royal Society Open Science
+- Zoological Journal of the Linnean Society
+- Zoology
+
+## NSF Panel Service
+
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service,
+  "2012", "Division of Evolutionary Biology -- Systematics and Biodiversity Science"
+) %>% 
+  baretable()
+```
+
+## NSF Ad Hoc Reviewer
+
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service,
+  "2009", "National Science Foundation -- IOB",
+  "2010", "National Science Foundation -- DEB",
+  "2012", "National Science Foundation -- IOB",
+  "2017", "National Science Foundation -- IOB",
+  "2019", "National Science Foundation -- IOB"
+) %>% 
+  baretable()
+```
+
+## University of Missouri Research Board
+
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service,
+  "2015", "Ad hoc reviewer"
+) %>% 
+  baretable()
+```
+
+## Reviewer (Textbooks)
+
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service, ~ Publisher,
+  "2003", "Miller, KR and JS Levine. Biology", "Pearson-Prentice Hall",
+  "2010", "Tate, P. Anatomy and Physiology", "McGraw Hill",
+  "2010", "Biological Sciences Curriculum Studies. BSCS Biology: A Human Approach. 4th Ed.", "Kendall Hunt Publishing"
+) %>% 
+  baretable()
+```
+
+## Reviewer for Deutsche Forschungsgemeinschaft (German Research Foundation)
+
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service,
+  "2018", "Life Sciences 1: Molecular and Organismic Biology"
+) %>% 
+  baretable()
+```
+
+# Department and University Service
+
+## Current
+
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service,
+  "2020-Present", "PAS Director of Graduate Studies",
+  "2020-Present", "School of Medicine Block 4 Planning Committee",
+  "2018-Present", "MU School of Medicine Faculty Committee for Diversity and Inclusion",
+  "2015-Present", "School of Medicine Advice Support and Career (ASC) Preclerkship Advisor",
+  "2014-Present", "School of Medicine eResources Committee",
+  "2012-Present", "MU Doctoral Faculty",
+  "2012-Present", "MU Graduate Faculty",
+  "2012-Present", "Pathobiology Area Program Faculty"
+) %>% 
+  baretable()
+```
+
+## Past
+
+**University of Missouri**
+
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service,
+  "2014-2019", "School of Medicine Block 2 Planning Committee",
+  "2013-2019", "PAS Promotion and Tenure Committee",
+  "2013-2020", "PAS Director of Admissions",
+  "2016-2019", "Evolution and Social Science Group (ESS) steering committee",
+  "2016-2019", "MU School of Medicine Admissions Committee",
+  "2016-2019", "MU Information Technology Committee",
+  "2016-2018", "MU Library Committee",
+  "2016", "Chair, MU Life Sciences Week Genetics, Evolution, and Environment Poster Competition",
+  "2016", "MU Office of Undergraduate Research focus group",
+  "2015", "Life Sciences Undergraduate Research Opportunity Program Selection Committee",
+  "2014-2018", "MU Life Sciences Week poster competition judge",
+  "2013-2017", "PAS Director of Graduate Studies",
+  "2013-2016, 2019", "SOM Summer Research Internship in Medical Sciences Selection Committee",
+  "2013, 2015-2019", "PAS Assistant Teaching Professor Search Committee",
+  "2013-2019", "PAS Lecturer Search Committee",
+  "2013-2014", "School of Medicine Block 4 Planning Committee"
+) %>% 
+  baretable()
+```
+
+**California State University, San Bernardino**
+
+```{r results="asis"}
+tribble(
+  ~ Date, ~ Service,
+  "2009-2012", "Institutional Animal Care and Use Committee",
+  "2008-2012", "NSF Mathematics and Science Scholars Mentor",
+  "2007-2012", "Pre-Dental Club Faculty Advisor",
+  "2007-2012", "Health Professions Advisory Committee",
+  "2007-2012", "Biology Department Webmaster",
+  "2009", "College of Natural Sciences Outstanding Students Evaluation Committee"
+) %>% 
+  baretable()
+```
+
+# Professional Organizations
+
+- American Association of Anatomists
+- International Association of Dental Research
+- International Society of Vertebrate Morphology
+- Society of Avian Paleontology and Evolution
+- Society of Integrative and Comparative Biology
+- Society of Vertebrate Paleontology
+
+# Televised Outreach
+
+\LTXtable{\textwidth}{televised.tex}

@@ -1,0 +1,1916 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Kevin Middleton, Ph.D.}{}
+
+\position{Associate Professor}
+\address{Department of Pathology and Anatomical Sciences, University of
+Missouri School of Medicine}
+
+\email{\href{mailto:middletonk@missouri.edu}{\nolinkurl{middletonk@missouri.edu}}}
+\homepage{middletonlab.org}
+\orcid{0000-0003-4704-1064}
+\github{kmiddleton}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{ltxtable}
+\usepackage{multicol}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {January 2021}
+    {Kevin Middleton, Ph.D.~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{professional-experience}{%
+\section{Professional Experience}\label{professional-experience}}
+
+\begin{cventries}
+    \cventry{Associate Professor}{University of Missouri}{Department of Pathology \& Anatomical Sciences}{2012 - Pres.}{}\vspace{-4.0mm}
+    \cventry{Associate Professor}{CSU San Bernardino}{Department of Biology}{2011 - 2012}{}\vspace{-4.0mm}
+    \cventry{Assistant Professor}{CSU San Bernardino}{Department of Biology}{2007 - 2011}{}\vspace{-4.0mm}
+    \cventry{NIH NRSA Postdoctoral Fellow}{Brown University and University of California, Riverside}{Effects of Genetics, Exercise, and Age on Bone Mechanics}{2005 - 2007}{}\vspace{-4.0mm}
+    \cventry{Postdoctoral Research Associate}{Brown University}{Department of Ecology and Evolutionary Biology}{2003 - 2005}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{BS Biology}{Wake Forest University}{Summa Cum Laude}{1992 - 1995}{}\vspace{-4.0mm}
+    \cventry{PhD Ecology and Evolutionary Biology}{Brown University}{Morphology, evolution, and function of the avian hallux}{1996 - 2003}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{research-interests}{%
+\section{Research Interests}\label{research-interests}}
+
+My research focuses on musculoskeletal physiology, form, and function in
+the contexts of animal locomotion, feeding, and vertebrate evolution. In
+my work, I integrate studies across multiple scales from micro-scale
+structural materials of bone to macro-scale whole bone morphology to
+evolutionary changes across vertebrate taxa and with comparisons to
+extinct organisms.
+
+\hypertarget{current-projects}{%
+\subsection{Current Projects}\label{current-projects}}
+
+\begin{itemize}
+\tightlist
+\item
+  Effects of exercise and genetic background on skeletal form,
+  physiology, and biomechanics using high activity mice as a model
+  organism
+\item
+  Evolution of the avian head: integrating cranial biomechanics, muscle
+  modeling, and brain evolution to understand avian cranial kinesis
+\item
+  Development of Bayesian and machine learning models for the prediction
+  of craniofacial growth and form in humans
+\item
+  Evolution of wing-propelled diving in birds: exploring patterns of
+  evolution in bone microstructure, feather biomechanics, functional
+  morphology, and sensory systems
+\end{itemize}
+
+\hypertarget{awards}{%
+\section{Awards}\label{awards}}
+
+\begin{tabular}{rl}
+  2017 & MU School of Medicine Award for Outstanding Preclinical Faculty Education \\ 
+  2017 & Ann K. Covington Award for Undergraduate Mentoring \\ 
+  2019 & Gold Chalk Award for Graduate Teaching \\ 
+  \end{tabular}
+
+\hypertarget{grants-in-review}{%
+\section{Grants in Review}\label{grants-in-review}}
+
+\LTXtable{\textwidth}{grants_in_review.tex}
+
+\hypertarget{current-and-past-grants-and-fellowships}{%
+\section{Current and Past Grants and
+Fellowships}\label{current-and-past-grants-and-fellowships}}
+
+\LTXtable{\textwidth}{grants.tex}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{dissertation}{%
+\subsection{Dissertation}\label{dissertation}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_dissertation}{}
+\leavevmode\hypertarget{ref-middleton_morphology_2003}{}%
+Middleton, K. M. (2003). \emph{Morphology evolution and function of the
+avian hallux} {[}PhD thesis{]}. Brown University.
+
+\endgroup
+
+\hypertarget{refereed-research-papers}{%
+\subsection{Refereed Research Papers}\label{refereed-research-papers}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_papers}{}
+\leavevmode\hypertarget{ref-Boeyer2020-jn}{}%
+Boeyer, M. E., Middleton, K. M., Duren, D. L., \& Leary, E. V. (2020).
+Estimating peak height velocity in individuals: A comparison of
+statistical methods. \emph{Ann. Hum. Biol.}, \emph{47}(5), 434--445.
+\url{https://doi.org/10.1080/03014460.2020.1763458}
+
+\leavevmode\hypertarget{ref-Boeyer2020-hp}{}%
+Boeyer, M. E., Middleton, K. M., Duren, D. L., \& Leary, E. V. (2020).
+Estimating peak height velocity in individuals: A response to Cole
+(2020). \emph{Annals of Human Biology}.
+\url{https://doi.org/10.1080/03014460.2020.1837954}
+
+\leavevmode\hypertarget{ref-Cost2020-jo}{}%
+Cost, I. N., Middleton, K. M., Sellers, K. C., Echols, M. S., Witmer, L.
+M., Davis, J. L., \& Holliday, C. M. (2020). Palatal biomechanics and
+its significance for cranial kinesis in \emph{Tyrannosaurus rex}.
+\emph{Anat. Rec.}, \emph{303}(4), 999--1017.
+\url{https://doi.org/10.1002/ar.24219}
+
+\leavevmode\hypertarget{ref-Sherwood2020-le}{}%
+Sherwood, R. J., Oh, H., Valiathan, M., McNulty, K., Duren, D. L.,
+Knigge, R., Hardin, A., Holzhauser, C. L., \& Middleton, K. M. (2020).
+Bayesian approach to longitudinal craniofacial growth: The craniofacial
+growth consortium study. \emph{Anat. Rec.}
+\url{https://doi.org/10.1002/ar.24520}
+
+\leavevmode\hypertarget{ref-Tsai2020-zm}{}%
+Tsai, H. P., Middleton, K. M., Hutchinson, J. R., \& Holliday, C. M.
+(2020). More than one way to be a giant: Convergence and disparity in
+the hip joints of saurischian dinosaurs. \emph{Evolution}, \emph{74}(8),
+1654--1681. \url{https://doi.org/10.1111/evo.14017}
+
+\leavevmode\hypertarget{ref-Wilken2020-wf}{}%
+Wilken, A. T., Sellers, K. C., Cost, I. N., Rozin, R. E., Middleton, K.
+M., \& Holliday, C. M. (2020). Connecting the chondrocranium:
+Biomechanics of the suspensorium in reptiles. \emph{Vertebrate Zoology},
+\emph{70}(3), 275--290. \url{https://doi.org/10.26049/VZ70-3-2020-02}
+
+\leavevmode\hypertarget{ref-Lynch2019-ny}{}%
+Lynch, R., Lummaa, V., Panchanathan, K., Middleton, K., Rotkirch, A.,
+Danielsbacka, M., O'Brien, D., \& Loehr, J. (2019). Integration involves
+a trade-off between fertility and status for World War II evacuees.
+\emph{Nat Hum Behav}, \emph{3}(4), 337--345.
+\url{https://doi.org/10.1038/s41562-019-0542-5}
+
+\leavevmode\hypertarget{ref-Ngoma2019-gq}{}%
+Ng'oma, E., Fidelis, W., Middleton, K. M., \& King, E. G. (2019). The
+evolutionary potential of diet-dependent effects on lifespan and
+fecundity in a multi-parental population of \emph{Drosophila
+melanogaster}. \emph{Heredity}, \emph{122}(5), 582--594.
+\url{https://doi.org/10.1038/s41437-018-0154-2}
+
+\leavevmode\hypertarget{ref-Sullivan2019-vq}{}%
+Sullivan, S. P., McGechie, F. R., Middleton, K. M., \& Holliday, C. M.
+(2019). 3D muscle architecture of the pectoral muscles of european
+starling (\emph{Sturnus vulgaris}). \emph{Integr Org Biol}, \emph{1}(1),
+oby010. \url{https://doi.org/10.1093/iob/oby010}
+
+\leavevmode\hypertarget{ref-Wilken2019-so}{}%
+Wilken, A. T., Middleton, K. M., Sellers, K. C., Cost, I. N., \&
+Holliday, C. M. (2019). The roles of joint tissues and jaw muscles in
+palatal biomechanics of the savannah monitor (\emph{Varanus
+exanthematicus}) and their significance for cranial kinesis. \emph{J.
+Exp. Biol.}, \emph{222}(Pt 18), 1--14.
+\url{https://doi.org/10.1242/jeb.201459}
+
+\leavevmode\hypertarget{ref-Ngoma2018-aw}{}%
+Ng'oma, E., King, E. G., \& Middleton, K. M. (2018). A model-based high
+throughput method for fecundity estimation in fruit fly studies.
+\emph{Fly}, \emph{12}(3-4), 183--190.
+\url{https://doi.org/10.1080/19336934.2018.1562267}
+
+\leavevmode\hypertarget{ref-Peacock2018-ty}{}%
+Peacock, S. J., Coats, B. R., Kirkland, J. K., Tanner, C. A., Garland,
+T., Jr, \& Middleton, K. M. (2018). Predicting the bending properties of
+long bones: Insights from an experimental mouse model. \emph{Am. J.
+Phys. Anthropol.}, \emph{165}(3), 457--470.
+\url{https://doi.org/10.1002/ajpa.23363}
+
+\leavevmode\hypertarget{ref-Peacock2018-uz}{}%
+Peacock, S. J., Garland, T., Jr, \& Middleton, K. M. (2018). Reply to
+Ruff, Warden, and Karlson. \emph{Am. J. Phys. Anthropol.},
+\emph{167}(1), 190--193. \url{https://doi.org/10.1002/ajpa.23614}
+
+\leavevmode\hypertarget{ref-Tsai2018-xp}{}%
+Tsai, H. P., Middleton, K. M., Hutchinson, J. R., \& Holliday, C. M.
+(2018). Hip joint articular soft tissues of non-dinosaurian
+Dinosauromorpha and early dinosauria: Evolutionary and biomechanical
+implications for Saurischia. \emph{J. Vert. Paleontol.},
+\emph{e1427593}, 1--23.
+\url{https://doi.org/10.1080/02724634.2017.1427593}
+
+\leavevmode\hypertarget{ref-Goller2017-es}{}%
+Goller, B., Segre, P. S., Middleton, K. M., Dickinson, M. H., \&
+Altshuler, D. L. (2017). Visual sensory signals dominate tactile cues
+during docked feeding in hummingbirds. \emph{Front. Neurosci.},
+\emph{11}, 622. \url{https://doi.org/10.3389/fnins.2017.00622}
+
+\leavevmode\hypertarget{ref-Sellers2017-kj}{}%
+Sellers, K. C., Middleton, K. M., Davis, J. L., \& Holliday, C. M.
+(2017). Ontogeny of bite force in a validated biomechanical model of the
+american alligator. \emph{J. Exp. Biol.}, \emph{220}, 2036--2046.
+\url{https://doi.org/10.1242/jeb.156281}
+
+\leavevmode\hypertarget{ref-Malisch2016-ht}{}%
+Malisch, J. L., deWolski, K., Meek, T. H., Acosta, W., Middleton, K. M.,
+Crino, O. L., \& Garland, T., Jr. (2016). Acute restraint stress alters
+wheel-running behavior immediately following stress and up to 20 hours
+later in house mice. \emph{Physiol. Biochem. Zool.}, \emph{89}(6),
+546--552. \url{https://doi.org/10.1086/688660}
+
+\leavevmode\hypertarget{ref-read_hummingbirds_2016}{}%
+Read, T. J. G., Segre, P. S., Middleton, K. M., \& Altshuler, D. L.
+(2016). Hummingbirds control turning velocity using body orientation and
+turning radius using asymmetrical wingbeat kinematics. \emph{J. R. Soc.
+Interface}, \emph{13}(116), 20160110.
+\url{https://doi.org/10.1098/rsif.2016.0110}
+
+\leavevmode\hypertarget{ref-cheney_membrane_2014}{}%
+Cheney, J. A., Konow, N., Middleton, K. M., Breuer, K. S., Roberts, T.
+J., Giblin, E. L., \& Swartz, S. M. (2014). Membrane muscle function in
+the compliant wings of bats. \emph{Bioinspir. Biomim.}, \emph{9}(2),
+025007. \url{https://doi.org/10.1088/1748-3182/9/2/025007}
+
+\leavevmode\hypertarget{ref-altshuler_wingbeat_2012}{}%
+Altshuler, D. L., Quicazán-Rubio, E. M., Segre, P. S., \& Middleton, K.
+M. (2012). Wingbeat kinematics and motor control of yaw turns in anna's
+hummingbirds (\emph{Calypte anna}). \emph{J. Exp. Biol.}, \emph{215}(Pt
+23), 4070--4084. \url{https://doi.org/10.1242/jeb.075044}
+
+\leavevmode\hypertarget{ref-keeney_sex_2012}{}%
+Keeney, B. K., Meek, T. H., Middleton, K. M., Holness, L. F., \&
+Garland, T., Jr. (2012). Sex differences in cannabinoid receptor-1 (CB1)
+pharmacology in mice selectively bred for high voluntary wheel-running
+behavior. \emph{Pharmacol. Biochem. Behav.}, \emph{101}(4), 528--537.
+\url{https://doi.org/10.1016/j.pbb.2012.02.017}
+
+\leavevmode\hypertarget{ref-garlandjr_how_2011}{}%
+Garland, T., Jr, Kelly, S. A., Malisch, J. L., Kolb, E. M., Hannon, R.
+M., Keeney, B. K., Van Cleave, S. L., \& Middleton, K. M. (2011). How to
+run far: Multiple solutions and sex-specific responses to selective
+breeding for high voluntary activity levels. \emph{Proc. Biol. Sci.},
+\emph{278}(1705), 574--581. \url{https://doi.org/10.1098/rspb.2010.1584}
+
+\leavevmode\hypertarget{ref-kolb_erythropoietin_2010}{}%
+Kolb, E. M., Kelly, S. A., Middleton, K. M., Sermsakdi, L. S., Chappell,
+M. A., \& Garland, T., Jr. (2010). Erythropoietin elevates VO2,max but
+not voluntary wheel running in mice. \emph{J. Exp. Biol.},
+\emph{213}(3), 510--519. \url{https://doi.org/10.1242/jeb.029074}
+
+\leavevmode\hypertarget{ref-middleton_variation_2010}{}%
+Middleton, K. M., Goldstein, B. D., Guduru, P. R., Waters, J. F., Kelly,
+S. A., Swartz, S. M., \& Garland, T., Jr. (2010). Variation in
+within-bone stiffness measured by nanoindentation in mice bred for high
+levels of voluntary wheel running. \emph{J. Anat.}, \emph{216}(1),
+121--131. \url{https://doi.org/10.1111/j.1469-7580.2009.01175.x}
+
+\leavevmode\hypertarget{ref-riskin_effect_2010}{}%
+Riskin, D. K., Iriarte-Díaz, J., Middleton, K. M., Breuer, K. S., \&
+Swartz, S. M. (2010). The effect of body size on the wing movements of
+pteropodid bats, with insights into thrust and lift production. \emph{J.
+Exp. Biol.}, \emph{213}(Pt 23), 4110--4122.
+\url{https://doi.org/10.1242/jeb.043091}
+
+\leavevmode\hypertarget{ref-wallace_functional_2010}{}%
+Wallace, I. J., Middleton, K. M., Lublinsky, S., Kelly, S. A., Judex,
+S., Garland, T., Jr, \& Demes, B. (2010). Functional significance of
+genetic variation underlying limb bone diaphyseal structure. \emph{Am.
+J. Phys. Anthropol.}, \emph{143}(1), 21--30.
+\url{https://doi.org/10.1002/ajpa.21286}
+
+\leavevmode\hypertarget{ref-eisenmann_day_2009}{}%
+Eisenmann, J. C., Wickel, E. E., Kelly, S. A., Middleton, K. M., \&
+Garland, T., Jr. (2009). Day-to-day variability in voluntary wheel
+running among genetically differentiated lines of mice that vary in
+activity level. \emph{Eur. J. Appl. Physiol.}, \emph{106}(4), 613--619.
+\url{https://doi.org/10.1007/s00421-009-1056-z}
+
+\leavevmode\hypertarget{ref-malisch_behavioral_2009}{}%
+Malisch, J. L., Breuner, C. W., Kolb, E. M., Wada, H., Hannon, R. M.,
+Chappell, M. A., Middleton, K. M., \& Garland, T., Jr. (2009).
+Behavioral despair and home-cage activity in mice with chronically
+elevated baseline corticosterone concentrations. \emph{Behav. Genet.},
+\emph{39}(2), 192--201. \url{https://doi.org/10.1007/s10519-008-9246-8}
+
+\leavevmode\hypertarget{ref-clarke_mosaicism_2008}{}%
+Clarke, J. A., \& Middleton, K. M. (2008). Mosaicism, modules, and the
+evolution of birds: Results from a bayesian approach to the study of
+morphological evolution using discrete character data. \emph{Syst.
+Biol.}, \emph{57}(2), 185--201.
+\url{https://doi.org/10.1080/10635150802022231}
+
+\leavevmode\hypertarget{ref-hannon_phenotypic_2008a}{}%
+Hannon, R. M., Kelly, S. A., Middleton, K. M., Kolb, E. M., Pomp, D., \&
+Garland, T., Jr. (2008). Phenotypic effects of the ``mini-muscle''
+allele in a large HR x C57BL/6J mouse backcross. \emph{J. Hered.},
+\emph{99}(4), 349--354. \url{https://doi.org/10.1093/jhered/esn011}
+
+\leavevmode\hypertarget{ref-keeney_differential_2008}{}%
+Keeney, B. K., Raichlen, D. A., Meek, T. H., Wijeratne, R. S.,
+Middleton, K. M., Gerdeman, G. L., \& Garland, T., Jr. (2008).
+Differential response to a selective cannabinoid receptor antagonist
+(SR141716: Rimonabant) in female mice from lines selectively bred for
+high voluntary wheel-running behaviour. \emph{Behav. Pharmacol.},
+\emph{19}(8), 812--820.
+\url{https://doi.org/10.1097/FBP.0b013e32831c3b6b}
+
+\leavevmode\hypertarget{ref-lavin_morphometrics_2008}{}%
+Lavin, S. R., Karasov, W. H., Ives, A. R., Middleton, K. M., \& Garland,
+T., Jr. (2008). Morphometrics of the avian small intestine compared with
+that of nonflying mammals: A phylogenetic approach. \emph{Physiol.
+Biochem. Zool.}, \emph{81}(5), 526--550.
+\url{https://doi.org/10.1086/522641}
+
+\leavevmode\hypertarget{ref-middleton_selective_2008a}{}%
+Middleton, K. M., Kelly, S. A., \& Garland, T., Jr. (2008). Selective
+breeding as a tool to probe skeletal response to high voluntary
+locomotor activity in mice. \emph{Integr. Comp. Biol.}, \emph{48}(3),
+394--410. \url{https://doi.org/10.1093/icb/icn057}
+
+\leavevmode\hypertarget{ref-middleton_relative_2008}{}%
+Middleton, K. M., Shubin, C. E., Moore, D. C., Carter, P. A., Garland,
+T., Jr, \& Swartz, S. M. (2008). The relative importance of genetics and
+phenotypic plasticity in dictating bone morphology and mechanics in aged
+mice: Evidence from an artificial selection experiment. \emph{Zoology},
+\emph{111}(2), 135--147.
+\url{https://doi.org/10.1016/j.zool.2007.06.003}
+
+\leavevmode\hypertarget{ref-swartz_biomechanics_2008}{}%
+Swartz, S. M., \& Middleton, K. M. (2008). Biomechanics of the bat limb
+skeleton: Scaling, material properties and mechanics. \emph{Cells
+Tissues Organs}, \emph{187}(1), 59--84.
+\url{https://doi.org/10.1159/000109964}
+
+\leavevmode\hypertarget{ref-tian_direct_2006}{}%
+Tian, X., Iriarte-Diaz, J., Middleton, K., Galvao, R., Israeli, E.,
+Roemer, A., Sullivan, A., Song, A., Swartz, S., \& Breuer, K. (2006).
+Direct measurements of the kinematics and dynamics of bat flight.
+\emph{Bioinspir. Biomim.}, \emph{1}(4), S10--8.
+\url{https://doi.org/10.1088/1748-3182/1/4/S02}
+
+\leavevmode\hypertarget{ref-middleton_morphological_2001}{}%
+Middleton, K. M. (2001). The morphological basis of hallucal orientation
+in extant birds. \emph{J. Morphol.}, \emph{250}(1), 51--60.
+\url{https://doi.org/10.1002/jmor.1058}
+
+\leavevmode\hypertarget{ref-middleton_theropod_2000}{}%
+Middleton, K. M., \& Gatesy, S. M. (2000). Theropod forelimb design and
+evolution. \emph{Zool. J. Linn. Soc.}, \emph{128}(2), 149--187.
+\url{https://doi.org/10.1111/j.1096-3642.2000.tb00160.x}
+
+\leavevmode\hypertarget{ref-gatesy_theropod_1999}{}%
+Gatesy, S. M., \& Middleton, K. M. (1999). Theropod hind limb disparity
+revisited: A response. \emph{J. Vert. Paleontol.}, \emph{19}(3),
+606--606. \url{https://doi.org/10.1080/02724634.1999.10011173}
+
+\leavevmode\hypertarget{ref-gatesy_three-dimensional_1999}{}%
+Gatesy, S. M., Middleton, K. M., Jenkins, F. A., Jr, \& Shubin, N. H.
+(1999). Three-dimensional preservation of foot movements in Triassic
+theropod dinosaurs. \emph{Nature}, \emph{399}(6732), 141--144.
+\url{https://doi.org/10.1038/20167}
+
+\leavevmode\hypertarget{ref-gatesy_bipedalism_1997}{}%
+Gatesy, S. M., \& Middleton, K. M. (1997). Bipedalism, flight, and the
+evolution of theropod locomotor diversity. \emph{J. Vert. Paleontol.},
+\emph{17}(2), 308--329.
+\url{https://doi.org/10.1080/02724634.1997.10010977}
+
+\endgroup
+
+\hypertarget{book-chapters}{%
+\subsection{Book Chapters}\label{book-chapters}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_bookchapters}{}
+\leavevmode\hypertarget{ref-owerkowicz_respiratory_2015}{}%
+Owerkowicz, T., Musinsky, C., Middleton, K. M., \& Crompton, A. W.
+(2015). Respiratory turbinates and the evolution of endothermy in
+mammals and birds. In K. P. Dial, N. H. Shubin, \& E. L. Brainerd
+(Eds.), \emph{Great transformations in vertebrate evolution} (pp.
+143--166). University of Chicago Press.
+\url{https://doi.org/10.7208/chicago/9780226268392.003.0009}
+
+\leavevmode\hypertarget{ref-gatesy_skeletal_2007}{}%
+Gatesy, S. M., \& Middleton, K. M. (2007). Skeletal adaptations for
+flight. In B. K. Hall (Ed.), \emph{Fins into limbs}. University of
+Chicago Press.
+
+\endgroup
+
+\hypertarget{invited-reviews}{%
+\subsection{Invited Reviews}\label{invited-reviews}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_reviews}{}
+\leavevmode\hypertarget{ref-middleton_challenges_2015}{}%
+Middleton, K. M., \& English, L. T. (2014). Challenges and advances in
+the study of pterosaur flight. \emph{Can. J. Zool.}, \emph{93}(12),
+945--959. \url{https://doi.org/10.1139/cjz-2013-0219}
+
+\leavevmode\hypertarget{ref-clarke_bird_2006}{}%
+Clarke, J., \& Middleton, K. (2006). Bird evolution. \emph{Curr. Biol.},
+\emph{16}(10), R350--4. \url{https://doi.org/10.1016/j.cub.2006.04.023}
+
+\endgroup
+
+\hypertarget{book-reviews}{%
+\subsection{Book Reviews}\label{book-reviews}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_bookreviews}{}
+\leavevmode\hypertarget{ref-middleton_dinosaurs_2003}{}%
+Middleton, K. M. (2003). \emph{Dinosaurs of the air: The evolution and
+loss of flight in dinosaurs and birds} and \emph{mesozoic birds: Above
+the heads of dinosaurs}. \emph{Palaeontol. Electronica}, \emph{6}, 5.
+\url{http://palaeo-electronica.org/2003_1/books/birds.htm}
+
+\endgroup
+
+\hypertarget{published-data-sets}{%
+\subsection{Published Data Sets}\label{published-data-sets}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_datasets}{}
+\leavevmode\hypertarget{ref-Ngoma2018-kf}{}%
+Ng'oma, E., Fidelis, W., Middleton, K. M., \& King, E. G. (2018).
+\emph{Lifespan and fecundity data for: The evolutionary potential of
+diet-dependent effects on lifespan and fecundity in a multi-parental
+population of \textup{drosophila melanogaster}}.
+\url{https://zenodo.org/record/1285237}
+
+\leavevmode\hypertarget{ref-Peacock2018-lc}{}%
+Peacock, S. J., Coats, B. R., Kirkland, J. K., Tanner, C. A., Garland,
+T., Jr, \& Middleton, K. M. (2018). \emph{Data from: Predicting the
+bending properties of long bones: Insights from an experimental mouse
+model}. \url{https://osf.io/3wxnh/}
+
+\leavevmode\hypertarget{ref-read_data_2016}{}%
+Read, T. J. G., Segre, P. S., Middleton, K. M., \& Altshuler, D. L.
+(2016). \emph{Data from: Hummingbirds control turning velocity using
+body orientation and turning radius using asymmetrical wingbeat
+kinematics}.
+\url{https://datadryad.org/stash/dataset/doi:10.5061/dryad.j77h6}
+
+\leavevmode\hypertarget{ref-middleton_data_2000}{}%
+Middleton, K. M., \& Gatesy, S. M. (2000). \emph{Data from: Theropod
+forelimb design and evolution}.
+\url{https://doi.org/10.5061/dryad.jf6ht}
+
+\endgroup
+
+\hypertarget{manuscripts-in-preparation}{%
+\subsection{Manuscripts in
+Preparation}\label{manuscripts-in-preparation}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_inprep}{}
+\leavevmode\hypertarget{ref-Cost_undated-cr}{}%
+Cost, I. N., Sellers, K. C., Middleton, K. M., \& Holliday, C. M.
+(n.d.-). Conveying 3D spatial data of muscle orientation throughout
+lineages, their ontogeny, and their feeding cycles to understand cranial
+mechanics. \emph{Proc. Natl. Acad. Sci. U. S. A.}
+
+\leavevmode\hypertarget{ref-kuo_tensile_inreview}{}%
+Kuo, S., \& Middleton, K. M. (n.d.-). Tensile mechanical properties of
+isolated penguin flipper feathers. \emph{J. Morphol.}
+
+\leavevmode\hypertarget{ref-Lujan_undated-rq}{}%
+Lujan, S. L., Owerkowicz, T., Hicks, J. W., \& Middleton, K. M. (n.d.-).
+Atmospheric oxygen level does not alter growth or size-specific femoral
+cross-sectional geometry in the american alligator (\emph{alligator
+mississippiensis}). \emph{Anat. Rec.}
+
+\leavevmode\hypertarget{ref-Middleton_undated-dc}{}%
+Middleton, K. M., Prior, S. C., \& Swartz, S. M. (n.d.-). Scaling of
+cortical and subchondral bone thickness in the femora of terrestrial
+mammals. \emph{J. Morphol.}
+
+\leavevmode\hypertarget{ref-Smith_undated-hm}{}%
+Smith, C. J., Holliday, C. M., Middleton, K. M., \& Bailleul, A. M.
+(n.d.-). Bending properties of the jugal bone in mallard ducks and its
+significance for cranial biomechanics. \emph{Anatomical Record}.
+
+\leavevmode\hypertarget{ref-Smolinsky_undated-uh}{}%
+Smolinsky, A. N., \& Middleton, K. M. (n.d.-). Endurance and impact
+activities differentially influence femoral cross-sectional geometry and
+mineral apposition. \emph{J. Exp. Biol.}
+
+\leavevmode\hypertarget{ref-smolinsky_mechanical_inpreparation}{}%
+Smolinsky, A. N., Middleton, K. M., \& Holliday, C. M. (n.d.-).
+Mechanical properties of the mandibular symphysis of american alligators
+(\emph{alligator mississippiensis}). \emph{J. Exp. Biol.}
+
+\endgroup
+
+\hypertarget{postdoctoral-supervisor}{%
+\section{Postdoctoral Supervisor}\label{postdoctoral-supervisor}}
+
+\begin{cventries}
+    \cventry{Currently an Assistant Professor at the Institute of Vertebrate Paleontology and Paleoanthropology, Beijing}{Alida Bailleul, PhD}{}{2015-2018}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{graduate-advisor}{%
+\section{Graduate Advisor}\label{graduate-advisor}}
+
+\begin{cventries}
+    \cventry{Currently Assistant Teaching Professor at Northeastern University}{Sarah Peacock}{Ph.D. University of Missouri}{2015-2019}{}\vspace{-4.0mm}
+    \cventry{Currently an Assistant Teaching Professor at Roanoke College}{Amanda Smolinsky}{Ph.D. University of Missouri}{2013-2018}{}\vspace{-4.0mm}
+    \cventry{Completed doctoral studies at University of California, Riverside}{Katherine Johnson}{M.S., CSUSB}{2011-2012}{}\vspace{-4.0mm}
+    \cventry{Completed doctoral studies at the University of Chicago}{Brittney Coats}{M.S., CSUSB}{2010-2012}{}\vspace{-4.0mm}
+    \cventry{Currently a lecturer at California State University, San Bernardino}{Susan Lujan}{M.S., CSUSB}{2008-2012}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{graduate-committee-member}{%
+\section{Graduate Committee Member}\label{graduate-committee-member}}
+
+\hypertarget{current}{%
+\subsection{Current}\label{current}}
+
+\begin{cventries}
+    \cventry{Ph.D.; Geological Sciences}{Gabriel Jacobs}{}{2020-Present}{}\vspace{-4.0mm}
+    \cventry{Ph.D.; Biological Sciences}{Christian Perez}{}{2020-Present}{}\vspace{-4.0mm}
+    \cventry{Ph.D.; Pathobiology}{Emily Lessner}{}{2019-Present}{}\vspace{-4.0mm}
+    \cventry{Ph.D.; Pathobiology}{Samuel Sullivan}{}{2019-Present}{}\vspace{-4.0mm}
+    \cventry{M.S.; Geological Sciences}{Mikaela Pulsipher}{}{2019-Present}{}\vspace{-4.0mm}
+    \cventry{Ph.D.; Pathobiology}{Sean Greer}{}{2018-Present}{}\vspace{-4.0mm}
+    \cventry{Ph.D.; Pathobiology}{Kaleb Sellers}{}{2016-Present}{}\vspace{-4.0mm}
+    \cventry{Ph.D.; Anthropology}{Elizabeth Cho}{}{2016-Present}{}\vspace{-4.0mm}
+    \cventry{Ph.D.; Biological Sciences}{Deise Cruz}{}{2016-Present}{}\vspace{-4.0mm}
+    \cventry{Ph.D.; Anthropology}{Rob'yn Johnston}{}{2015-Present}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{past}{%
+\subsection{Past}\label{past}}
+
+\begin{cventries}
+    \cventry{Currently podtdoctoral researcher, University of Chicago}{Faye McGechie}{Ph.D.; Pathobiology}{2017-2020}{}\vspace{-4.0mm}
+    \cventry{Currently pursuing certificate in nutrition, University of Missouri}{Rebecca Dirkes}{Ph.D.; Nutrition \& Exercise Physiology}{2017-2020}{}\vspace{-4.0mm}
+    \cventry{Currently doctoral student at University of Chicago}{Alec Wilken}{M.S.; Pathology and Anatomical Sciences}{2019-2020}{}\vspace{-4.0mm}
+    \cventry{Currently postdoctoral research associate at the University of Missouri}{Melanie Boeyer}{Ph.D.; Pathobiology}{2016-2020}{}\vspace{-4.0mm}
+    \cventry{Currently postdoctoral research associate at Pennsylvania State University}{Sharon Kuo}{Ph.D.; Pathobiology}{2015-2020}{}\vspace{-4.0mm}
+    \cventry{}{Ellee Cook}{Ph.D.; Biological Sciences}{2018-2019}{}\vspace{-4.0mm}
+    \cventry{Currently assistant professor at Albright College}{Ian Cost}{Ph.D.; Pathobiology}{2015-2019}{}\vspace{-4.0mm}
+    \cventry{}{Landry Konan}{M.S.; Pathology and Anatomical Sciences}{2017-2018}{}\vspace{-4.0mm}
+    \cventry{}{Stephanie Rosbach}{M.S.; Geological Sciences}{2017-2018}{}\vspace{-4.0mm}
+    \cventry{Currently research associate at the University of Missouri}{Tara Selly}{Ph.D.; Geological Sciences}{2016-2018}{}\vspace{-4.0mm}
+    \cventry{}{Edward Ramirez}{Ph.D.; Biological Sciences}{2015-2017}{}\vspace{-4.0mm}
+    \cventry{}{Steven Hanson}{Ph.D.; Pathobiology}{2015-2017}{}\vspace{-4.0mm}
+    \cventry{}{Luésoni Johnson}{Ph.D.; Biological Sciences}{2014-2017}{}\vspace{-4.0mm}
+    \cventry{Currently an Assistant Professor at Rocky Vista University}{Elizabeth Moffett}{Ph.D.; Biological Sciences}{2013-2016}{}\vspace{-4.0mm}
+    \cventry{}{Kaleb Sellers}{M.S.; Pathology}{2014-2015}{}\vspace{-4.0mm}
+    \cventry{Currently an Assistant Professor at Missouri State University}{Henry Tsai}{Ph.D.; Pathobiology}{2012-2015}{}\vspace{-4.0mm}
+    \cventry{}{Kandee Bain}{M.S.; Biology, CSUSB}{2009-2012}{}\vspace{-4.0mm}
+    \cventry{}{Kim Scott}{M.S.; Biology, CSUSB}{2008-2012}{}\vspace{-4.0mm}
+    \cventry{Currently an Assistant Professor at the University of Southern California}{Adam Huttenlocker}{M.S.; Biology, CSUSB}{2007-2008}{}\vspace{-4.0mm}
+    \cventry{}{Candace Reno}{M.S.; Biology, CSUSB}{2007-2008}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{undergraduate-mentoring}{%
+\section{Undergraduate Mentoring}\label{undergraduate-mentoring}}
+
+University of Missouri only. 23 additional students at Brown University
+and UC Riverside; 2003--2012
+
+\begin{cventries}
+    \cventry{MU Cherng Summer Scholar}{Madison LaChance}{}{2020-Present}{}\vspace{-4.0mm}
+    \cventry{}{Joshua Fajardo}{}{2019-Present}{}\vspace{-4.0mm}
+    \cventry{MU School of Medicine Summer Research Intern from Washington University in St. Louis}{Kendra Lewis}{}{2018}{}\vspace{-4.0mm}
+    \cventry{Currently Master's student at the University of Missouri}{Alec Wilken}{}{2016-2019}{}\vspace{-4.0mm}
+    \cventry{Currently a student in the University of Missouri School of Medicine}{Caitlyn Smith}{}{2016-2018}{}\vspace{-4.0mm}
+    \cventry{}{Rebecca Meyer}{}{2016-2018}{}\vspace{-4.0mm}
+    \cventry{}{Nicholas Ferrari}{}{2016-2017}{}\vspace{-4.0mm}
+    \cventry{NSF Inside Dinosaurs Research Fellow}{Jake Cooper}{}{2016}{}\vspace{-4.0mm}
+    \cventry{NSF Inside Dinosaurs Research Fellow}{Eva Herbst}{}{2016}{}\vspace{-4.0mm}
+    \cventry{C3 Hughes Research Fellow}{Nicholas Bira}{}{2014-2018}{}\vspace{-4.0mm}
+    \cventry{MU School of Medicine Summer Research Intern from Michigan State University}{Kyle Kirkland}{}{2015}{}\vspace{-4.0mm}
+    \cventry{}{Imran Rashid}{}{2014-2015}{}\vspace{-4.0mm}
+    \cventry{C3 Hughes Research Fellow, MU School of Journalism}{Michael Sojka}{}{2014-2015}{}\vspace{-4.0mm}
+    \cventry{Currently a student in the University of Missouri School of Medicine}{Tarrin Casey}{}{2014}{}\vspace{-4.0mm}
+    \cventry{MU School of Medicine Summer Research Intern from Indiana University}{Diana Salas}{}{2013}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{presentations}{%
+\section{Presentations}\label{presentations}}
+
+\hypertarget{published-abstracts}{%
+\subsection{Published Abstracts}\label{published-abstracts}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_abstracts}{}
+\leavevmode\hypertarget{ref-Middleton2020-ye}{}%
+Middleton, K. M., Hardin, A. M., Knigge, R. P., Duren, D. L., Mcnulty,
+K. P., Valiathan, M., \& Sherwood, R. J. (2020). \emph{Bayesian
+modelling to address the challenges of estimating craniofacial growth
+patterns}. International Association for Dental Research.
+
+\leavevmode\hypertarget{ref-Fortner2020-qa}{}%
+Fortner, J. D., Wilkin, A. T., Cost, I. N., Sellers, K. C., Middleton,
+K. M., \& Holliday, C. M. (2020). \emph{The role of symphyseal tissues
+and sutures on mandible function in archosaurs}. Society of Vertebrate
+Palentology Annual Meeting.
+
+\leavevmode\hypertarget{ref-Holliday2020-ua}{}%
+Holliday, C. M., \& Middleton, K. M. (2020). \emph{Myology of the
+reptilia}. Experimental Biology.
+
+\leavevmode\hypertarget{ref-Holliday2020-vt}{}%
+Holliday, C. M., Wilken, A. T., Sullivan, S., Lessner, E., Sellers, K.
+C., Middleton, K. M., \& Ward, C. V. (2020). \emph{Paleontology
+engagement in rural public science expos}. Society of Vertebrate
+Paleontology Annual Meeting.
+
+\leavevmode\hypertarget{ref-Holliday2020-to}{}%
+Holliday, C. M., Wilkin, A. T., Sullivan, S., Verhulst, C., Sellers, K.
+C., Lessner, E., Fortner, J. D., \& Middleton, K. M. (2020).
+\emph{Myology of the reptilia: 3d modeling of jaw muscles and its
+utility in paleobiology}. Society of Vertebrate Palentology Annual
+Meeting.
+
+\leavevmode\hypertarget{ref-Lough2020-qg}{}%
+Lough, C. P., Gieg, S. D., Bezold, W. A., Feltz, K. P., Middleton, K.
+M., \& Skelley, N. W. (2020). \emph{Mechanical properties of 3D printed
+orthopaedic internal fixation implants}. ORS 2020 Annual Meeting.
+
+\leavevmode\hypertarget{ref-Sellers2020-gf}{}%
+Sellers, K. C., Middleton, K. M., \& Holliday, C. M. (2020). \emph{Joint
+loading and transformation in suchian evolution}. Society for
+Experimental Biology.
+
+\leavevmode\hypertarget{ref-Sellers2020-lz}{}%
+Sellers, K. C., Middleton, K. M., \& Holliday, C. M. (2020).
+\emph{Muscle and joint evolution in crocodyliforms}. Experimental
+Biology.
+
+\leavevmode\hypertarget{ref-Sullivan2020-jk}{}%
+Sullivan, S. P., Middleton, K. M., \& Holliday, C. M. (2020).
+\emph{Evolutionary variation and biomechanics of the avian furcula}.
+Experimental Biology.
+
+\leavevmode\hypertarget{ref-Sullivan2020-df}{}%
+Sullivan, S. P., Middleton, K. M., \& Holliday, C. M. (2020).
+\emph{Morphology and function of the avian furcula}. Society for
+Experimental Biology.
+
+\leavevmode\hypertarget{ref-Wilken2020-ws}{}%
+Wilken, A. T., Middleton, K. M., Sellers, K. C., Cost, I. N., \&
+Holliday, C. M. (2020). \emph{Functional morphology of the palate of
+varanus exanthematicus and its significance for the evolution of cranial
+kinesis}. Society for Experimental Biology.
+
+\leavevmode\hypertarget{ref-Wilken2020-ks}{}%
+Wilken, A. T., Sellers, K. C., Rozin, R., Middleton, K. M., \& Holliday,
+C. M. (2020). \emph{Comparative biomechanics of the otic joint and
+suspensorium in sauropsids}. Society of Vertebrate Paleontology Annual
+Meeting.
+
+\leavevmode\hypertarget{ref-Holliday2019-tp}{}%
+Holliday, C. M., Wilken, A. T., Bailleul, A. M., Sellers, K. C., Cost,
+I. N., Rozin, R. E., \& Middleton, K. M. (2019). \emph{Connecting the
+chondrocranium: Biomechanics of the palatocranial joints of sauropsids}.
+International Congress of Vertebrate Morphology.
+
+\leavevmode\hypertarget{ref-McGechie2019-xy}{}%
+McGechie, F., Sullivan, S., Middleton, K. M., Holliday, C. M., Nalley,
+T. K., Grider-Potter, N., \& Ward, C. V. (2019). 3D analysis of primate
+neck anatomy using Contrast-Enhanced CT imaging, Fascicle-Tracking
+algorithms, and muscle mechanics. \emph{FASEB J.}, \emph{612.1}.
+
+\leavevmode\hypertarget{ref-McGechie2019-ov}{}%
+McGechie, F., Sullivan, S., Middleton, K. M., Holliday, C. M., Nalley,
+T. K., Grider-Potter, N., \& Ward, C. V. (2019). Using novel 3D
+techniques to visualize and quantify primate neck anatomy. \emph{Am. J.
+Phys. Anthropol.}, \emph{168}(S68), 160.
+
+\leavevmode\hypertarget{ref-Middleton2019-ll}{}%
+Middleton, K. M., Sellers, K. C., Cost, I. N., Spates, A. T., \&
+Holliday, C. M. (2019). \emph{Methods for visualizing and comparing
+force vectors in two- and Three-Dimensions, with applications for
+vertebrate feeding and locomotion}. International Congress of Vertebrate
+Morphology.
+
+\leavevmode\hypertarget{ref-Middleton2019-si}{}%
+Middleton, K. M., Smolinsky, A. N., \& Garland, T., Jr. (2019). Creation
+of a novel inbred mouse model for high activity with a small muscle
+phenotype. \emph{FASEB J.}, \emph{769.1}.
+
+\leavevmode\hypertarget{ref-Owerkowicz2019-hc}{}%
+Owerkowicz, T., Poff, M., Middleton, K. M., \& Crompton, A. W. (2019).
+\emph{Metabolic and environmental factors shaping the morphology of
+respiratory turbinates in mammals and archosaurs}. International
+Congress of Vertebrate Morphology.
+
+\leavevmode\hypertarget{ref-Ruth2019-mq}{}%
+Ruth, A. A., \& Middleton, K. M. (2019). Mechanical stimulus vs.
+Selection in determining enthesis morphology in mice. \emph{Am. J. Phys.
+Anthropol.}, \emph{168}(S68), 212.
+
+\leavevmode\hypertarget{ref-Sellers2019-js}{}%
+Sellers, K. C., Middleton, K. M., \& Holliday, C. M. (2019). \emph{Joint
+loading and transformation in suchian evolution}. International Congress
+of Vertebrate Morphology.
+
+\leavevmode\hypertarget{ref-Smolinsky2019-lf}{}%
+Smolinsky, A. N., Aldridge, K., Castro, A. A., Garland, T., Jr, \&
+Middleton, K. M. (2019). Artificial selection for increased voluntary
+wheel running alters limb skeleton shape and exercise plasticity in
+mice. \emph{FASEB J.}, \emph{10.6}.
+
+\leavevmode\hypertarget{ref-Smolinsky2019-in}{}%
+Smolinsky, A. N., Aldridge, K., Castro, A. A., Garland, T., Jr, \&
+Middleton, K. M. (2019). \emph{Effects of artificial selection for
+increased voluntary wheel running on hindlimb skeletal shape in mice}.
+International Congress of Vertebrate Morphology.
+
+\leavevmode\hypertarget{ref-Sullivan2019-yv}{}%
+Sullivan, S. P., Middleton, K. M., \& Holliday, C. M. (2019).
+\emph{Morphology and function of the avian furcula}. International
+Congress of Vertebrate Morphology.
+
+\leavevmode\hypertarget{ref-Wilken2019-up}{}%
+Wilken, A. T., Middleton, K. M., Sellers, K. C., Cost, I. N., \&
+Holliday, C. M. (2019). \emph{Functional morphology of the palate in
+\textup{varanus exanthematicus} (squamata: Varanidae) and its
+significance for the evolution of cranial kinesis}. International
+Congress of Vertebrate Morphology.
+
+\leavevmode\hypertarget{ref-Cost2018-lx}{}%
+Cost, I. N., Middleton, K. M., \& Holliday, C. M. (2018).
+\emph{Mechanical performance in the skulls of parrots (aves:
+Psittaciformes)}. Society for Integrative and Comparative Biology.
+
+\leavevmode\hypertarget{ref-Holliday2018-nh}{}%
+Holliday, C. M., Cost, I. N., Sellers, K. C., \& Middleton, K. M.
+(2018). \emph{Using ternary plots to convey 3D jaw muscle orientation in
+space and time}. Society for Integrative and Comparative Biology.
+
+\leavevmode\hypertarget{ref-McGechie2018-sd}{}%
+McGechie, F., Aldridge, K., \& Middleton, K. M. (2018). Plastic and
+evolved responses to postural behavior in the morphology of the cranium.
+\emph{Am. J. Phys. Anthropol.}, \emph{165}, 171.
+
+\leavevmode\hypertarget{ref-Owerkowicz2018-hr}{}%
+Owerkowicz, T., Middleton, K. M., \& Crompton, A. W. (2018). Selective
+forces behind the evolution of respiratory turbinates in mammals and
+birds. \emph{5th International Palaeontological Congress}, 893.
+
+\leavevmode\hypertarget{ref-Sellers2018-lh}{}%
+Sellers, K. C., Middleton, K. M., Clark, J. M., \& Holliday, C. M.
+(2018). \emph{Cranial joints and the evolution of extreme feeding
+performance in crocodyliformes}. Society of Vertebrate Palentology
+Annual Meeting.
+
+\leavevmode\hypertarget{ref-Sellers2018-sc}{}%
+Sellers, K. C., Middleton, K. M., \& Holliday, C. M. (2018).
+\emph{Biomechanics and evolution of the crocodyliform skull}. Society
+for Integrative and Comparative Biology.
+
+\leavevmode\hypertarget{ref-Sethi2018-ga}{}%
+Sethi, A., Sellers, K. C., Cost, I. N., McGechie, F., Middleton, K. M.,
+\& Holliday, C. M. (2018). \emph{3D fiber tracking of jaw muscles
+reveals a diversity of muscle architectures in the heads of reptiles}.
+Society for Integrative and Comparative Biology.
+
+\leavevmode\hypertarget{ref-Smith2018-kz}{}%
+Smith, C. J., Middleton, K. M., Bailleul, A. M., \& Holliday, C. M.
+(2018). \emph{Bending properties of the lower temporal bar in ducks and
+its significance for cranial biomechanics}. Society for Integrative and
+Comparative Biology.
+
+\leavevmode\hypertarget{ref-Smolinsky2018-iz}{}%
+Smolinsky, A. N., Aldridge, K., \& Middleton, K. M. (2018).
+Muscle-intensive and high-impact exercises differentially influence
+whole bone 3D morphology in young male mice. \emph{FASEB J.}, \emph{32},
+9650.
+
+\leavevmode\hypertarget{ref-Smolinsky2018-sy}{}%
+Smolinsky, A. N., \& Middleton, K. M. (2018). \emph{Muscle- and
+impact-dominated activities differentially affect bone morphology and
+mineral apposition in young outbred mice}. Society for Integrative and
+Comparative Biology.
+
+\leavevmode\hypertarget{ref-Sullivan2018-kt}{}%
+Sullivan, S. P., Holliday, C. M., Bailleul, A. M., \& Middleton, K. M.
+(2018). \emph{Digital reconstruction of the avian pectoral girdle with
+implications for furcula function}. Society for Integrative and
+Comparative Biology.
+
+\leavevmode\hypertarget{ref-Wilkin2018-ya}{}%
+Wilkin, A. T., Middleton, K. M., Sellers, K. C., Cost, I. N., \&
+Holliday, C. M. (2018). \emph{Finite element analysis of the savannah
+monitor, \textup{varanus exanthematicus}, and its implications for
+lepidosaur cranial kinesis}. Society for Integrative and Comparative
+Biology.
+
+\leavevmode\hypertarget{ref-cost_biomechanics_2017}{}%
+Cost, I. N., Middleton, K. M., Witmer, L. M., Echols, M. S., \&
+Holliday, C. M. (2017). Biomechanics of the feeding apparatus of parrots
+(aves: Psittaciformes). \emph{FASEB J.}, \emph{31}(Supplement 1), 577.7.
+
+\leavevmode\hypertarget{ref-hill_aaa_2017}{}%
+Hill, C. A., Aldridge, K., Holliday, C. M., Middleton, K. M., Ward, C.
+V., Maiolino, S., \& Jorgensen, M. E. (2017). The minute clinic:
+Increasing student engagement in an undergraduate Systems-Based anatomy
+course. \emph{FASEB J.}, \emph{31}(Supplement 1), 733.8.
+
+\leavevmode\hypertarget{ref-holliday_dinosaurs_2017}{}%
+Holliday, C. M., Hill, C. A., Davis, J. L., Witmer, L. M., \& Middleton,
+K. M. (2017). Inside Dinosaurs: A broader impacts program for research,
+teaching and public education through dinosaur biology, physics and
+evolution. \emph{FASEB J.}, \emph{31}(Supplement 1), 734.8.
+
+\leavevmode\hypertarget{ref-peacock_effects_2017}{}%
+Peacock, S. J., Bates, K. A., Talton, O. O., Schulz, L. C., \&
+Middleton, K. M. (2017). Effects of perinatal circadian programming on
+activity and skeletal morphology in C57BL/6 mice. \emph{FASEB J.},
+\emph{31}(Supplement 1), 577.18.
+
+\leavevmode\hypertarget{ref-Sellers2017-uj}{}%
+Sellers, K. C., Middleton, K. M., Davis, J. L., \& Holliday, C. M.
+(2017). Biomechanics and the evolution of the crocodyliform skull.
+\emph{FASEB J.}, \emph{31}(Supplement 1), 579.1.
+
+\leavevmode\hypertarget{ref-Smith2017-ws}{}%
+Smith, C. J., Holliday, C. M., Middleton, K. M., \& Bailleul, A. M.
+(2017). Bending properties of the jugal bone in mallard ducks and its
+significance for cranial biomechanics. \emph{FASEB J.},
+\emph{31}(Supplement 1), 577.6.
+
+\leavevmode\hypertarget{ref-smolinsky_comparing_2017}{}%
+Smolinsky, A. N., \& Middleton, K. M. (2017). Comparing femur
+cross-sectional morphology in young outbred mice following daily
+exposure to muscle-, impact-, or combined loading of the hind limb
+skeleton. \emph{FASEB J.}, \emph{31}(Supplement 1), 577.15.
+
+\leavevmode\hypertarget{ref-Smolinsky2017-gk}{}%
+Smolinsky, A. N., \& Middleton, K. M. (2017). The effects of muscle- and
+impact-dominated loading on femoral cross-section morphology and mineral
+apposition in young outbred mice. \emph{Integr. Comp. Biol.},
+\emph{57}(Suppl. 1), e395.
+
+\leavevmode\hypertarget{ref-tsai_cartilage_2017}{}%
+Tsai, H. P., Middleton, K. M., \& Holliday, C. M. (2017). \emph{The
+cartilage cone of archosauromorphs: Implications for hip loading and
+femoral ossification}. Society for Integrative and Comparative Biology
+Annual Meeting.
+
+\leavevmode\hypertarget{ref-wilkin_modeling_2017}{}%
+Wilkin, A. T., Middleton, K. M., Sellers, K. C., Cost, I. N., Davis, J.
+L., \& Holliday, C. M. (2017). Modeling complex cranial joints in
+\emph{varanus exanthematicus}. \emph{FASEB J.}, \emph{31}(Supplement 1),
+577.5.
+
+\leavevmode\hypertarget{ref-cost_postural_2016}{}%
+Cost, I. N., Sellers, K. C., Davis, J. L., Middleton, K. M., Witmer, L.
+M., \& Holliday, C. M. (2016). Postural changes and kinetic competency
+in the palates of birds and other diapsids. \emph{Journal of Vertebrate
+Paleontology, Program and Abstracts}, \emph{2016}(Supplement 1),
+120--121.
+
+\leavevmode\hypertarget{ref-cost_relative_2016}{}%
+Cost, I. N., Spates, A., Sellers, K. C., Davis, J. L., Middleton, K. M.,
+Witmer, L. M., \& Holliday, C. M. (2016). Relative kinetic competency in
+the palatal complexes of birds and other diapsids. \emph{Anat. Rec.},
+\emph{299}(special feature), 208--209.
+
+\leavevmode\hypertarget{ref-holliday_dinosaurs_2016}{}%
+Holliday, C. M., Hill, C. A., Davis, J. L., Witmer, L. M., \& Middleton,
+K. M. (2016). Inside dinosaurs: A broader impacts program for research,
+teaching and public education through dinosaur biology, physics and
+evolution. \emph{Journal of Vertebrate Paleontology, Program and
+Abstracts}, \emph{2016}, 155--156.
+
+\leavevmode\hypertarget{ref-kuo_tensile_2016}{}%
+Kuo, S., \& Middleton, K. M. (2016). \emph{Tensile mechanical properties
+of isolated penguin flipper feathers}. Society for Integrative and
+Comparative Biology 2016 Annual Meeting. Portland, OR.
+
+\leavevmode\hypertarget{ref-lujan_atmospheric_2016}{}%
+Lujan, S. L., Owerkowicz, T., Elsey, R. M., Hicks, J. W., \& Middleton,
+K. M. (2016). Atmospheric oxygen conditions do not constrain growth or
+biomechanical performance of limb bones in alligatoridae:
+\emph{Alligator mississippiensis}. \emph{Anat. Rec.}, \emph{299}(special
+feature), 72--73.
+
+\leavevmode\hypertarget{ref-middleton_scaling_2016}{}%
+Middleton, K. M., Hurtado, A. C., \& Swartz, S. M. (2016). Scaling of
+haversian systems in a phylogenetically diverse sample of mammals is
+consistent with physical and physiological constraints. \emph{Anat.
+Rec.}, \emph{299}(special feature), 70.
+
+\leavevmode\hypertarget{ref-middleton_comparison_2016}{}%
+Middleton, K. M., Peacock, S. J., Kirkland, J. K., \& Garland, T., Jr.
+(2016). Comparison of morphology and bending mechanics of femora in
+response to chronic exercise in three strains of mice. \emph{FASEB J.},
+\emph{30}, 368.2.
+
+\leavevmode\hypertarget{ref-peacock_history_2016}{}%
+Peacock, S. J., Coats, B. R., Kirkland, J. K., Tanner, C. A., Garland,
+T., Jr., \& Middleton, K. M. (2016). \emph{History of exercise,
+cross-sectional geometry, and bending mechanics: Inferences based on
+three strains of mice}. American Association of Physical
+Anthropologists. Atlanta, GA.
+
+\leavevmode\hypertarget{ref-sellers_high_2016}{}%
+Sellers, K. C., Davis, J. L., Middleton, K. M., \& Holliday, C. M.
+(2016). A high-fidelity, 3D model of the skull of Alligator
+mississippiensis (Archosauria: Crocodylia) and its significance for
+vertebrate feeding biomechanics. \emph{Anat. Rec.}, \emph{299}(special
+feature), 120--121.
+
+\leavevmode\hypertarget{ref-sellers_biomechanics_2016}{}%
+Sellers, K. C., Davis, J. L., Middleton, K. M., \& Holliday, C. M.
+(2016). Biomechanics and the evolution of the crocodyliform skull.
+\emph{Journal of Vertebrate Paleontology, Program and Abstracts},
+\emph{2016}, 221.
+
+\leavevmode\hypertarget{ref-smolinsky_comparison_2016}{}%
+Smolinsky, A. N., \& Middleton, K. M. (2016). Comparison of impact
+loading and wheel running on femoral cross-section morphology in young
+outbred mice. \emph{Anat. Rec.}, \emph{299}(special feature), 246.
+
+\leavevmode\hypertarget{ref-spates_using_2016}{}%
+Spates, A., Cost, I. N., Sellers, K. C., Middleton, K. M., \& Holliday,
+C. M. (2016). Using novel methods to visualize jaw muscle biomechanics
+and its significance for the evolution of the avian feeding apparatus.
+\emph{FASEB J.}, \emph{30}, 779.6.
+
+\leavevmode\hypertarget{ref-tsai_cartilage_2016a}{}%
+Tsai, H. P., Middleton, K. M., \& Holliday, C. M. (2016). The cartilage
+cone of archosauromorphs: Biomechanical implications for hip joint
+loading and femoral ossification. \emph{Anat. Rec.}, \emph{299}(special
+feature), 197.
+
+\leavevmode\hypertarget{ref-tsai_cartilage_2016}{}%
+Tsai, H. P., Middleton, K. M., \& Holliday, C. M. (2016). The cartilage
+cone of archosauromorphs: Implications of chondro-osseous junction on
+hip joint loading and femoral ossification. \emph{Journal of Vertebrate
+Paleontology, Program and Abstracts}, \emph{2016}, 239.
+
+\leavevmode\hypertarget{ref-cheney_shaping_2015}{}%
+Cheney, J. A., Konow, N., Middleton, K. M., Breuer, K. S., Roberts, T.
+J., Giblin, E. L., \& Swartz, S. M. (2015). Shaping the wings of bats:
+Muscle and wing skin interactions in flight. \emph{Integr. Comp. Biol.},
+\emph{55}, e29.
+
+\leavevmode\hypertarget{ref-cost_biomechanics_2015}{}%
+Cost, I. N., Spates, A., Sellers, K. C., Davis, J. L., Middleton, K. M.,
+Witmer, L. M., \& Holliday, C. M. (2015). Biomechanics of the avian
+feeding apparatus. \emph{Journal of Vertebrate Paleontology, Program and
+Abstracts}, \emph{2015}, 110.
+
+\leavevmode\hypertarget{ref-sellers_ontogeny_2015}{}%
+Sellers, K. C., Davis, J. L., Middleton, K. M., \& Holliday, C. M.
+(2015). Ontogeny and biomechanics of the american alligator skull.
+\emph{Journal of Vertebrate Paleontology, Program and Abstracts},
+\emph{2015}, 211.
+
+\leavevmode\hypertarget{ref-smolinsky_material_2015}{}%
+Smolinsky, A. N., Middleton, K. M., Pfeiffer, F., \& Holliday, C. M.
+(2015). Material properties of the mandibular symphysis in
+\emph{alligator mississippiensis}. \emph{Integr. Comp. Biol.},
+\emph{55}, e173.
+
+\leavevmode\hypertarget{ref-tsai_solutions_2015}{}%
+Tsai, H. P., Middleton, K. M., \& Holliday, C. M. (2015). Solutions for
+gigantism: Evolutionary and biomechanical implications of dinosaur hip
+joint soft tissues. \emph{FASEB J.}, \emph{29}(supplement), 351.4.
+
+\leavevmode\hypertarget{ref-harper-judd_dinosaurs_2014}{}%
+Harper-Judd, J., Holliday, C. M., Knocke, M., Butaric, L. N., George, I.
+D., Middleton, K. M., Moffett, E. A., Swartz, S., Tsai, H. P., \&
+Warren, A. L. (2014). Dinosaurs \& cavemen science expo: Science
+outreach using interactive and experiential anatomical learning.
+\emph{Journal of Vertebrate Paleontology, Program and Abstracts},
+\emph{2014}, 241.
+
+\leavevmode\hypertarget{ref-holliday_modeling_2014}{}%
+Holliday, C. M., Sellers, K. C., Davis, J. L., Middleton, K. M., \&
+Witmer, L. M. (2014). Modeling cranial biomechanics in archosaurs using
+3D computational methods. \emph{Journal of Vertebrate Paleontology,
+Program and Abstracts}, \emph{2014}, 149.
+
+\leavevmode\hypertarget{ref-lujan_acute_2014}{}%
+Lujan, S. L., Owerkowicz, T., Elsey, R. M., Hicks, J. W., \& Middleton,
+K. M. (2014). Acute and chronic alterations in atmospheric oxygen do not
+alter femoral biomechanics in \emph{alligator mississippiensis}.
+\emph{Integr. Comp. Biol.}, \emph{54}, e308.
+
+\leavevmode\hypertarget{ref-middleton_analysis_2014}{}%
+Middleton, K. M., \& Altshuler, D. L. (2014). \emph{Analysis of motor
+variability in the maneuvering flight of hummingbirds}. World Congress
+of Biomechanics. Boston, MA.
+
+\leavevmode\hypertarget{ref-middleton_estimating_2014}{}%
+Middleton, K. M., Johnson, K. E., \& Clarke, J. A. (2014). Estimating
+bending mechanics of extant and fossil penguin contour feathers.
+\emph{Ornithol. Sci.}, \emph{13}(supplement), 144.
+
+\leavevmode\hypertarget{ref-proffitt_patterns_2014a}{}%
+Proffitt, J. V., Middleton, K. M., \& Clarke, J. A. (2014). Patterns of
+morphological evolution during a locomotor transition: Lessons from the
+evolution of wing-propelled diving in penguins. \emph{Integr. Comp.
+Biol.}, \emph{54}, e334.
+
+\leavevmode\hypertarget{ref-proffitt_patterns_2014}{}%
+Proffitt, J. V., Middleton, K. M., \& Clarke, J. A. (2014). Patterns of
+morphological evolution during the evolution of wing-propelled diving in
+penguins: Insights into the evolution of form and function.
+\emph{Ornithol. Sci.}, \emph{13}(supplement), 342.
+
+\leavevmode\hypertarget{ref-tsai_archosaur_2014}{}%
+Tsai, H. P., Middleton, K. M., \& Holliday, C. M. (2014). Archosaur hip
+joint and its significance in body size and locomotor evolution.
+\emph{Integr. Comp. Biol.}, \emph{54}, e211.
+
+\leavevmode\hypertarget{ref-tsai_more_2014a}{}%
+Tsai, H. P., Middleton, K. M., \& Holliday, C. M. (2014). More than one
+way to be a giant: Convergence and disparity in saurischian dinosaur hip
+joints during body size evolution. \emph{Integr. Comp. Biol.},
+\emph{55}, e186.
+
+\leavevmode\hypertarget{ref-cheney_electromyography_2013}{}%
+Cheney, J. A., Middleton, K. M., Konow, N., Giblin, E. L., Breuer, K.
+S., \& Swartz, S. M. (2013). Electromyography of bat wing membrane
+muscles. \emph{Integr. Comp. Biol.}, \emph{53}, e34.
+
+\leavevmode\hypertarget{ref-johnson_comparative_2013}{}%
+Johnson, K. E., Andrus, C. J., \& Middleton, K. M. (2013). Comparative
+anatomy of flight and contour feathers in aquatic birds. \emph{Integr.
+Comp. Biol.}, \emph{53}, e304.
+
+\leavevmode\hypertarget{ref-middleton_energy_2013}{}%
+Middleton, K. M., \& Coats, B. R. (2013). Energy metabolism of small
+muscle phenotype mice compared to inbred strains in response to
+exercise. \emph{Integr. Comp. Biol.}, \emph{53}, e146.
+
+\leavevmode\hypertarget{ref-middleton_effects_2013}{}%
+Middleton, K. M., Lujan, S. L., Hicks, J. W., \& Owerkowicz, T. (2013).
+Effects of atmospheric oxygen on femur biomechanics in \emph{alligator
+mississippiensis}. \emph{Anat. Rec.}, \emph{296}(special feature),
+238--239.
+
+\leavevmode\hypertarget{ref-tsai_anatomy_2013}{}%
+Tsai, H. P., Middleton, K. M., \& Holliday, C. M. (2013). \emph{Anatomy
+of saurischian hip joint soft tissues and its significance in body size
+evolution}. Society of Vertebrate Paleontology 2013 Annual Meeting. Los
+Angeles, CA.
+
+\leavevmode\hypertarget{ref-clarke_bayesian_2012}{}%
+Clarke, J. A., \& Middleton, K. M. (2012). \emph{Bayesian approaches to
+the investigation of morphological rate heterogeneity in distinct
+anatomical subregions}. Society of Vertebrate Paleontology Annual
+Meeting 2012. Raleigh, NC.
+
+\leavevmode\hypertarget{ref-coats_cross_2012}{}%
+Coats, B. R., Middleton, K. M., Kelly, S. A., \& Garland, T., Jr.
+(2012). Cross sectional anatomy of the femoral diaphysis in mice bred
+for high levels of voluntary wheel running. \emph{FASEB J.}, \emph{26},
+723.11.
+
+\leavevmode\hypertarget{ref-lujan_effects_2012}{}%
+Lujan, S. L., Owerkowicz, T., Elsey, R. M., Hicks, J. W., \& Middleton,
+K. M. (2012). Effects of hypoxia on growth and biomechanics in limb
+bones of \emph{alligator mississippiensis}. \emph{FASEB J.}, \emph{26},
+908.4.
+
+\leavevmode\hypertarget{ref-bradford_estimating_2011}{}%
+Bradford, K. K., Clarke, J. A., \& Middleton, K. M. (2011).
+\emph{Estimating bending mechanics of extant and fossil penguin contour
+feathers}. Society of Vertebrate Paleontology. Las Vegas, NV.
+
+\leavevmode\hypertarget{ref-coats_cross_2011}{}%
+Coats, B. R., Middleton, K. M., Kelly, S. A., \& Garland, T. (2011).
+Cross-sectional limb bone geometry in mice bred for high levels of
+voluntary wheel running. \emph{Integr. Comp. Biol.},
+\emph{51}(supplement 1), e176.
+
+\leavevmode\hypertarget{ref-english_phylogenetic_2011}{}%
+English, L. T., \& Middleton, K. M. (2011). \emph{Phylogenetic patterns
+of pterosaur wing skeleton allometry}. Society of Vertebrate
+Paleontology 2011 Annual Meeting. Las Vegas, NV.
+
+\leavevmode\hypertarget{ref-lujan_hypoxia_2011}{}%
+Lujan, S. L., Middleton, K. M., Owerkowicz, T., Elsey, R. M., \& Hicks,
+J. W. (2011). \emph{Hypoxia-induced alterations in limb bone growth and
+geometry in \textup{alligator mississippiensis}}. Society for
+Integrative and Comparative Biology. Salt Lake City.
+
+\leavevmode\hypertarget{ref-wallace_genetic_2011}{}%
+Wallace, I. J., Garland, T., Jr., Wallace, S. A., Middleton, K. M.,
+Kelly, S. A., Judex, S., \& Demes, B. (2011). Genetic and epigenetic
+effects on diaphyseal morphology in selectively bred mice with the
+mini-muscle allele. \emph{Integr. Comp. Biol.}, \emph{51}, e263.
+
+\leavevmode\hypertarget{ref-keeney_sex_2010}{}%
+Keeney, B. K., Meek, T. H., Middleton, K. M., Holness, L., Gerdeman, G.
+L., Raichlen, D. A., \& Garland, T., Jr. (2010). Sex-specific
+involvement of the CB1 receptor in the high voluntary wheel running of
+selectively bred mice. \emph{Integr. Comp. Biol.}, \emph{50}(supplement
+1), e88.
+
+\leavevmode\hypertarget{ref-owerkowicz_atmospheric_2010}{}%
+Owerkowicz, T., Andrade, F., Elsey, R. M., Middleton, K. M., \& Hicks,
+J. W. (2010). Atmospheric hypoxia increases bone robusticity in the
+american alligator. \emph{J. Vert. Paleontol.}, \emph{28}(3), 142A.
+
+\leavevmode\hypertarget{ref-riskin_how_2010}{}%
+Riskin, D. K., Iriarte-Díaz, J., Middleton, K. M., Breuer, K. S., \&
+Swartz, S. M. (2010). How do bats accelerate? \emph{Integr. Comp.
+Biol.}, \emph{50}(supplement 1), e147.
+
+\leavevmode\hypertarget{ref-wallace_activity_2010}{}%
+Wallace, I. J., Middleton, K. M., Lublinsky, S., Kelly, S. A., Judex,
+S., Garland, T., Jr, \& Demes, B. (2010). \emph{Activity, genes, and
+diaphyseal structure}. American Association of Physical Anthropology.
+
+\leavevmode\hypertarget{ref-middleton_variation_2009}{}%
+Middleton, K. M., Conners, M. G., \& Swartz, S. M. (2009). Variation in
+rachis cross-sectional geometry within and among feathers in the barn
+owl (\emph{tyto alba}). \emph{Integr. Comp. Biol.}, \emph{49}(supplement
+1), e273.
+
+\leavevmode\hypertarget{ref-swartz_scaling_2009}{}%
+Swartz, S. M., Riskin, D. K., Iriarte-Díaz, J., Middleton, K. M., \&
+Breuer, K. S. (2009). Scaling of flight characteristics in bats.
+\emph{Integr. Comp. Biol.}, \emph{49}(supplement 1), e166.
+
+\leavevmode\hypertarget{ref-clarke_quantitative_2007}{}%
+Clarke, J. A., \& Middleton, K. M. (2007). Quantitative approaches to
+the study of morphological evolution using discrete characters and a
+bayesian phylogenetic approach to investigating mosaicism in avialan
+evolution. \emph{J. Vert. Paleontol.}, \emph{27}(3), 59A.
+
+\leavevmode\hypertarget{ref-gatesy_exploring_2007}{}%
+Gatesy, S. M., \& Middleton, K. M. (2007). Exploring footprint
+morphospace by 3-D computer-animated track simulation. \emph{J. Vert.
+Paleontol.}, \emph{27}(3), 80A.
+
+\leavevmode\hypertarget{ref-hannon_phenotypic_2007}{}%
+Hannon, R. M., Kelly, S. A., Middleton, K. M., Kolb, E. M., Pomp, D., \&
+Garland, T., Jr. (2007). Phenotypic effects of the ``mini-muscle''
+allele in a large HR X C57Bl/6J backcross. \emph{Int Mouse Genome Conf},
+\emph{S1-S4}, 185.
+
+\leavevmode\hypertarget{ref-middleton_bone_2007}{}%
+Middleton, K. M., Kelly, S. A., \& Garland, T., Jr. (2007). Bone to run:
+Selective breeding and skeletal response to high voluntary activity in
+mice. \emph{Integr. Comp. Biol.}, \emph{47}(supplement 1), e82.
+
+\leavevmode\hypertarget{ref-hannon_phenotypic_2006}{}%
+Hannon, R. M., Kelly, S. A., Middleton, K. M., Kolb, E. M., Pomp, D., \&
+Garland, T., Jr. (2006). Phenotypic effects of the ``mighty
+mini-muscle'' allele in a large HR X C57Bl/6J backcross. \emph{Integr.
+Comp. Biol.}, \emph{46}(supplement 1), e55.
+
+\leavevmode\hypertarget{ref-keeney_life_2006}{}%
+Keeney, B. K., Malisch, J. L., Kelly, S. A., Hannon, R. M., Kolb, E. M.,
+Lonquich, B. P., Middleton, K. M., \& Garland, T., Jr. (2006).
+Life-history traits in house mice selectively bred for high voluntary
+wheel-running activity. \emph{Integr. Comp. Biol.}, \emph{46}(supplement
+1), e214.
+
+\leavevmode\hypertarget{ref-kolb_effects_2006}{}%
+Kolb, E. M., Kelly, S. A., Middleton, K. M., Sermsakdi, L. S., \&
+Garland, T., Jr. (2006). Effects of experimental erythropoietin
+elevation on voluntary exercise and maximal aerobic capacity in house
+mice. \emph{Integr. Comp. Biol.}, \emph{46}(supplement 1), e76.
+
+\leavevmode\hypertarget{ref-middleton_bone_2006}{}%
+Middleton, K. M., Garland, T., Jr., Goldstein, B. D., Guduru, P. R.,
+Kelly, S. A., \& Swartz, S. M. (2006). Within-bone variation in
+stiffness measured by nanoindentation in high-running mice.
+\emph{Integr. Comp. Biol.}, \emph{46}(supplement 1), e98.
+
+\leavevmode\hypertarget{ref-swartz_unique_2006}{}%
+Swartz, S. M., Galvao, R., Iriarte-Díaz, J., Israeli, E., Middleton, K.
+M., Roemer, A., Tian, X., \& Breuer, K. S. (2006). Unique
+characteristics of aerodynamics of bat flight: Evidence from direct
+visualization of patterns of airflow in the wakes of naturally flying
+bats. \emph{Integr. Comp. Biol.}, \emph{45}(6), 1080.
+
+\leavevmode\hypertarget{ref-middleton_wing_2005}{}%
+Middleton, K. M., \& Gatesy, S. M. (2005). Wing design and disparity in
+flying vertebrates. \emph{Integr. Comp. Biol.}, \emph{44}(6), 605.
+
+\leavevmode\hypertarget{ref-swartz_role_2005}{}%
+Swartz, S. M., Kay, N., Middleton, K. M., \& Blume, J. A. (2005). The
+role of thickness and curvature in dictating subchondral bone stresses
+in mammalian joints. \emph{Integr. Comp. Biol.}, \emph{44}(6), 649.
+
+\leavevmode\hypertarget{ref-swartz_can_2005}{}%
+Swartz, S. M., Middleton, K. M., Iriarte-Díaz, J., Lee, M.-M., Wofford,
+J. M., Breuer, K. S., \& Ritter, D. A. (2005). Can bats actively control
+the mechanical properties of the wing membrane? \emph{Integr. Comp.
+Biol.}, \emph{44}(6), 751.
+
+\leavevmode\hypertarget{ref-middleton_reconstructing_2004}{}%
+Middleton, K. M., \& Gatesy, S. M. (2004). Reconstructing leg function
+from osteology in mesozoic birds. \emph{J. Morphol.}, \emph{260}(3),
+313.
+
+\leavevmode\hypertarget{ref-gatesy_skin_2003}{}%
+Gatesy, S. M., Kenny, K. S., Middleton, K. M., Jenkins, F. A., Jr., \&
+Shubin, N. H. (2003). Skin impression microtopography in triassic
+theropod tracks. \emph{J. Vert. Paleontol.}, \emph{23}(3), 54A.
+
+\leavevmode\hypertarget{ref-middleton_evolution_2002}{}%
+Middleton, K. M. (2002). Evolution of the perching foot in theropods.
+\emph{J. Vert. Paleontol.}, \emph{22}(3), 88A.
+
+\leavevmode\hypertarget{ref-middleton_comparative_2000}{}%
+Middleton, K. M. (2000). Comparative morphology and evolution of the
+hallux in extant and fossil birds. \emph{Vert PalAsiatica},
+\emph{38}(supplement), 20.
+
+\leavevmode\hypertarget{ref-middleton_influence_2000}{}%
+Middleton, K. M. (2000). Influence of hallucal reversion on terrestrial
+locomotion in birds. \emph{Am. Zool.}, \emph{40}(5), 303A.
+
+\leavevmode\hypertarget{ref-middleton_morphological_1999}{}%
+Middleton, K. M. (1999). Morphological basis for hallucal orientation in
+fossil birds. \emph{J. Vert. Paleontol.}, \emph{19}(3), 64A.
+
+\leavevmode\hypertarget{ref-middleton_osteology_1999}{}%
+Middleton, K. M. (1999). Osteology and evolution of the avian reversed
+hallux. \emph{Am. Zool.}, \emph{39}(5), 17A.
+
+\leavevmode\hypertarget{ref-gatesy_reconstructing_1998}{}%
+Gatesy, S. M., \& Middleton, K. M. (1998). Reconstructing theropod foot
+function using 3-D computer-animated track simulation. \emph{J. Vert.
+Paleontol.}, \emph{18}(3), 45A.
+
+\leavevmode\hypertarget{ref-middleton_evolution_1998}{}%
+Middleton, K. M., \& Gatesy, S. M. (1998). The evolution of theropod
+forelimb design and function. \emph{Am. Zool.}, \emph{37}(5), 58A.
+
+\leavevmode\hypertarget{ref-middleton_theropod_1998}{}%
+Middleton, K. M., \& Gatesy, S. M. (1998). Theropod forelimb disparity
+and functional evolution. \emph{J. Vert. Paleontol.}, \emph{18}(3), 63A.
+
+\leavevmode\hypertarget{ref-gatesy_sinking_1996}{}%
+Gatesy, S. M., \& Middleton, K. M. (1996). Sinking dinosaurs:
+Sub-surface preservation of foot kinematics in greenlandic theropods.
+\emph{J. Vert. Paleontol.}, \emph{16}(3), 37A.
+
+\leavevmode\hypertarget{ref-gatesy_sinking_1995}{}%
+Gatesy, S. M., \& Middleton, K. M. (1995). Sinking dinosaurs:
+Sub-surface foot kinematics in greenlandic theropods. \emph{Am. Zool.},
+\emph{35}(5), 120A.
+
+\endgroup
+
+\hypertarget{other-presentations}{%
+\subsection{Other Presentations}\label{other-presentations}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_other}{}
+\leavevmode\hypertarget{ref-Holliday2018-ei}{}%
+Holliday, C. M., Hill, C. A., Middleton, K. M., Knocke, M., \& MU
+Integrative Anatomy. (2018). \emph{Inside dinosaurs: A broader impacts
+program for research, teaching and public education through using
+biology, physics \& evolution}. University of Missouri Medical Education
+Research Day.
+
+\leavevmode\hypertarget{ref-Johnson2018-mb}{}%
+Johnson, L. E., Aldridge, K., Hill, C. A., Holliday, C. M., Middleton,
+K. M., Nesbitt, A., Sherwood, R. J., \& Ward, C. V. (2018).
+\emph{Integrating patient-based learning into the anatomy lab: Design
+and implementation of a new multi-use anatomy facility}. University of
+Missouri Medical Education Research Day.
+
+\leavevmode\hypertarget{ref-Middleton2018-rt}{}%
+Middleton, K. M., Rahman, A. J., Smolinsky, A. N., Bivens, N. J.,
+Bottoms, C. A., Givens, S. A., \& King, E. G. (2018). \emph{Differential
+gene expression in mouse long bones and marrow in response to three
+forms of mechanical loading}. University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-Peacock2018-hs}{}%
+Peacock, S. J., \& Middleton, K. M. (2018). \emph{Effects of nocturnal
+blue light exposure on physiology and skeletal morphology in two strains
+of mice}. University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-Smith2018-ms}{}%
+Smith, C. J., Middleton, K. M., Bailleul, A. M., \& Holliday, C. M.
+(2018). \emph{Bending properties of the lower temporal bar in ducks and
+its significance for cranial biomechanics}. University of Missouri Life
+Sciences Week.
+
+\leavevmode\hypertarget{ref-Smolinsky2018-st}{}%
+Smolinsky, A. N., Aldridge, K., \& Middleton, K. M. (2018).
+\emph{Muscle-intensive and High-Impact exercises differentially
+influence whole bone 3D morphology in young outbred male mice}.
+University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-Ward2018-ix}{}%
+Ward, C. V., Aldridge, K., Hill, C. A., Holliday, C. M., Johnson, L.,
+Middleton, K. M., \& Sherwood, R. (2018). \emph{10 years of active
+learning in the anatomy curriculum}. University of Missouri Medical
+Education Research Day.
+
+\leavevmode\hypertarget{ref-Cost2017-qq}{}%
+Cost, I. N., Middleton, K. M., Witmer, L. M., Echols, M. S., \&
+Holliday, C. M. (2017). \emph{Biomechanics of the feeding apparatus of
+parrots (aves: Psittaciformes)}. University of Missouri Life Sciences
+Week.
+
+\leavevmode\hypertarget{ref-Hill2017-jr}{}%
+Hill, C. A., Aldridge, K., Holliday, C. M., Johnson, L., Middleton, K.
+M., Sherwood, R., \& Ward, C. V. (2017). \emph{Approaches for active
+learning in a flipped undergraduate health sciences anatomy classroom}.
+University of Missouri School of Medicine Health Sciences Research Day.
+
+\leavevmode\hypertarget{ref-Holliday2017-xi}{}%
+Holliday, C. M., Hill, C. A., Davis, J. L., Witmer, L. M., \& Middleton,
+K. M. (2017). \emph{Inside dinosaurs: A broader impacts program for
+research, teaching and public education through dinosaur biology,
+physics and evolution}. University of Missouri School of Medicine Health
+Sciences Research Day.
+
+\leavevmode\hypertarget{ref-Ngoma2017-oq}{}%
+Ng'oma, E., Perinchery, A., Middleton, K. M., \& King, E. G. (2017).
+\emph{Coordination of resource availability with allocation in a
+synthetic population: Lifespan and its heritability across dietary
+regimes}. 58th Annual Drosophila Research Conference.
+
+\leavevmode\hypertarget{ref-Ngoma2017-vs}{}%
+Ng'oma, E., Perinchery, A., Middleton, K. M., \& King, E. G. (2017).
+\emph{Coordination of resource availability with allocation in a
+synthetic population: Lifespan and its heritability across dietary
+regimes}. University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-Ngoma2017-ck}{}%
+Ng'oma, E., Perinchery, A., Middleton, K. M., \& King, E. G. (2017).
+\emph{Evolutionary potential of nutrition-dependent effects on lifespan
+in a multi-parental population of \textup{drosophila melanogaster}}.
+Evolution 2017.
+
+\leavevmode\hypertarget{ref-Peacock2017-ep}{}%
+Peacock, S. J., Bates, K. A., Talton, O. O., Schulz, L. C., \&
+Middleton, K. M. (2017). \emph{Effects of perinatal circadian
+programming on activity and skeletal morphology in C57BL/6 mice}.
+University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-Sellers2017-nv}{}%
+Sellers, K. C., Middleton, K. M., Davis, J. L., \& Holliday, C. M.
+(2017). \emph{Biomechanics and the evolution of the crocodyliform
+skull}. University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-Smith2017-io}{}%
+Smith, C. J., Holliday, C. M., Middleton, K. M., \& Bailleul, A. M.
+(2017). \emph{Bending properties of the jugal bone in mallard ducks and
+its significance for cranial biomechanics}. University of Missouri Life
+Sciences Week.
+
+\leavevmode\hypertarget{ref-Smolinsky2017-fj}{}%
+Smolinsky, A. N., \& Middleton, K. M. (2017). \emph{Comparing femur
+cross-sectional morphology in young outbred mice following daily
+exposure to muscle-, impact-, or combined loading of the hind limb
+skeleton}. University of Missouri Life Science Week.
+
+\leavevmode\hypertarget{ref-Smolinsky2017-ht}{}%
+Smolinsky, A. N., \& Middleton, K. M. (2017). \emph{The effects of
+muscle- and impact-dominated loading on femoral cross-section morphology
+and mineral apposition in young outbred mice}. University of Missouri
+Life Sciences Week.
+
+\leavevmode\hypertarget{ref-Ward2017-jh}{}%
+Ward, C. V., Aldridge, K., Hill, C. A., Holliday, C. M., Johnson, L.,
+Middleton, K. M., \& Sherwood, R. (2017). \emph{10 years of active
+learning in the anatomy curriculum}. University of Missouri School of
+Medicine Health Sciences Research Day.
+
+\leavevmode\hypertarget{ref-Wilkin2017-md}{}%
+Wilkin, A. T., Middleton, K. M., Sellers, K. C., Cost, I. N., Davis, J.
+L., \& Holliday, C. M. (2017). \emph{Modeling complex cranial joints in
+\textup{varanus exanthematicus}}. University of Missouri Life Sciences
+Week.
+
+\leavevmode\hypertarget{ref-cooper_impact_2016}{}%
+Cooper, J., Herbst, E., Sellers, K. C., Cost, I. N., Davis, J. L.,
+Middleton, K. M., \& Holliday, C. M. (2016). \emph{The impact of muscle
+anatomy on skull loading in hard-biting animals}. University of Missouri
+Summer 2016 Undergraduate Research and Creative Achievements Forum.
+
+\leavevmode\hypertarget{ref-herbst_3d_2016}{}%
+Herbst, E., Cooper, J., Cost, I. N., Sellers, K. C., Middleton, K. M.,
+\& Holliday, C. M. (2016). \emph{3D reconstruction of the feeding
+biomechanics of the north american aetosaur \textup{desmatosuchus}}.
+University of Missouri Summer 2016 Undergraduate Research and Creative
+Achievements Forum.
+
+\leavevmode\hypertarget{ref-Peacock2016-cs}{}%
+Peacock, S. J., Coats, B. R., Kirkland, J. K., Tanner, C. A., Garland,
+T., Jr., \& Middleton, K. M. (2016). \emph{History of exercise,
+cross-sectional geometry, and bending mechanics: Inferences based on
+three strains of mice}. University of Missouri Health Science Research
+Day.
+
+\leavevmode\hypertarget{ref-peacock_predicting_2016}{}%
+Peacock, S. J., \& Middleton, K. M. (2016). \emph{Predicting the bending
+properties of long bones: Insights from an experimental mouse model}.
+University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-Sellers2016-vb}{}%
+Sellers, K. C., Davis, J. L., Middleton, K. M., \& Holliday, C. M.
+(2016). \emph{A high-fidelity, 3D model of the skull of
+\textup{alligator mississippiensis} (archosauria: Crocodylia) and its
+significance for vertebrate feeding biomechanics}. University of
+Missouri Health Sciences Research Day.
+
+\leavevmode\hypertarget{ref-Smolinsky2016-ox}{}%
+Smolinsky, A. N., \& Middleton, K. M. (2016). \emph{Comparison of impact
+loading and wheel running on femoral cross-section morphology and growth
+in young outbred mice}. University of Missouri Health Science Research
+Day.
+
+\leavevmode\hypertarget{ref-smolinsky_comparison_2016a}{}%
+Smolinsky, A. N., \& Middleton, K. M. (2016). \emph{Comparison of impact
+loading and wheel running on femoral cross-section morphology and growth
+in young outbred mice}. University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-bira_inexpensive_2015}{}%
+Bira, N. P., \& Middleton, K. M. (2015). \emph{Inexpensive study of
+small animal locomotion through indirect scientific rotoscoping}.
+University of Missouri Spring 2015 Undergraduate Research and Creative
+Achievements Forum.
+
+\leavevmode\hypertarget{ref-kirkland_effects_2015}{}%
+Kirkland, J. K., Peacock, S. J., Coats, B. R., \& Middleton, K. M.
+(2015). \emph{Effects of cross sectional area on bone strength in three
+strains of mice}. University of Missouri Summer 2015 Undergraduate
+Research and Creative Achievements Forum.
+
+\leavevmode\hypertarget{ref-kirkland_effects_2015a}{}%
+Kirkland, J. K., Peacock, S. J., Coats, B. R., \& Middleton, K. M.
+(2015). \emph{Effects of cross sectional area on bone strength in three
+strains of mice}. ABRCMS. Seattle, WA.
+
+\leavevmode\hypertarget{ref-rashid_axial_2015}{}%
+Rashid, I. S., Carter, P. A., Garland, T., Jr., \& Middleton, K. M.
+(2015). \emph{Axial loading of caudal and lumbar vertebrae of selected
+high running lines of mice with different exercise regimens}. University
+of Missouri Summer 2015 Undergraduate Research and Creative Achievements
+Forum.
+
+\leavevmode\hypertarget{ref-smolinsky_fracture_2015}{}%
+Smolinsky, A. N., Pfeiffer, F., Middleton, K. M., \& Holliday, C. M.
+(2015). \emph{Fracture mechanics of the mandible in \textup{alligator
+mississippiensis}}. University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-tsai_hip_2015}{}%
+Tsai, H. P., Middleton, K. M., \& Holliday, C. M. (2015). \emph{The hip
+joint functional module and its significance in the evolution of avian
+locomotor posture}. University of Missouri Life Sciences Week.
+
+\leavevmode\hypertarget{ref-bira_development_2014}{}%
+Bira, N. P., \& Middleton, K. M. (2014). \emph{Development of an
+inexpensive method for studying small animal locomotion through indirect
+scientific rotoscoping}. University of Missouri Summer 2014
+Undergraduate Research and Creative Achievements Forum.
+
+\leavevmode\hypertarget{ref-casey_estimating_2014}{}%
+Casey, T. K., \& Middleton, K. M. (2014). \emph{Estimating comparative
+bending properties of feather rachises in four species of birds}.
+University of Missouri Summer 2014 Undergraduate Research and Creative
+Achievements Forum.
+
+\leavevmode\hypertarget{ref-cheney_wing_2014}{}%
+Cheney, J. A., Konow, N., Middleton, K. M., Breuer, K. S., Roberts, T.
+J., Giblin, E. L., \& Swartz, S. M. (2014). \emph{Wing membrane muscle
+activity in bats}. North American Society for Bat Research. Albany, NY.
+
+\leavevmode\hypertarget{ref-peacock_minimsc_2014}{}%
+Peacock, S. J., Coats, B. R., Tanner, C. A., \& Middleton, K. M. (2014).
+\emph{\textup{Minimsc} genotype increases resistance to bending in mouse
+femora}. MU Life Sciences Week 2014.
+
+\leavevmode\hypertarget{ref-holliday_12_2013}{}%
+Holliday, C. M., Knocke, M., Cowgill, L. W., Middleton, K. M., Woods,
+A., Maddux, S. D., Ward, C. V., Dufeau, D. L., Warren, A. L., George, I.
+D., Moffett, E. A., Tsai, H. P., Savage, C. R., Swartz, S., Lo Presti,
+E. J., Munds, R. A., Hammond, A. S., Sellers, K. C., Gant, C. A., \&
+Winkler, Z. J. (2013). \emph{K-12 and community outreach using
+interactive and experiential anatomical learning: Dinosaurs \& cavemen}.
+MU School of Medicine Medical Education Day.
+
+\leavevmode\hypertarget{ref-middleton_physiology_2013}{}%
+Middleton, K. M. (2013). \emph{The physiology, function, and evolution
+of vertebrate locomotor tissues}. University of Missouri Life Sciences
+Week.
+
+\leavevmode\hypertarget{ref-salas_effects_2013}{}%
+Salas, D. L., Coats, B. R., Kelly, S. A., Garland, T., Jr, \& Middleton,
+K. M. (2013). \emph{Effects of genetics and exercise on mid-femoral
+diaphyseal mineral apposition in mice}. University of Missouri Summer
+2013 Undergraduate Research and Creative Achievements Forum.
+
+\leavevmode\hypertarget{ref-riskin_how_2010a}{}%
+Riskin, D. K., Iriarte-Díaz, J., Middleton, K. M., Breuer, K. S., \&
+Swartz, S. M. (2010). \emph{How do bats modulate thrust and lift
+production during flight?} North American Symposium on Bat Research.
+
+\leavevmode\hypertarget{ref-riskin_effects_2008}{}%
+Riskin, D. K., Iriarte-Díaz, J., Middleton, K. M., Breuer, K. S., \&
+Swartz, S. M. (2008). \emph{Effects of body size on the wing kinematics
+of bats}. Society for Experimental Biology Annual Meeting. Marseille,
+France.
+
+\leavevmode\hypertarget{ref-bahlman_flying_2007}{}%
+Bahlman, J. W., Riskin, D. K., Middleton, K. M., Iriarte-Díaz, J., \&
+Swartz, S. M. (2007). \emph{Flying squirrels don't glide steady:
+Implications for bat evolution}. North American Symposium on Bat
+Research.
+
+\leavevmode\hypertarget{ref-middleton_material_2007}{}%
+Middleton, K. M., Swartz, S. M., Kovnats, J. M., Lee, M.-M., \& McComas,
+K. M. (2007). \emph{Material properties of bat wing bones estimated by
+cantilever bending}. North American Symposium on Bat Research.
+
+\leavevmode\hypertarget{ref-swartz_unique_2005}{}%
+Swartz, S. M., Galvao, R., Iriarte-Díaz, J., Israeli, E., Middleton, K.
+M., Roemer, A., Sullivan, A., Tian, X., \& Breuer, K. S. (2005).
+\emph{Unique characteristics of aerodynamics of bat flight: Evidence
+from direct visualization of patterns of airflow in the wakes of
+naturally flying bats}. North American Symposium on Bat Research.
+
+\endgroup
+
+\hypertarget{teaching-experience}{%
+\section{Teaching Experience}\label{teaching-experience}}
+
+\hypertarget{university-of-missouri}{%
+\subsection{University of Missouri}\label{university-of-missouri}}
+
+\LTXtable{\textwidth}{teaching.tex}
+
+\hypertarget{california-state-university-san-bernardino}{%
+\subsection{California State University, San
+Bernardino}\label{california-state-university-san-bernardino}}
+
+\begin{tabular}{ll}
+  2007-2011 & Biology of the Chordates \\ 
+  2008-2012 & Human Physiology and Anatomy \\ 
+  2010-2012 & Biostatistics \\ 
+  2008, 2010, 2012 & Graduate Seminar \\ 
+  2008-2011 & Biology Seminar \\ 
+  2008 & Advanced Vertebrate Morphology \\ 
+  \end{tabular}
+
+\hypertarget{invited-seminars}{%
+\section{Invited Seminars}\label{invited-seminars}}
+
+\begin{tabular}{ll}
+  2001 & University of Chicago \\ 
+  2001 & American Museum of Natural History \\ 
+  2007 & CSU, San Bernardino \\ 
+  2007 & University of California, Riverside \\ 
+  2007 & CSU, Fullerton \\ 
+  2007 & Loma Linda University \\ 
+  2010 & Grove High School, Redlands, CA \\ 
+  2010 & CSU, Northridge \\ 
+  2011 & University of Missouri \\ 
+  2012 & La Sierra College \\ 
+  2012 & Grinnell College \\ 
+  2013 & MU Evolutionary Studies EvoBlitz \\ 
+  2013 & University of Texas at Austin \\ 
+  2013 & Saint Louis University \\ 
+  2013 & MU Division of Biological Sciences \\ 
+  2014 & Northeast Ohio Medical University \\ 
+  2014 & MU Math in Life Sciences Freshman Interest Group \\ 
+  2014 & MU LSUROP Evening Seminar Speaker \\ 
+  2017 & MU Saturday Morning Science \\ 
+  2018 & MU Department of Pathology and Anatomical Sciences \\ 
+  \end{tabular}
+
+\hypertarget{professional-service}{%
+\section{Professional Service}\label{professional-service}}
+
+\hypertarget{referee}{%
+\subsection{Referee}\label{referee}}
+
+\begin{itemize}
+\tightlist
+\item
+  Acta Anatomica
+\item
+  Acta Palaeontologica Polonica
+\item
+  Acta Zoologica Sinica
+\item
+  Ameghiniana
+\item
+  American Journal of Physical Anthropology
+\item
+  Anatomical Record
+\item
+  Biology Letters
+\item
+  Comparative Biochemistry and Physiology
+\item
+  Current Biology
+\item
+  Evolution
+\item
+  IEEE Visualization \& Graphics
+\item
+  Integrative Organismal Biology
+\item
+  International Journal of Primatology
+\item
+  Journal of Anatomy
+\item
+  Journal of Morphology
+\item
+  Journal of Vertebrate Paleontology
+\item
+  Journal of Zoology
+\item
+  Nature
+\item
+  Nature Communications
+\item
+  Naturwissenschaften
+\item
+  Palaeontology
+\item
+  Paleobiology
+\item
+  Paleobios
+\item
+  PeerJ
+\item
+  PLoS One
+\item
+  Proceedings of the National Academy of Sciences USA
+\item
+  Proceedings of the Royal Society (Biological Sciences)
+\item
+  Quarterly Review of Biology
+\item
+  Restoration Ecology
+\item
+  Royal Society Open Science
+\item
+  Zoological Journal of the Linnean Society
+\item
+  Zoology
+\end{itemize}
+
+\hypertarget{nsf-panel-service}{%
+\subsection{NSF Panel Service}\label{nsf-panel-service}}
+
+\begin{tabular}{ll}
+  2012 & Division of Evolutionary Biology -- Systematics and Biodiversity Science \\ 
+  \end{tabular}
+
+\hypertarget{nsf-ad-hoc-reviewer}{%
+\subsection{NSF Ad Hoc Reviewer}\label{nsf-ad-hoc-reviewer}}
+
+\begin{tabular}{ll}
+  2009 & National Science Foundation -- IOB \\ 
+  2010 & National Science Foundation -- DEB \\ 
+  2012 & National Science Foundation -- IOB \\ 
+  2017 & National Science Foundation -- IOB \\ 
+  2019 & National Science Foundation -- IOB \\ 
+  \end{tabular}
+
+\hypertarget{university-of-missouri-research-board}{%
+\subsection{University of Missouri Research
+Board}\label{university-of-missouri-research-board}}
+
+\begin{tabular}{ll}
+  2015 & Ad hoc reviewer \\ 
+  \end{tabular}
+
+\hypertarget{reviewer-textbooks}{%
+\subsection{Reviewer (Textbooks)}\label{reviewer-textbooks}}
+
+\begin{tabular}{lll}
+  2003 & Miller, KR and JS Levine. Biology & Pearson-Prentice Hall \\ 
+  2010 & Tate, P. Anatomy and Physiology & McGraw Hill \\ 
+  2010 & Biological Sciences Curriculum Studies. BSCS Biology: A Human Approach. 4th Ed. & Kendall Hunt Publishing \\ 
+  \end{tabular}
+
+\hypertarget{reviewer-for-deutsche-forschungsgemeinschaft-german-research-foundation}{%
+\subsection{Reviewer for Deutsche Forschungsgemeinschaft (German
+Research
+Foundation)}\label{reviewer-for-deutsche-forschungsgemeinschaft-german-research-foundation}}
+
+\begin{tabular}{ll}
+  2018 & Life Sciences 1: Molecular and Organismic Biology \\ 
+  \end{tabular}
+
+\hypertarget{department-and-university-service}{%
+\section{Department and University
+Service}\label{department-and-university-service}}
+
+\hypertarget{current-1}{%
+\subsection{Current}\label{current-1}}
+
+\begin{tabular}{ll}
+  2020-Present & PAS Director of Graduate Studies \\ 
+  2020-Present & School of Medicine Block 4 Planning Committee \\ 
+  2018-Present & MU School of Medicine Faculty Committee for Diversity and Inclusion \\ 
+  2015-Present & School of Medicine Advice Support and Career (ASC) Preclerkship Advisor \\ 
+  2014-Present & School of Medicine eResources Committee \\ 
+  2012-Present & MU Doctoral Faculty \\ 
+  2012-Present & MU Graduate Faculty \\ 
+  2012-Present & Pathobiology Area Program Faculty \\ 
+  \end{tabular}
+
+\hypertarget{past-1}{%
+\subsection{Past}\label{past-1}}
+
+\textbf{University of Missouri}
+
+\begin{tabular}{ll}
+  2014-2019 & School of Medicine Block 2 Planning Committee \\ 
+  2013-2019 & PAS Promotion and Tenure Committee \\ 
+  2013-2020 & PAS Director of Admissions \\ 
+  2016-2019 & Evolution and Social Science Group (ESS) steering committee \\ 
+  2016-2019 & MU School of Medicine Admissions Committee \\ 
+  2016-2019 & MU Information Technology Committee \\ 
+  2016-2018 & MU Library Committee \\ 
+  2016 & Chair, MU Life Sciences Week Genetics, Evolution, and Environment Poster Competition \\ 
+  2016 & MU Office of Undergraduate Research focus group \\ 
+  2015 & Life Sciences Undergraduate Research Opportunity Program Selection Committee \\ 
+  2014-2018 & MU Life Sciences Week poster competition judge \\ 
+  2013-2017 & PAS Director of Graduate Studies \\ 
+  2013-2016, 2019 & SOM Summer Research Internship in Medical Sciences Selection Committee \\ 
+  2013, 2015-2019 & PAS Assistant Teaching Professor Search Committee \\ 
+  2013-2019 & PAS Lecturer Search Committee \\ 
+  2013-2014 & School of Medicine Block 4 Planning Committee \\ 
+  \end{tabular}
+
+\textbf{California State University, San Bernardino}
+
+\begin{tabular}{ll}
+  2009-2012 & Institutional Animal Care and Use Committee \\ 
+  2008-2012 & NSF Mathematics and Science Scholars Mentor \\ 
+  2007-2012 & Pre-Dental Club Faculty Advisor \\ 
+  2007-2012 & Health Professions Advisory Committee \\ 
+  2007-2012 & Biology Department Webmaster \\ 
+  2009 & College of Natural Sciences Outstanding Students Evaluation Committee \\ 
+  \end{tabular}
+
+\hypertarget{professional-organizations}{%
+\section{Professional Organizations}\label{professional-organizations}}
+
+\begin{itemize}
+\tightlist
+\item
+  American Association of Anatomists
+\item
+  International Association of Dental Research
+\item
+  International Society of Vertebrate Morphology
+\item
+  Society of Avian Paleontology and Evolution
+\item
+  Society of Integrative and Comparative Biology
+\item
+  Society of Vertebrate Paleontology
+\end{itemize}
+
+\hypertarget{televised-outreach}{%
+\section{Televised Outreach}\label{televised-outreach}}
+
+\LTXtable{\textwidth}{televised.tex}
+
+\end{document}
