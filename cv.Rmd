@@ -284,7 +284,7 @@ tribble(
   "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "",
   "2017-2018", "Stephanie Rosbach", "M.S.; Geological Sciences", "",
   "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "Currently research associate at the University of Missouri",
-  "2015-2017", "Edward Ramirez", "Ph.D.; Biological Sciences", "",
+  "2015-2017", "Edward Ramirez", "M.S.; Biological Sciences", "",
   "2015-2017", "Steven Hanson", "Ph.D.; Pathobiology", "",
   "2014-2017", "Luésoni Johnson", "Ph.D.; Biological Sciences", "",
   "2013-2016", "Elizabeth Moffett", "Ph.D.; Biological Sciences", "Currently an Assistant Professor at Rocky Vista University",
