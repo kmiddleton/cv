@@ -496,6 +496,7 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Date, ~ Service,
+  "2020-Present", "MUSOM MedPrep 2 Interviewer",
   "2020-Present", "PAS Director of Graduate Studies",
   "2020-Present", "School of Medicine Block 4 Planning Committee",
   "2018-Present", "MU School of Medicine Faculty Committee for Diversity and Inclusion",
