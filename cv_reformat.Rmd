@@ -14,7 +14,7 @@ output:
     pandoc_args: ["--lua-filter=multiple-bibliographies.lua"]
     includes:
       in_header: "preamble.tex"
-    keep_tex: yes
+    keep_tex: no
 csl: numeric-apa-cv.csl
 bibliography_dissertation: "Dissertation.bib"
 bibliography_papers: "Papers.bib"
