@@ -112,11 +112,11 @@ tribble(
 
 # Grants in Review
 
-\LTXtable{\textwidth}{grants_in_review.tex}
+\LTXtable{\textwidth}{../grants_in_review.tex}
 
 # Current and Past Grants and Fellowships
 
-\LTXtable{\textwidth}{grants.tex}
+\LTXtable{\textwidth}{../grants.tex}
 
 # Publications
 
@@ -340,7 +340,7 @@ tribble(
 
 ## University of Missouri
 
-\LTXtable{\textwidth}{teaching.tex}
+\LTXtable{\textwidth}{../teaching.tex}
 
 ## California State University, San Bernardino
 
@@ -552,4 +552,4 @@ tribble(
 
 # Televised Outreach
 
-\LTXtable{\textwidth}{televised.tex}
+\LTXtable{\textwidth}{../televised.tex}
