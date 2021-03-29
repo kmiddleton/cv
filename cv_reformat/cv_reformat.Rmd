@@ -138,6 +138,9 @@ tribble(
 # McGechie
 # Fortner
 # Smolinsky
+
+# Advising
+# Wade Leibach Geology
 ```
 
 ## Dissertation
