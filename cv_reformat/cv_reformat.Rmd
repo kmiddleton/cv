@@ -384,7 +384,8 @@ tribble(
   "2014", "MU Math in Life Sciences Freshman Interest Group",
   "2014", "MU LSUROP Evening Seminar Speaker",
   "2017", "MU Saturday Morning Science",
-  "2018", "MU Department of Pathology and Anatomical Sciences"
+  "2018", "MU Department of Pathology and Anatomical Sciences",
+  "2021", "Mizzou Musculoskeletal Research Symposium, Faculty Spotlight"
 ) %>% 
   baretable()
 ```
