@@ -248,6 +248,7 @@ tribble(
 ```{r results="asis"}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
+  "2021-Present", "Delaney Ryan", "M.S.; Geological Sciences",
   "2020-Present", "Gabriel Jacobs", "Ph.D.; Geological Sciences",
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
   "2019-Present", "Emily Lessner", "Ph.D.; Pathobiology",
