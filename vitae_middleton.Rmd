@@ -16,7 +16,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 output:
   vitae::middleton:
     latex_engine: pdflatex
-    keep_tex: yes
+    keep_tex: no
     includes:
       in_header: "preamble.tex"
 ---
@@ -33,7 +33,7 @@ include_refs <- TRUE
 
 # Professional Experience
 
-```{r}
+```{r, echo=FALSE}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates,
   "Associate Professor", "University of Missouri", "Department of Pathology & Anatomical Sciences", "2012 - Pres.",
@@ -47,7 +47,7 @@ tribble(
 
 # Education
 
-```{r}
+```{r, echo=FALSE}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates,
   "BS Biology", "Wake Forest University", "Summa Cum Laude", "1992 - 1995",
@@ -129,7 +129,7 @@ if (include_refs) {
 
 ## Manuscripts in Review
 
-```{r in-review, eval=FALSE}
+```{r in-review, eval=TRUE}
 if (include_refs) {
   bib_entries %>%
     filter(str_detect(keyword, "CV/In review")) %>%
@@ -139,7 +139,7 @@ if (include_refs) {
 
 ## Book Chapters
 
-```{r book-chapters, eval=FALSE}
+```{r book-chapters, eval=TRUE}
 if (include_refs) {
   bib_entries %>%
     filter(str_detect(keyword, "CV/Book chapters")) %>%
@@ -149,7 +149,7 @@ if (include_refs) {
 
 ## Invited Reviews
 
-```{r invited-reviews, eval=FALSE}
+```{r invited-reviews, eval=TRUE}
 if (include_refs) {
   bib_entries %>%
     filter(str_detect(keyword, "CV/Reviews")) %>%
@@ -159,7 +159,7 @@ if (include_refs) {
 
 ## Book Reviews
 
-```{r book-reviews, eval=FALSE}
+```{r book-reviews, eval=TRUE}
 if (include_refs) {
   bib_entries %>%
     filter(str_detect(keyword, "CV/Book reviews")) %>%
@@ -169,7 +169,7 @@ if (include_refs) {
 
 ## Published Data Sets
 
-```{r datasets, eval=FALSE}
+```{r datasets, eval=TRUE}
 if (include_refs) {
   bib_entries %>%
     filter(str_detect(keyword, "CV/Datasets")) %>%
@@ -179,7 +179,7 @@ if (include_refs) {
 
 ## Manuscripts in Preparation
 
-```{r in-prep, eval=FALSE}
+```{r in-prep, eval=TRUE}
 if (include_refs) {
   bib_entries %>%
     filter(str_detect(keyword, "CV/In prep")) %>%
