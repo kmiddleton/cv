@@ -28,7 +28,7 @@ library(vitae)
 library(tidyverse)
 options(tinytex.verbose = TRUE)
 
-include_refs <- FALSE
+include_refs <- TRUE
 ```
 
 # Professional Experience
@@ -100,15 +100,6 @@ tribble(
 ```{r include=FALSE}
 ## FIXME Publications
 
-# Gieg AAOSM
-
-# SICB 2021
-# McGechie
-
-# AAPA 2021
-# Cho
-# McGechie
-
 # AAA 2021
 # Sellers
 # Holliday
@@ -116,6 +107,8 @@ tribble(
 # Fortner
 # Smolinsky
 ```
+
+# Publications
 
 ## Dissertation
 
@@ -145,8 +138,8 @@ if (include_refs) {
 ```{r in-review, eval=TRUE}
 if (include_refs) {
   bib_entries %>%
-    filter(str_detect(keyword, "CV/In review")) %>%
-    arrange(issued, author)
+    filter(str_detect(keyword, "CV/In review")) %>% 
+    arrange(author)
 }
 ```
 
@@ -310,27 +303,39 @@ tribble(
   detailed_entries(when = Dates, what = Name, where = Notes)
 ```
 
-# Presentations
 
-## Published Abstracts
+```{r}
+Abstracts <- bib_entries %>%
+    filter(str_detect(keyword, "CV/Abstracts")) %>%
+    arrange(issued, author)
+```
+
+# Published Abstracts (most recent 20 of `r nrow(Abstracts)`)
 
 ```{r abstracts}
 if (include_refs) {
-  bib_entries %>%
-    filter(str_detect(keyword, "CV/Abstracts")) %>%
-    arrange(issued, author)
+  Abstracts %>% 
+    slice_tail(n = 20)
 }
 ```
 
-## Other Presentations
+<!--
+```{r}
+Other <- bib_entries %>%
+    filter(str_detect(keyword, "CV/Other presentations")) %>%
+    arrange(issued, author)
+```
+
+## Other Presentations (most recent 20 of `r nrow(Other)`)
 
 ```{r other}
 if (include_refs) {
-  bib_entries %>%
-    filter(str_detect(keyword, "CV/Other presentations")) %>%
-    arrange(issued, author)
+  Other %>% 
+    slice(1:20)
 }
 ```
+-->
+
 
 # Teaching Experience
 
@@ -460,12 +465,12 @@ tribble(
 
 ```{r, textbooks}
 tribble(
-  ~ Dates, ~ Service, ~ Publisher,
-  "2003", "Miller, KR and JS Levine. Biology", "Pearson-Prentice Hall",
-  "2010", "Tate, P. Anatomy and Physiology", "McGraw Hill",
-  "2010", "Biological Sciences Curriculum Studies. BSCS Biology: A Human Approach. 4th Ed.", "Kendall Hunt Publishing"
+  ~ Dates, ~ Author, ~Title, ~ Publisher,
+  "2003", "Miller, KR and JS Levine", "Biology", "Pearson-Prentice Hall",
+  "2010", "Tate, P", "Anatomy and Physiology", "McGraw Hill",
+  "2010", "Biological Sciences Curriculum Studies", "BSCS Biology: A Human Approach. 4th Ed.", "Kendall Hunt Publishing"
 ) %>% 
-  detailed_entries(when = Dates, what = Service, with = Publisher)
+  detailed_entries(when = Dates, where = Author, what = Title, with = Publisher)
 ```
 
 
@@ -492,7 +497,7 @@ tribble(
   "2018-Present", "MU School of Medicine Faculty Committee for Diversity and Inclusion",
   "2015-Present", "School of Medicine Advice Support and Career (ASC) Preclerkship Advisor",
   "2014-Present", "School of Medicine eResources Committee",
-  "2013-2016, 2019-2021", "SOM Summer Research Internship in Medical Sciences Selection Committee",
+  "2013-2016, 2019-Present", "SOM Summer Research Internship in Medical Sciences Selection Committee",
   "2012-Present", "MU Doctoral Faculty",
   "2012-Present", "MU Graduate Faculty",
   "2012-Present", "Pathobiology Area Program Faculty"
@@ -508,6 +513,7 @@ tribble(
 tribble(
   ~ Dates, ~ Service,
   "2014-2019", "School of Medicine Block 2 Planning Committee",
+  "2013, 2015-2019", "PAS Assistant Teaching Professor Search Committee",
   "2013-2019", "PAS Promotion and Tenure Committee",
   "2013-2020", "PAS Director of Admissions",
   "2016-2019", "Evolution and Social Science Group (ESS) steering committee",
@@ -518,7 +524,6 @@ tribble(
   "2016", "MU Office of Undergraduate Research focus group",
   "2015", "Life Sciences Undergraduate Research Opportunity Program Selection Committee",
   "2014-2018", "MU Life Sciences Week poster competition judge",
-  "2013, 2015-2019", "PAS Assistant Teaching Professor Search Committee",
   "2013-2019", "PAS Lecturer Search Committee",
   "2013-2014", "School of Medicine Block 4 Planning Committee"
 ) %>% 
