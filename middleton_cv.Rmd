@@ -1,10 +1,13 @@
 ---
-name: "Kevin Middleton, Ph.D."
-position: "Associate Professor"
-address: "Department of Pathology & Anatomical Sciences"
-address2: "University of Missouri School of Medicine"
-address3: "Medical Science Building M263, 1 Hospital Dr."
-address4: "Columbia, MO 65212"
+name: Kevin Middleton, Ph.D.
+position: |
+  | Associate Professor
+  | Dept. of Pathology & Anatomical Sciences
+address: |
+  | University of Missouri School of Medicine
+  | Medical Science Building M263
+  | 1 Hospital Dr.
+  | Columbia, MO 65212
 www: middletonlab.org
 email: "middletonk@missouri.edu"
 phone: "573 884 3192"
@@ -14,19 +17,20 @@ github: kmiddleton
 scholar: Ziha7x8AAAAJ
 date: "`r format(Sys.time(), '%B %Y')`"
 output:
-  vitae::middleton:
-    latex_engine: pdflatex
-    keep_tex: no
+  vitae::hyndman:
     includes:
       in_header: "preamble.tex"
+headcolor: "000090"
+papersize: "usletter"
 ---
+
+\renewcommand{\labelitemi}{\textbullet}
 
 ```{r setup, include=FALSE}
 #remotes::install_github("kmiddleton/vitae")
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 library(tidyverse)
-options(tinytex.verbose = TRUE)
 
 include_refs <- TRUE
 ```
@@ -109,6 +113,9 @@ tribble(
 ```
 
 # Publications
+
+A full list of my published work can be found at: 
+https://www.ncbi.nlm.nih.gov/myncbi/kevin.middleton.1/bibliography/public/
 
 ## Dissertation
 
