@@ -21,7 +21,7 @@ output:
     includes:
       in_header: "preamble.tex"
 headcolor: "000090"
-papersize: usletter
+papersize: letterpaper
 ---
 
 \renewcommand{\labelitemi}{\textbullet}
