@@ -581,8 +581,16 @@ tribble(
 
 # Televised Outreach
 
-\LTXtable{\textwidth}{televised.tex}
-
+```{r}
+tribble(
+  ~ Dates, ~Title, ~ Notes,
+  "2009", "National Geographic Channel -- Prehistoric Predators", "National Geographic Channel's Prehistoric Predators featured an episode on phorusrhacids (also known as Terror Birds -- an extinct group of gigantic carnivorous birds from the Cenozoic of South and North America).",
+  "2009", "Discovery Channel -- Megabeasts", "Discovery Channel's Megabeasts also features an episode on Terror Birds",
+  "2008", "Coastline Community College", "On-camera expert on skeletal biology for an Anatomy & Physiology course produced by Coastline Community College (Orange County, CA). This course will be utilized by 2-year colleges and 4-year universities as well as broadcast by PBS.",
+  "2008", "CBC Television Canada -- Project X", "The Project X episode 'Flight' showcases collaborative work with Drs. Sharon Swartz, Kenneth Breuer, Daniel Riskin, and Jose Iriarte-Diaz on the aeromechanics of bat flight."
+) %>% 
+  detailed_entries(when = Dates, what = Title, where = Notes)
+```
 
 
 \vfill
