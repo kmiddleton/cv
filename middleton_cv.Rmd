@@ -3,8 +3,8 @@ name: Kevin Middleton, Ph.D.
 position: |
   | Associate Professor
   | Dept. of Pathology & Anatomical Sciences
-address: |
   | University of Missouri School of Medicine
+address: |
   | Medical Science Building M263
   | 1 Hospital Dr.
   | Columbia, MO 65212
@@ -21,7 +21,7 @@ output:
     includes:
       in_header: "preamble.tex"
 headcolor: "000090"
-papersize: "usletter"
+papersize: usletter
 ---
 
 \renewcommand{\labelitemi}{\textbullet}
@@ -114,8 +114,8 @@ tribble(
 
 # Publications
 
-A full list of my published work can be found at: 
-https://www.ncbi.nlm.nih.gov/myncbi/kevin.middleton.1/bibliography/public/
+A full list of my published work can be found at: \href{https://www.ncbi.nlm.nih.gov/myncbi/kevin.middleton.1/bibliography/public/}{\color[HTML]{000090}{NIH PubMed}}
+
 
 ## Dissertation
 
