@@ -1,33 +1,33 @@
-"Dates","Course","Detail"
-"2018-2019","Clinically Oriented Human Gross Anatomy","Block 2: all lectures (8), all labs (8), anatomy block leader"
-"2018-2019","Foundations of Evolutionary Biology: Evolutionary Biology","PTH_AS 8100; course leader, team taught"
-"2018-2019","Methods in Pathology and Anatomical Sciences: Quantitative Approaches in Life Sciences","PTH_AS 8285; co-course director)"
-"2018-2019","Ethical Conduct of Research","BCH/BSC 8060; Discussant"
-"2017-2018","Clinically Oriented Human Gross Anatomy","Block 2: all lectures (7), all labs (8), anatomy block leader"
-"2017-2018","Foundations of Evolutionary Biology: Evolutionary Morphology","PTH_AS 8150; team taught)"
-"2017-2018","Ethical Conduct of Research","BCH/BSC 8060; Discussant"
-"2016-2017","Clinically Oriented Human Gross Anatomy","Block 1: all labs (7)"
-"2016-2017","Clinically Oriented Human Gross Anatomy","Block 2: all lectures (7), all labs (8), anatomy block leader"
-"2016-2017","Methods in Pathology and Anatomical Sciences: Quantitative Approaches in Life Sciences","PTH_AS 8285; co-course director, new course"
-"2016-2017","Foundations of Evolutionary Biology: Evolutionary Biology","PTH_AS 8100; team taught"
-"2016-2017","Ethical Conduct of Research","BCH/BSC 8060; Discussant"
-"2015-2016","Clinically Oriented Human Gross Anatomy","Block 2: all lectures (7), all labs (8), anatomy block leader"
-"2015-2016","Foundations of Evolutionary Morphology", "PTH_AS 8150; team taught"
-"2015-2016","Methods in Pathology and Anatomical Sciences: Multivariate Statistics", "PTH_AS 8285; course director, new course"
-"2015-2016","Topics in Biological Sciences: Evolution Bootcamp","BIO_SCI 8002; team taught"
-"2015-2016","Ethical Conduct of Research","BCH/BSC 8060; Discussant"
-"2014-2015","Clinically Oriented Human Gross Anatomy","Block 1: all labs (7)"
-"2014-2015","Clinically Oriented Human Gross Anatomy","Block 2: all lectures (7), all labs (7), anatomy block leader"
-"2014-2015","Human Anatomy Lab","PTH_AS 2203; team taught"
-"2014-2015","Foundations of Evolutionary Biology: Evolutionary Biology","PTH_AS 8100; team taught"
-"2013-2014","Clinically Oriented Human Gross Anatomy","Block 1: all labs (7)"
-"2013-2014","Clinically Oriented Human Gross Anatomy","Block 2: abdomen labs (4)"
-"2013-2014","Clinically Oriented Human Gross Anatomy","Block 4: all lectures (7) and labs (7); anatomy block leader"
-"2013-2014","Foundations of Evolutionary Biology: Evolutionary Morphology","PTH_AS 8100; team taught"
-"2013-2014","Current Issues in Anatomy","PTH_AS 8010; Fall and Spring; team taught"
-"2013-2014","Research in Pathology and Anatomical Sciences","PTH_AS 8290"
-"2012-2013","Clinically Oriented Human Gross Anatomy","Block 1: all labs (7)"
-"2012-2013","Clinically Oriented Human Gross Anatomy","Block 2: thorax lectures (3), all labs (7)"
-"2012-2013","Clinically Oriented Human Gross Anatomy","Block 3: lower limb lectures (5) and labs (6)"
-"2012-2013","Foundations of Evolutionary Biology: Evolutionary Biology","PTH_AS 8100; team taught"
-"2012-2013","Human Anatomy Lecture","PTH_AS 2201; team taught"
+Dates,Course,Notes
+2020-2021,Clinically Oriented Human Gross Anatomy,"Block 1: labs; Block 4: anatomy block leader, lectures, labs"
+,Quantitative Methods in Life Sciences (PTH_AS 8640 / BIO_SC 8640),Co-course director
+,Foundations of Evolutionary Biology (PTH_AS 8100),"Course director, team taught"
+,Methods in Pathology and Anatomical Sciences: 3D Imaging and Computational Biology for Research Applications (PTH_AS 8285),Team taught
+,Ethical Conduct of Research (BCH/BSC 8060),Discussant
+2019-2020,Clinically Oriented Human Gross Anatomy,"Block 1: anatomy block leader, lectures, labs; Block 2: labs"
+,Foundations of Evolutionary Morphology (PTH_AS 8150),Team taught
+,Ethical Conduct of Research (BCH/BSC 8060),Discussant
+2018-2019,Clinically Oriented Human Gross Anatomy,"Block 2: anatomy block leader, lectures, labs "
+,Foundations of Evolutionary Biology (PTH_AS 8100),"Course leader, team taught"
+,Methods in Pathology and Anatomical Sciences: Quantitative Approaches in Life Sciences (PTH_AS 8285),Co-course director)
+,Ethical Conduct of Research (BCH/BSC 8060),Discussant
+2017-2018,Clinically Oriented Human Gross Anatomy,"Block 2: anatomy block leader, lectures, labs"
+,Foundations of Evolutionary Morphology (PTH_AS 8150),Team taught
+,Ethical Conduct of Research (BCH/BSC 8060),Discussant
+2016-2017,Clinically Oriented Human Gross Anatomy,"Block 1: labs; Block 2: anatomy block leader, lectures, labs"
+,Methods in Pathology and Anatomical Sciences: Quantitative Approaches in Life Sciences (PTH_AS 8285),"Co-course director, new course"
+,Foundations of Evolutionary Biology (PTH_AS 8100),Team taught
+,Ethical Conduct of Research (BCH/BSC 8060),Discussant
+2015-2016,Clinically Oriented Human Gross Anatomy,"Block 2: anatomy block leader, lectures, labs"
+,Foundations of Evolutionary Morphology (PTH_AS 8150),Team taught
+,Methods in Pathology and Anatomical Sciences: Multivariate Statistics (PTH_AS 8285),"Course director, new course"
+,Topics in Biological Sciences: Evolution Bootcamp (BIO_SCI 8002),Team taught
+,Ethical Conduct of Research (BCH/BSC 8060),Discussant
+2014-2015,Clinically Oriented Human Gross Anatomy,"Block 1: labs; Block 2: anatomy block leader, lectures, labs"
+,Human Anatomy Lab (PTH_AS 2203),Team taught
+,Foundations of Evolutionary Biology (PTH_AS 8100),Team taught
+2013-2014,Clinically Oriented Human Gross Anatomy,"Block 1: labs; Block 2 labs; Block 4: block leader, lecture, labs"
+,Current Issues in Anatomy (PTH_AS 8010),Team taught
+2012-2013,Clinically Oriented Human Gross Anatomy,"Block 1: all labs (7); Block 2: thorax lectures (3), all labs (7); Block 3: lower limb lectures (5) and labs (6)"
+,Foundations of Evolutionary Biology (PTH_AS 8100),Team taught
+,Human Anatomy Lecture (PTH_AS 2201),Team taught
