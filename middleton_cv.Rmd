@@ -123,6 +123,7 @@ A full list of my published work can be found at: \href{https://www.ncbi.nlm.nih
 ## Dissertation
 
 ```{r dissertation}
+# Load bib file
 bib_entries <- bibliography_entries("Paperpile.bib")
 
 if (include_refs) {
@@ -487,11 +488,12 @@ tribble(
 ```{r, textbooks}
 tribble(
   ~ Dates, ~ Author, ~Title, ~ Publisher,
-  "2003", "Miller, KR and JS Levine", "Biology", "Pearson-Prentice Hall",
-  "2010", "Tate, P", "Anatomy and Physiology", "McGraw Hill",
-  "2010", "Biological Sciences Curriculum Studies", "BSCS Biology: A Human Approach. 4th Ed.", "Kendall Hunt Publishing"
+  "2003", "Miller, KR and JS Levine", "\\emph{Biology}", "Pearson-Prentice Hall",
+  "2010", "Tate, P", "\\emph{Anatomy and Physiology}", "McGraw Hill",
+  "2010", "Biological Sciences Curriculum Studies", "\\emph{BSCS Biology: A Human Approach}, 4th Ed.", "Kendall Hunt Publishing"
 ) %>% 
-  detailed_entries(when = Dates, where = Author, what = Title, with = Publisher)
+  detailed_entries(when = Dates, where = Author,
+                   what = Title, with = Publisher, .protect=FALSE)
 ```
 
 
