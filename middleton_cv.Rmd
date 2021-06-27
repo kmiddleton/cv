@@ -15,10 +15,7 @@ orcid: 0000-0003-4704-1064
 github: kmiddleton
 scholar: Ziha7x8AAAAJ
 date: "`r format(Sys.time(), '%B %Y')`"
-output:
-  vitae::hyndman:
-    includes:
-      in_header: "preamble.tex"
+output: vitae::hyndman
 headcolor: "000090"
 papersize: letterpaper
 ---
@@ -31,7 +28,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 library(tidyverse)
 
-include_refs <- FALSE
+include_refs <- TRUE
 ```
 
 # Professional Experience
@@ -53,8 +50,8 @@ tribble(
 ```{r, echo=FALSE}
 tribble(
   ~ Degree, ~ University, ~ Location, ~ Dates,
-  "BS Biology, Summa Cum Laude", "Wake Forest University", "Winston-Salem, NC", "1992 - 1995",
-  "PhD Ecology and Evolutionary Biology", "Brown University", "Providence, RI", "1996 - 2003"
+  "PhD Ecology and Evolutionary Biology", "Brown University", "Providence, RI", "1996 - 2003",
+  "BS Biology, Summa Cum Laude", "Wake Forest University", "Winston-Salem, NC", "1992 - 1995"
 ) %>% 
   detailed_entries(when = Dates, what = University,
                    where = Degree, with = Location)
@@ -105,8 +102,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "NIH NIDCR",
         "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead statisticsian; 10\\% salary support)") %>% 
   detailed_entries(when = Dates, what = Title, with = Agency,
-                   where = PIs,
-                   .protect = FALSE)
+                   where = PIs, .protect = FALSE)
 ```
 
 
@@ -130,7 +126,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
         "NIH NIDCR",
         "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead statisticsian; 10\\% salary support)",
-        "We have identified landmarks on over 25,000 lateral cephalographs from 5,247 individuals (3,340 with serial data) age 0-27 years from nine growth studies. This proposed research will 1) estimate population- and individual-level timing of pubertal growth and adult size for multiple craniofacial traits, 2) provide diagnostic reference charts for craniofacial measures, 3) develop prognostic tools to predict remaining growth/change and the timing of the pubertal growth spurt for craniofacial traits, 4) make these valuable resources available to clinicians and researchers via an easy-to-use free web-based application.") %>% 
+        "We have identified landmarks on over 25,000 lateral cephalographs from 5,247 individuals age 0-27 years from eight growth studies. This research will 1) estimate population- and individual-level timing of pubertal growth and adult size for multiple craniofacial traits, 2) provide diagnostic reference charts for craniofacial measures, 3) develop prognostic tools to predict remaining growth/change and the timing of the pubertal growth spurt for craniofacial traits, 4) make these valuable resources available to clinicians and researchers via an easy-to-use free web-based application.") %>% 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, why = Notes,
                    .protect = FALSE)
@@ -139,7 +135,97 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
 
 # Past Grants and Fellowships
 
-\LTXtable{\textwidth}{grants.tex}
+```{r}
+tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
+        "2019--2020",
+        "Administrative Supplement to \\emph{Craniofacial Growth Prediction in Different Facial Types}",
+        "NIH NIDCR",
+        "RJ Sherwood (PI) \\\\ \\textbf{Kevin Middleton} co-I (10\\% salary support)",
+        "This administrative supplement leveraged the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters.  (\\$116,169)",
+        
+        "2017",
+        "Differential Gene Expression of Bone in Response to Experimental Loading Regimes",
+        "MU DNA Core Facility NextGen Sequencing Pilot Award",
+        "\\textbf{Kevin Middleton} PI",
+        "This award supported preliminary research into the differential expression of genes in bone: RNA sequencing and analysis of data. (\\$10,760)",
+        
+        "2015--2019",
+        "Collaborative Research: Dinosaur Jaw Muscle Evolution and\\\\the Origins of Avian Cranial Kinesis",
+        "NSF -- Integrative Organismal Systems",
+        "Casey Holliday Lead PI, \\\\ \\textbf{Kevin Middleton}, co-PI, \\\\ Julian Davis (Sountern Indiana University), co-PI, \\\\ Lawrence Witmer (Ohio University), co-PI",
+        "This project focused on the evolution and function of intra-cranial mobility (cranial kinesis) in dinosaurs and birds. We developed novel techniques for imaging muscle structure via contrast-enhanced micro-CT, new finite-element computational models for estimating cranial loads in extant and extinct animals, and visualization techniques for representing 3D data in two-dimensional space. (\\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1457319}{NSF IOS 1457319}; \\$606,705).",
+        
+        "2010--2015",
+        "Collaborative Research: Wings to flippers - phylogenetics,\\\\character acquisition, and feather biomechanics in the evolution\\\\of wing-propelled diving",
+        "NSF -- Systematic Biology",
+        "\\textbf{Kevin Middleton} co-PI \\\\ Julia Clarke (University of Texas, Austin), co-PI \\\\ Daniel Ksepka (North Carolina State University), co-PI",
+        "The goal of this project was to integrate studies of phylogenetics, sensory systems evolution, bone microstructure, feather function, and wing biomechanics across multiple transitions from aerial ﬂight to underwater wing-propelled diving. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0949945}{NSF DEB 0949945}; \\$471,717).",
+        
+        "2009--2014",
+        "Collaborative Research: LiT: Effects of environmental oxygen on growth and physiological performance in the American alligator: A case study in experimental paleophysiology",
+        "NSF -- Integrative Organismal Systems",
+        "James Hicks (University of California, Irvine), Lead PI \\\\ \\textbf{Kevin Middleton}, co-PI \\\\ Bryan Rourke (CSU Long Beach) , co-PI",
+        "This project studied the effects of altered environmental oxygen level on alligator physiology (growth, locomotor ability, muscle and bone structure). We used a long-term experiment of raising American alligators in varying levels of atmospheric oxygen for 24 months. We found that overall growth rates as well as skeletal morphology was largely unaltered by changes in available oxygen. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0922576}{NSF IOS 0922576}; \\$517,931)",
+        
+        "2011--2014",
+        "Maturation of an S-STEM scholarship program at a Hispanic,\\\\minority serving institution",
+        "NSF -- Division of Undergraduate Education",
+        "Kimberley Cousins, Lead PI \\\\ \\textbf{Kevin Middleton}, co-PI",
+        "This project supported four years of continued funding and expansion of CSUSB Math and Science Scholars scholarship program designed to encourage minority, under-represented, and economically disadvantaged students to enter STEM disciplines. This grant was awarded while I was a faculty member at California State University San Bernardino, but I resigned as co-PI on moving to the University of Missouri. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1060632}{NSF DUE 1060632}; co-PI; \\$591,231)",
+        
+        "2008--2009",
+        "Extramural Associates Research Development Award (EARDA) pilot grant:\\\\ \\emph{Establishment of an Inbred Strain of ``Mini-muscle'' Phenotype, High-activity Mice}",
+        "NIH NIAMS",
+        "Kevin Middleton, PI",
+        "Award to establish an inbred strain of mice. (\\$15,000; sub-award from NIH 5G11HD052368-03)",
+        
+        "2005--2007",
+        "\\emph{Effects of Genetics, Exercise, and Age on Bone Mechanics}",
+        "NIH Ruth Kirschstein National Research Service Award",
+        "Kevin Middleton, PI",
+        "Postdoctoral fellowhsip (NIH 1F32AR053008-01)",
+        
+        "2002",
+        "Honorable Mention, Alfred Sherwood Romer Prize",
+        "Society of Vertebrate Paleontology",
+        "",
+        "Award for outstanding graduate research",
+        
+        "2000--2003",
+        "Dissertation Improvement Grant: Evolution and Functional Morphology of the Theropod Foot",
+        "NSF",
+        "Kevin Middleton co-PI",
+        "Grant in support of doctoral dissertation research",
+        
+        "1999",
+        "Grant-in-Aid of Paleontological Research",
+        "Paleontological Society",
+        "Kevin Middleton, PI",
+        "Award for Outstanding Student Scholarship Proposal",
+        
+        "1999",
+        "Student Research Grant",
+        "Geological Society of America",
+        "Kevin Middleton PI",
+        "Award for Exceptional Merit in Conception and Presentation",
+        
+        "1999",
+        "Grant in Aid of Research",
+        "Sigma Xi",
+        "Kevin Middleton, PI",
+        "Grant in support of doctoral dissertation research",
+        
+        "1997",
+        "Honorable Mention, Graduate Research Fellowship",
+        "NSF",
+        "Kevin Middleton, PI",
+        "Grant in support of doctoral dissertation research"
+        
+        ) %>% 
+  detailed_entries(when = Dates, what = Title, with = Agency,
+                   where = PIs, why = Notes,
+                   .protect = FALSE)
+```
 
 ```{r include=FALSE}
 ## FIXME Publications
@@ -303,14 +389,14 @@ tribble(
   "2015-2020", "Sharon Kuo", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at Pennsylvania State University",
   "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences", "Currently a high school teacher",
   "2015-2019", "Ian Cost", "Ph.D.; Pathobiology", "Currently assistant professor at Albright College",
-  "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "",
+  "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "Fulbright Fellow",
   "2017-2018", "Stephanie Rosbach", "M.S.; Geological Sciences", "",
-  "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "Currently research associate at the University of Missouri",
+  "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "Currently research assistant professor at the University of Missouri",
   "2015-2017", "Edward Ramirez", "M.S.; Biological Sciences", "",
   "2015-2017", "Steven Hanson", "Ph.D.; Pathobiology", "",
   "2014-2017", "Luésoni Johnson", "M.S.; Biological Sciences", "Currently a doctoral student at the University of Illinois School of information Science",
   "2013-2016", "Elizabeth Moffett", "Ph.D.; Biological Sciences", "Currently an Assistant Professor at Rocky Vista University",
-  "2014-2015", "Kaleb Sellers", "M.S.; Pathology", "",
+  "2014-2015", "Kaleb Sellers", "M.S.; Pathology", "Currently a doctoral candidate at the University of Missoui",
   "2012-2015", "Henry Tsai", "Ph.D.; Pathobiology", "Currently an Assistant Professor at Missouri State University",
   "2009-2012", "Kandee Bain", "M.S.; Biology, CSUSB", "",
   "2008-2012", "Kim Scott", "M.S.; Biology, CSUSB", "",
@@ -570,6 +656,7 @@ tribble(
   ~ Dates, ~ Service,
   "2014-2019", "School of Medicine Block 2 Planning Committee",
   "2013, 2015-2019", "PAS Assistant Teaching Professor Search Committee",
+  "2013-2015, 2018", "MUSOM Summer Research Fellow Research Mentor",
   "2013-2019", "PAS Promotion and Tenure Committee",
   "2013-2020", "PAS Director of Admissions",
   "2016-2019", "Evolution and Social Science Group (ESS) steering committee",
@@ -620,7 +707,7 @@ tribble(
   ~ Dates, ~Title, ~ Notes,
   "2009", "National Geographic Channel -- Prehistoric Predators", "National Geographic Channel's Prehistoric Predators featured an episode on phorusrhacids (also known as Terror Birds -- an extinct group of gigantic carnivorous birds from the Cenozoic of South and North America).",
   "2009", "Discovery Channel -- Megabeasts", "Discovery Channel's Megabeasts also features an episode on Terror Birds",
-  "2008", "Coastline Community College", "On-camera expert on skeletal biology for an Anatomy & Physiology course produced by Coastline Community College (Orange County, CA). This course will be utilized by 2-year colleges and 4-year universities as well as broadcast by PBS.",
+  "2008", "Coastline Community College", "On-camera expert on skeletal biology for an Anatomy & Physiology course produced by Coastline Community College (Orange County, CA). This course will be utilized by 2-year colleges and 4-year universities as well as broadcast locally by PBS.",
   "2008", "CBC Television Canada -- Project X", "The Project X episode 'Flight' showcases collaborative work with Drs. Sharon Swartz, Kenneth Breuer, Daniel Riskin, and Jose Iriarte-Diaz on the aeromechanics of bat flight."
 ) %>% 
   detailed_entries(when = Dates, what = Title, where = Notes)
