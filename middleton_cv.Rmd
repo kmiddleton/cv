@@ -63,14 +63,19 @@ tribble(
 
 # Research Interests
 
-My research focuses on musculoskeletal physiology, form, and function in the contexts of animal locomotion, feeding, and vertebrate evolution. In my work, I integrate studies across multiple scales from micro-scale structural materials of bone to macro-scale whole bone morphology to evolutionary changes across vertebrate taxa and with comparisons to extinct organisms.
+My research focuses on musculoskeletal form, physiology, and function in the contexts of growth, locomotion, feeding, and evolution. In my work, I integrate studies across multiple scales from micro-scale structural materials of bone to macro-scale whole bone morphology to evolutionary changes across taxa and with comparisons to extinct organisms.
 
 
 ## Current Projects
 
-- Development of Bayesian and machine learning models for the prediction of craniofacial growth in humans
-- Evolution of the reptile head: integrating cranial biomechanics, muscle modeling, and brain evolution to understand cranial kinesis and diversity
-- Effects of exercise and genetic background on skeletal form, physiology, and biomechanics using high activity mice as a model organism
+### Development of Bayesian and machine learning models for the prediction of craniofacial growth in humans.
+
+- Timing of 
+
+Evolution of the reptile head: integrating cranial biomechanics, muscle modeling, and brain evolution to understand cranial kinesis and diversity
+
+
+Effects of exercise and genetic background on skeletal form, physiology, and biomechanics using high activity mice as a model organism
 
 
 # Awards
