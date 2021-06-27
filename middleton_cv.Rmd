@@ -107,13 +107,6 @@ tribble(
 
 ```{r include=FALSE}
 ## FIXME Publications
-
-# AAA 2021
-# Sellers
-# Holliday
-# McGechie
-# Fortner
-# Smolinsky
 ```
 
 
