@@ -93,7 +93,23 @@ tribble(
 
 # Grants in Preparation
 
-\LTXtable{\textwidth}{grants_in_prep.tex}
+```{r}
+tribble(~ Dates, ~ Title, ~ Agency, ~ Notes,
+        "2021", 
+        "R01 - Maturation-based Prediction of Craniofacial Growth",
+        "NIH National Institute of Dental and Craniofacial Research",
+        c("RJ Sherwood and D Duren (Multiple PI)",
+          "Kevin Middleton co-I (Lead statistician; 10% salary support)"),
+        
+        "2021",
+        "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
+        "NIH National Institute of Dental and Craniofacial Research",
+        c("RJ Sherwood and HS Oh (Multiple PI)",
+          "Kevin Middleton co-I (Lead statisticsian; 10% salary support)")) %>% 
+  detailed_entries(when = Dates, what = Title, where = Agency, why = Notes,
+                   .protect = FALSE)
+```
+
 
 <!--
 # Grants in Review
