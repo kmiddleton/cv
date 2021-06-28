@@ -80,9 +80,9 @@ My overall research focuses on form, physiology, and function of the skeletal an
 ```{r awards, results="asis"}
 tribble(
   ~ Year, ~ Award,
+  2019, "Gold Chalk Award for Graduate Teaching",
   2017, "School of Medicine Award for Outstanding Preclinical Faculty Education",
-  2017, "Ann K. Covington Award for Undergraduate Mentoring",
-  2019, "Gold Chalk Award for Graduate Teaching"
+  2017, "Ann K. Covington Award for Undergraduate Mentoring"
 ) %>%
   detailed_entries(when = Year, what = Award)
 ```
@@ -152,13 +152,13 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "2015--2019",
         "Collaborative Research: Dinosaur Jaw Muscle Evolution and\\\\the Origins of Avian Cranial Kinesis",
         "NSF -- Integrative Organismal Systems",
-        "Casey Holliday Lead PI, \\\\ \\textbf{Kevin Middleton}, co-PI, \\\\ Julian Davis (Sountern Indiana University), co-PI, \\\\ Lawrence Witmer (Ohio University), co-PI",
+        "Casey Holliday, Lead PI, \\\\ \\textbf{Kevin Middleton}, co-PI, \\\\ Julian Davis (Sounthern Indiana University), co-PI, \\\\ Lawrence Witmer (Ohio University), co-PI",
         "This project focused on the evolution and function of intra-cranial mobility (cranial kinesis) in dinosaurs and birds. We developed novel techniques for imaging muscle structure via contrast-enhanced micro-CT, new finite-element computational models for estimating cranial loads in extant and extinct animals, and visualization techniques for representing 3D data in two-dimensional space. (\\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1457319}{NSF IOS 1457319}; \\$606,705).",
         
         "2010--2015",
-        "Collaborative Research: Wings to flippers - phylogenetics,\\\\character acquisition, and feather biomechanics in the evolution\\\\of wing-propelled diving",
+        "Collaborative Research: Wings to flippers - phylogenetics, character acquisition,\\\\and feather biomechanics in the evolution of wing-propelled diving",
         "NSF -- Systematic Biology",
-        "\\textbf{Kevin Middleton} co-PI \\\\ Julia Clarke (University of Texas, Austin), co-PI \\\\ Daniel Ksepka (North Carolina State University), co-PI",
+        "Julia Clarke (University of Texas, Austin), Lead PI \\\\ \\textbf{Kevin Middleton}, co-PI \\\\ Daniel Ksepka (North Carolina State University), co-PI",
         "The goal of this project was to integrate studies of phylogenetics, sensory systems evolution, bone microstructure, feather function, and wing biomechanics across multiple transitions from aerial ﬂight to underwater wing-propelled diving. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0949945}{NSF DEB 0949945}; \\$471,717).",
         
         "2009--2014",
@@ -180,7 +180,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "Award to establish an inbred strain of mice. (\\$15,000; sub-award from NIH 5G11HD052368-03)",
         
         "2005--2007",
-        "\\emph{Effects of Genetics, Exercise, and Age on Bone Mechanics}",
+        "Effects of Genetics, Exercise, and Age on Bone Mechanics",
         "NIH Ruth Kirschstein National Research Service Award",
         "Kevin Middleton, PI",
         "Postdoctoral fellowhsip (NIH 1F32AR053008-01)",
