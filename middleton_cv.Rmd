@@ -360,6 +360,7 @@ tribble(
 ```{r, current_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree,
+  "2021-Present", "Jeremy Webb", "M.S.; Geological Sciences",
   "2021-Present", "Wade Leibach", "M.S.; Geological Sciences",
   "2021-Present", "Delaney Ryan", "M.S.; Geological Sciences",
   "2020-Present", "Gabriel Jacobs", "Ph.D.; Geological Sciences",
@@ -368,7 +369,6 @@ tribble(
   "2019-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
   "2019-Present", "Mikaela Pulsipher", "M.S.; Geological Sciences",
   "2018-Present", "Sean Greer", "Ph.D.; Pathobiology",
-  "2016-Present", "Kaleb Sellers", "Ph.D.; Pathobiology",
   "2016-Present", "Elizabeth Cho", "Ph.D.; Anthropology",
   "2016-Present", "Deise Cruz", "Ph.D.; Biological Sciences",
   "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
@@ -382,7 +382,8 @@ tribble(
 ```{r, past_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
-  "2017-2020", "Faye McGechie", "Ph.D.; Pathobiology", "Currently podtdoctoral researcher, University of Chicago",
+  "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, Rocky Vista University",
+  "2017-2021", "Faye McGechie", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Chicago",
   "2017-2020", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology", "Currently pursuing certificate in nutrition, University of Missouri",
   "2019-2020", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Currently doctoral student at University of Chicago",
   "2016-2020", "Melanie Boeyer", "Ph.D.; Pathobiology", "Currently postdoctoral research associate at the University of Missouri",
