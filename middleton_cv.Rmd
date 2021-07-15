@@ -95,12 +95,17 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "2021", 
         "R01 - Maturation-based Prediction of Craniofacial Growth",
         "NIH NIDCR",
-        "RJ Sherwood and D Duren (Multiple PI) \\\\ \\textbf{Kevin M Middleton} co-I (Lead statistician; 10\\% salary support)",
+        "RJ Sherwood and D Duren (Multiple PI) \\\\ \\textbf{Kevin M Middleton} co-I (Lead data scientist; 10\\% salary support)",
         
         "2021",
         "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
         "NIH NIDCR",
-        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead statisticsian; 10\\% salary support)") %>% 
+        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)",
+        
+        "2021",
+        "R01 - Connecting the Genome to Structure and Function of Wing Morphology and Flight Performance in \\emph{Drosophila}",
+        "NIH NIGMS",
+        "Elizabeth King and \\textbf{Kevin Middleton} (Multiple PI)") %>% 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, .protect = FALSE)
 ```
@@ -125,7 +130,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "2015--2022",
         "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
         "NIH NIDCR",
-        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead statisticsian; 10\\% salary support)",
+        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)",
         "We have identified landmarks on over 25,000 lateral cephalographs from 5,247 individuals age 0-27 years from eight growth studies. This research will 1) estimate population- and individual-level timing of pubertal growth and adult size for multiple craniofacial traits, 2) provide diagnostic reference charts for craniofacial measures, 3) develop prognostic tools to predict remaining growth/change and the timing of the pubertal growth spurt for craniofacial traits, 4) make these valuable resources available to clinicians and researchers via an easy-to-use free web-based application.") %>% 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, why = Notes,
