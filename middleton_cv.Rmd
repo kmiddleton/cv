@@ -95,17 +95,12 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "2021", 
         "R01 - Maturation-based Prediction of Craniofacial Growth",
         "NIH NIDCR",
-        "RJ Sherwood and D Duren (Multiple PI) \\\\ \\textbf{Kevin M Middleton} co-I (Lead data scientist; 10\\% salary support)",
+        "RJ Sherwood, D Duren, and KM Middleton (Multiple PI) \\\\ (Lead data scientist; 25\\% salary support)",
         
         "2021",
         "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
         "NIH NIDCR",
-        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)",
-        
-        "2021",
-        "R01 - Connecting the Genome to Structure and Function of Wing Morphology and Flight Performance in \\emph{Drosophila}",
-        "NIH NIGMS",
-        "Elizabeth King and \\textbf{Kevin Middleton} (Multiple PI)") %>% 
+        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)") %>% 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, .protect = FALSE)
 ```
@@ -114,6 +109,13 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
 <!--
 # Grants in Review
 
+,
+        
+        "2021",
+        "R01 - Connecting the Genome to Structure and Function of Wing Morphology and Flight Performance in \\emph{Drosophila}",
+        "NIH NIGMS",
+        "Elizabeth King and \\textbf{Kevin Middleton} (Multiple PI)"
+        
 -->
 
 
