@@ -88,37 +88,6 @@ tribble(
 ```
 
 
-# Grants in Preparation
-
-```{r}
-tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
-        "2021", 
-        "R01 - Maturation-based Prediction of Craniofacial Growth",
-        "NIH NIDCR",
-        "RJ Sherwood, D Duren, and KM Middleton (Multiple PI) \\\\ (Lead data scientist; 25\\% salary support)",
-        
-        "2021",
-        "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
-        "NIH NIDCR",
-        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)") %>% 
-  detailed_entries(when = Dates, what = Title, with = Agency,
-                   where = PIs, .protect = FALSE)
-```
-
-
-<!--
-# Grants in Review
-
-,
-        
-        "2021",
-        "R01 - Connecting the Genome to Structure and Function of Wing Morphology and Flight Performance in \\emph{Drosophila}",
-        "NIH NIGMS",
-        "Elizabeth King and \\textbf{Kevin Middleton} (Multiple PI)"
-        
--->
-
-
 # Current Support
 
 ```{r}
@@ -137,6 +106,38 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, why = Notes,
                    .protect = FALSE)
+```
+
+
+# Grants in Review
+
+```{r}
+tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
+        "2021", 
+        "R01 - Maturation-based Prediction of Craniofacial Growth",
+        "NIH NIDCR",
+        "RJ Sherwood, D Duren, and KM Middleton (Multiple PI) \\\\ (Lead data scientist; 25\\% salary support)"
+) %>% 
+  detailed_entries(when = Dates, what = Title, with = Agency,
+                   where = PIs, .protect = FALSE)
+```
+
+
+# Grants in Preparation
+
+```{r}
+tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
+        "TBS 2022",
+        "R01 - Connecting the Genome to Structure and Function of Wing Morphology and Flight Performance in \\emph{Drosophila}",
+        "NIH NIGMS",
+        "Elizabeth King and \\textbf{Kevin Middleton} (Multiple PI)",
+
+        "TBS 2022",
+        "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
+        "NIH NIDCR",
+        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)") %>% 
+  detailed_entries(when = Dates, what = Title, with = Agency,
+                   where = PIs, .protect = FALSE)
 ```
 
 
