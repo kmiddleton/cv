@@ -378,7 +378,6 @@ tribble(
   "2019-Present", "Mikaela Pulsipher", "M.S.; Geological Sciences",
   "2018-Present", "Sean Greer", "Ph.D.; Pathobiology",
   "2016-Present", "Elizabeth Cho", "Ph.D.; Anthropology",
-  "2016-Present", "Deise Cruz", "Ph.D.; Biological Sciences",
   "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
 ) %>% 
   detailed_entries(when = Dates, what = Name, with = Degree)
@@ -390,6 +389,7 @@ tribble(
 ```{r, past_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2016-2021", "Deise Cruz", "Ph.D.; Biological Sciences", "",
   "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, Rocky Vista University",
   "2017-2021", "Faye McGechie", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Chicago",
   "2017-2020", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology", "Currently pursuing certificate in nutrition, University of Missouri",
