@@ -116,7 +116,11 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "2021", 
         "R01 - Maturation-based Prediction of Craniofacial Growth",
         "NIH NIDCR",
-        "RJ Sherwood, D Duren, and KM Middleton (Multiple PI) \\\\ (Lead data scientist; 25\\% salary support)"
+        "RJ Sherwood, D Duren, and KM Middleton (Multiple PI) \\\\ Lead data scientist; 25\\% salary support",
+        "2022", 
+        "Biomechanics of Grasping in Primates",
+        "Leakey Foundation",
+        "CV Ward, CM Holliday, and KM Middleton (co-PI) \\\\ \\$25,000"
 ) %>% 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, .protect = FALSE)
@@ -135,7 +139,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "TBS 2022",
         "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
         "NIH NIDCR",
-        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)") %>% 
+        "RJ Sherwood, HS Oh, \\textbf{Kevin Middleton} (Multiple PI) \\\\ Role: Lead data scientist (25\\% salary support)") %>% 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, .protect = FALSE)
 ```
@@ -148,7 +152,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "2019--2020",
         "Administrative Supplement to \\emph{Craniofacial Growth Prediction in Different Facial Types}",
         "NIH NIDCR",
-        "RJ Sherwood (PI) \\\\ \\textbf{Kevin Middleton} co-I (10\\% salary support)",
+        "RJ Sherwood (PI) \\\\ \\textbf{Kevin Middleton} co-I 10\\% salary support",
         "This administrative supplement leveraged the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters.  (\\$116,169)",
         
         "2017",
@@ -445,6 +449,9 @@ tribble(
 
 ```{r}
 # Subset abstracts from bib_entries
+# Add
+# AABA 2022
+# IADR 2022
 Abstracts <- bib_entries %>%
     filter(str_detect(keyword, "CV/Abstracts")) %>%
     arrange(issued, author)
