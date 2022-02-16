@@ -372,9 +372,6 @@ tribble(
 ```{r, current_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree,
-  "2021-Present", "Jeremy Webb", "M.S.; Geological Sciences",
-  "2021-Present", "Wade Leibach", "M.S.; Geological Sciences",
-  "2021-Present", "Delaney Ryan", "M.S.; Geological Sciences",
   "2020-Present", "Gabriel Jacobs", "Ph.D.; Geological Sciences",
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
   "2019-Present", "Emily Lessner", "Ph.D.; Pathobiology",
