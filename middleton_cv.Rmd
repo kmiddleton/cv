@@ -374,10 +374,8 @@ tribble(
   ~ Dates, ~ Name, ~ Degree,
   "2020-Present", "Gabriel Jacobs", "Ph.D.; Geological Sciences",
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
-  "2019-Present", "Emily Lessner", "Ph.D.; Pathobiology",
-  "2019-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
+  "2018-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
   "2018-Present", "Sean Greer", "Ph.D.; Pathobiology",
-  "2016-Present", "Elizabeth Cho", "Ph.D.; Anthropology",
   "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
 ) %>% 
   detailed_entries(when = Dates, what = Name, with = Degree)
@@ -389,6 +387,8 @@ tribble(
 ```{r, past_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2018-2021", "Emily Lessner", "Ph.D.; Pathobiology", "",
+  "2016-2021", "Elizabeth Cho", "Ph.D.; Anthropology", "",
   "2016-2021", "Deise Cruz", "Ph.D.; Biological Sciences", "",
   "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, Rocky Vista University",
   "2017-2021", "Faye McGechie", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Chicago",
@@ -650,7 +650,6 @@ tribble(
   "2020-Present", "School of Medicine Block 4 Planning Committee",
   "2018-Present", "MU School of Medicine Faculty Committee for Diversity and Inclusion",
   "2015-Present", "School of Medicine Advice Support and Career (ASC) Preclerkship Advisor",
-  "2014-Present", "School of Medicine eResources Committee",
   "2013-2016, 2019-Present", "SOM Summer Research Internship in Medical Sciences Selection Committee",
   "2012-Present", "MU Doctoral Faculty",
   "2012-Present", "MU Graduate Faculty",
@@ -667,6 +666,7 @@ tribble(
 ```{r, past_service}
 tribble(
   ~ Dates, ~ Service,
+  "2014-2019", "School of Medicine eResources Committee",
   "2014-2019", "School of Medicine Block 2 Planning Committee",
   "2013, 2015-2019", "PAS Assistant Teaching Professor Search Committee",
   "2013-2015, 2018", "MUSOM Summer Research Fellow Research Mentor",
