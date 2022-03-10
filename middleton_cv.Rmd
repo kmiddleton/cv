@@ -375,7 +375,6 @@ tribble(
   "2020-Present", "Gabriel Jacobs", "Ph.D.; Geological Sciences",
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
   "2018-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
-  "2018-Present", "Sean Greer", "Ph.D.; Pathobiology",
   "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
 ) %>% 
   detailed_entries(when = Dates, what = Name, with = Degree)
@@ -387,8 +386,9 @@ tribble(
 ```{r, past_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
-  "2018-2021", "Emily Lessner", "Ph.D.; Pathobiology", "",
-  "2016-2021", "Elizabeth Cho", "Ph.D.; Anthropology", "",
+  "2018-2022", "Sean Greer", "Ph.D.; Pathobiology", "Currently lecturer, University of Missouri",
+  "2018-2022", "Emily Lessner", "Ph.D.; Pathobiology", "",
+  "2016-2022", "Elizabeth Cho", "Ph.D.; Anthropology", "Currently postdoctoral researcher, UNTHSC",
   "2016-2021", "Deise Cruz", "Ph.D.; Biological Sciences", "",
   "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, Rocky Vista University",
   "2017-2021", "Faye McGechie", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Chicago",
