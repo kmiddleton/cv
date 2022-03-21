@@ -447,7 +447,7 @@ tribble(
 ```{r}
 # Subset abstracts from bib_entries
 # Add
-# AABA 2022
+# AAA 2022
 # IADR 2022
 Abstracts <- bib_entries %>%
     filter(str_detect(keyword, "CV/Abstracts")) %>%
