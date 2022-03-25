@@ -16,7 +16,7 @@ github: kmiddleton
 scholar: Ziha7x8AAAAJ
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::hyndman
-headcolor: "000090"
+#headcolor: 000090
 papersize: letterpaper
 ---
 
