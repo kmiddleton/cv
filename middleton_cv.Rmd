@@ -40,7 +40,7 @@ tribble(
   "Assistant to Associate Professor, Department of Biology", "CSU San Bernardino", "San Bernardino, CA", "2007 - 2012",
   "NIH NRSA Postdoctoral Fellow", "Brown University and University of California, Riverside", "Providence, RI and Riverside, CA", "2005 - 2007",
   "Postdoctoral Research Associate, Department of Ecology and Evolutionary Biology", "Brown University", "Providence, RI", "2003 - 2005"
-) %>% 
+) |> 
   detailed_entries(what = Position, when = Dates,
                    where = University, with = Location)
 ```
@@ -52,7 +52,7 @@ tribble(
   ~ Degree, ~ University, ~ Location, ~ Dates,
   "PhD Ecology and Evolutionary Biology", "Brown University", "Providence, RI", "1996 - 2003",
   "BS Biology, Summa Cum Laude", "Wake Forest University", "Winston-Salem, NC", "1992 - 1995"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = University,
                    where = Degree, with = Location)
 ```
@@ -83,7 +83,7 @@ tribble(
   2019, "Gold Chalk Award for Graduate Teaching",
   2017, "School of Medicine Award for Outstanding Preclinical Faculty Education",
   2017, "Ann K. Covington Award for Undergraduate Mentoring"
-) %>%
+) |>
   detailed_entries(when = Year, what = Award)
 ```
 
@@ -102,7 +102,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
         "NIH NIDCR",
         "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)",
-        "We have identified landmarks on over 25,000 lateral cephalographs from 5,247 individuals age 0-27 years from eight growth studies. This research will 1) estimate population- and individual-level timing of pubertal growth and adult size for multiple craniofacial traits, 2) provide diagnostic reference charts for craniofacial measures, 3) develop prognostic tools to predict remaining growth/change and the timing of the pubertal growth spurt for craniofacial traits, 4) make these valuable resources available to clinicians and researchers via an easy-to-use free web-based application.") %>% 
+        "We have identified landmarks on over 25,000 lateral cephalographs from 5,247 individuals age 0-27 years from eight growth studies. This research will 1) estimate population- and individual-level timing of pubertal growth and adult size for multiple craniofacial traits, 2) provide diagnostic reference charts for craniofacial measures, 3) develop prognostic tools to predict remaining growth/change and the timing of the pubertal growth spurt for craniofacial traits, 4) make these valuable resources available to clinicians and researchers via an easy-to-use free web-based application.") |> 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, why = Notes,
                    .protect = FALSE)
@@ -122,7 +122,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "Biomechanics of Grasping in Primates",
         "Leakey Foundation",
         "Carol Ward, Casey Holliday, and \\textbf{Kevin Middleton} (co-PI) \\\\ \\$25,000"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, .protect = FALSE)
 ```
@@ -140,7 +140,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "TBS 2022", 
         "R01 - Maturation-based Prediction of Craniofacial Growth",
         "NIH NIDCR",
-        "Richard Sherwood, Dana Duren, and \\textbf{Kevin Middleton} (Multiple PI)") %>% 
+        "Richard Sherwood, Dana Duren, and \\textbf{Kevin Middleton} (Multiple PI)") |> 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, .protect = FALSE)
 ```
@@ -234,7 +234,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "Kevin Middleton, PI",
         "Grant in support of doctoral dissertation research"
         
-        ) %>% 
+        ) |> 
   detailed_entries(when = Dates, what = Title, with = Agency,
                    where = PIs, why = Notes,
                    .protect = FALSE)
@@ -257,7 +257,7 @@ A full list of my published work can be found at: \href{https://www.ncbi.nlm.nih
 bib_entries <- bibliography_entries("Paperpile.bib")
 
 if (include_refs) {
-  bib_entries %>%
+  bib_entries |>
     filter(str_detect(keyword, "CV/Dissertation"))
 }
 ```
@@ -267,8 +267,8 @@ if (include_refs) {
 
 ```{r research-papers, eval=TRUE}
 if (include_refs) {
-  bib_entries %>%
-    filter(str_detect(keyword, "CV/Papers")) %>%
+  bib_entries |>
+    filter(str_detect(keyword, "CV/Papers")) |>
     arrange(issued, author)
 }
 ```
@@ -278,8 +278,8 @@ if (include_refs) {
 
 ```{r in-review, eval=TRUE}
 if (include_refs) {
-  bib_entries %>%
-    filter(str_detect(keyword, "CV/In review")) %>% 
+  bib_entries |>
+    filter(str_detect(keyword, "CV/In review")) |> 
     arrange(author)
 }
 ```
@@ -289,8 +289,8 @@ if (include_refs) {
 
 ```{r book-chapters, eval=TRUE}
 if (include_refs) {
-  bib_entries %>%
-    filter(str_detect(keyword, "CV/Book chapters")) %>%
+  bib_entries |>
+    filter(str_detect(keyword, "CV/Book chapters")) |>
     arrange(issued, author)
 }
 ```
@@ -300,8 +300,8 @@ if (include_refs) {
 
 ```{r invited-reviews, eval=TRUE}
 if (include_refs) {
-  bib_entries %>%
-    filter(str_detect(keyword, "CV/Reviews")) %>%
+  bib_entries |>
+    filter(str_detect(keyword, "CV/Reviews")) |>
     arrange(issued, author)
 }
 ```
@@ -311,8 +311,8 @@ if (include_refs) {
 
 ```{r book-reviews, eval=TRUE}
 if (include_refs) {
-  bib_entries %>%
-    filter(str_detect(keyword, "CV/Book reviews")) %>%
+  bib_entries |>
+    filter(str_detect(keyword, "CV/Book reviews")) |>
     arrange(issued, author)
 }
 ```
@@ -322,8 +322,8 @@ if (include_refs) {
 
 ```{r datasets, eval=TRUE}
 if (include_refs) {
-  bib_entries %>%
-    filter(str_detect(keyword, "CV/Datasets")) %>%
+  bib_entries |>
+    filter(str_detect(keyword, "CV/Datasets")) |>
     arrange(issued, author)
 }
 ```
@@ -333,8 +333,8 @@ if (include_refs) {
 
 ```{r in-prep, eval=TRUE}
 if (include_refs) {
-  bib_entries %>%
-    filter(str_detect(keyword, "CV/In prep")) %>%
+  bib_entries |>
+    filter(str_detect(keyword, "CV/In prep")) |>
     arrange(author)
 }
 ```
@@ -346,7 +346,7 @@ if (include_refs) {
 tribble(
   ~ Dates, ~ Name, ~ Notes,
   "2015-2018", "Alida Bailleul, PhD", "Currently an Assistant Professor at the Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Name, where = Notes)
 ```
 
@@ -361,7 +361,7 @@ tribble(
   "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Completed doctoral studies at University of California, Riverside",
   "2010-2012", "Brittney Coats", "M.S., CSUSB", "Completed doctoral studies at the University of Chicago",
   "2008-2012", "Susan Lujan", "M.S., CSUSB", "Currently a lecturer at California State University, San Bernardino"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Name, with = Degree, where = Notes)
 ```
 
@@ -380,7 +380,7 @@ tribble(
   "2018-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
   "2018-Present", "Austin Lawrence", "Ph.D.; Pathobiology",
   "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Name, with = Degree)
 ```
 
@@ -416,7 +416,7 @@ tribble(
   "2008-2012", "Kim Scott", "M.S.; Biology, CSUSB", "",
   "2007-2008", "Adam Huttenlocker", "M.S.; Biology, CSUSB", "Currently an Assistant Professor at the University of Southern California",
   "2007-2008", "Candace Reno", "M.S.; Biology, CSUSB", ""
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Name, with = Degree, where = Notes)
 ```
 
@@ -443,7 +443,7 @@ tribble(
   "2014-2015", "Michael Sojka", "C3 Hughes Research Fellow, MU School of Journalism",
   "2014", "Tarrin Casey", "Currently a student in the University of Missouri School of Medicine",
   "2013", "Diana Salas", "MU School of Medicine Summer Research Intern from Indiana University"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Name, where = Notes)
 ```
 
@@ -452,8 +452,8 @@ tribble(
 # Subset abstracts from bib_entries
 # Add
 # AAA 2022
-Abstracts <- bib_entries %>%
-    filter(str_detect(keyword, "CV/Abstracts")) %>%
+Abstracts <- bib_entries |>
+    filter(str_detect(keyword, "CV/Abstracts")) |>
     arrange(issued, author)
 ```
 
@@ -462,15 +462,15 @@ Abstracts <- bib_entries %>%
 
 ```{r abstracts}
 if (include_refs) {
-  Abstracts %>% 
+  Abstracts |> 
     slice_tail(n = 20)
 }
 ```
 
 <!--
 ```{r}
-Other <- bib_entries %>%
-    filter(str_detect(keyword, "CV/Other presentations")) %>%
+Other <- bib_entries |>
+    filter(str_detect(keyword, "CV/Other presentations")) |>
     arrange(issued, author)
 ```
 
@@ -478,7 +478,7 @@ Other <- bib_entries %>%
 
 ```{r other}
 if (include_refs) {
-  Other %>% 
+  Other |> 
     slice(1:20)
 }
 ```
@@ -490,7 +490,7 @@ if (include_refs) {
 ## University of Missouri
 
 ```{r}
-read_csv("MU_Teaching.csv", col_types = c("ccc")) %>% 
+read_csv("MU_Teaching.csv", col_types = c("ccc")) |> 
   detailed_entries(when = Dates, what = Course, where = Notes)
 ```
 
@@ -506,7 +506,7 @@ tribble(
   "2008, 2010, 2012", "Graduate Seminar",
   "2008-2011", "Biology Seminar",
   "2008", "Advanced Vertebrate Morphology"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Course)
 ```
 
@@ -536,7 +536,7 @@ tribble(
   "2014", "MU LSUROP Evening Seminar Speaker",
   "2017", "MU Saturday Morning Science",
   "2018", "MU Department of Pathology and Anatomical Sciences"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Location)
 ```
 
@@ -585,7 +585,7 @@ tribble(
 tribble(
   ~ Dates, ~ Service,
   "2012", "Division of Evolutionary Biology -- Systematics and Biodiversity Science"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Service)
 ```
 
@@ -600,7 +600,7 @@ tribble(
   "2012", "National Science Foundation -- IOB",
   "2017", "National Science Foundation -- IOB",
   "2019", "National Science Foundation -- IOB"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Service)
 ```
 
@@ -611,7 +611,7 @@ tribble(
 tribble(
   ~ Dates, ~ Service,
   "2015", "Ad hoc reviewer"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Service)
 ```
 
@@ -624,7 +624,7 @@ tribble(
   "2003", "Miller, KR and JS Levine", "\\emph{Biology}", "Pearson-Prentice Hall",
   "2010", "Tate, P", "\\emph{Anatomy and Physiology}", "McGraw Hill",
   "2010", "Biological Sciences Curriculum Studies", "\\emph{BSCS Biology: A Human Approach}, 4th Ed.", "Kendall Hunt Publishing"
-) %>% 
+) |> 
   detailed_entries(when = Dates, where = Author,
                    what = Title, with = Publisher, .protect=FALSE)
 ```
@@ -636,7 +636,7 @@ tribble(
 tribble(
   ~ Dates, ~ Service,
   "2018", "Life Sciences 1: Molecular and Organismic Biology"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Service)
 ```
 
@@ -657,7 +657,7 @@ tribble(
   "2012-Present", "MU Doctoral Faculty",
   "2012-Present", "MU Graduate Faculty",
   "2012-Present", "Pathobiology Area Program Faculty"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Service)
 ```
 
@@ -685,7 +685,7 @@ tribble(
   "2014-2018", "MU Life Sciences Week poster competition judge",
   "2013-2019", "PAS Lecturer Search Committee",
   "2013-2014", "School of Medicine Block 4 Planning Committee"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Service)
 ```
 
@@ -701,7 +701,7 @@ tribble(
   "2007-2012", "Health Professions Advisory Committee",
   "2007-2012", "Biology Department Webmaster",
   "2009", "College of Natural Sciences Outstanding Students Evaluation Committee"
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Service)
 ```
 
@@ -725,7 +725,7 @@ tribble(
   "2009", "Discovery Channel -- Megabeasts", "Discovery Channel's Megabeasts also features an episode on Terror Birds",
   "2008", "Coastline Community College", "On-camera expert on skeletal biology for an Anatomy & Physiology course produced by Coastline Community College (Orange County, CA). This course will be utilized by 2-year colleges and 4-year universities as well as broadcast locally by PBS.",
   "2008", "CBC Television Canada -- Project X", "The Project X episode 'Flight' showcases collaborative work with Drs. Sharon Swartz, Kenneth Breuer, Daniel Riskin, and Jose Iriarte-Diaz on the aeromechanics of bat flight."
-) %>% 
+) |> 
   detailed_entries(when = Dates, what = Title, where = Notes)
 ```
 
