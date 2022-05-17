@@ -455,10 +455,10 @@ University of Missouri only. 23 additional students at CSU San Bernardino, Brown
 ```{r, UG_mentoring}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
-  "2021-Present", "Kayla Robinson", "",
-  "2021-Present", "Adam Albright", "",
+  "2021-Present", "Adam Albright", "MU A&S Summer Scholar",
   "2020-Present", "Madison LaChance", "MU Cherng Summer Scholar",
   "2019-Present", "Joshua Fajardo", "",
+  "2021-2022", "Kayla Robinson", "MU DBS Honors Student",
   "2018", "Kendra Lewis", "MU School of Medicine Summer Research Intern from Washington University in St. Louis",
   "2016-2019", "Alec Wilken", "Currently doctoral student at the University of Chicago",
   "2016-2018", "Caitlyn Smith", "Currently a student in the University of Missouri School of Medicine",
@@ -470,7 +470,7 @@ tribble(
   "2015", "Kyle Kirkland", "MU School of Medicine Summer Research Intern from Michigan State University",
   "2014-2015", "Imran Rashid", "",
   "2014-2015", "Michael Sojka", "C3 Hughes Research Fellow, MU School of Journalism",
-  "2014", "Tarrin Casey", "Currently a student in the University of Missouri School of Medicine",
+  "2014", "Tarrin Casey, MD", "Graduate from the University of Missouri School of Medicine",
   "2013", "Diana Salas", "MU School of Medicine Summer Research Intern from Indiana University"
 ) |> 
   detailed_entries(when = Dates,
