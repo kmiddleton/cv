@@ -456,9 +456,9 @@ University of Missouri only. 23 additional students at CSU San Bernardino, Brown
 tribble(
   ~ Dates, ~ Name, ~ Notes,
   "2021-Present", "Adam Albright", "MU A&S Summer Scholar",
-  "2020-Present", "Madison LaChance", "MU Cherng Summer Scholar",
-  "2019-Present", "Joshua Fajardo", "",
   "2021-2022", "Kayla Robinson", "MU DBS Honors Student",
+  "2020-2022", "Madison LaChance", "MU Cherng Summer Scholar",
+  "2019-2022", "Joshua Fajardo", "",
   "2018", "Kendra Lewis", "MU School of Medicine Summer Research Intern from Washington University in St. Louis",
   "2016-2019", "Alec Wilken", "Currently doctoral student at the University of Chicago",
   "2016-2018", "Caitlyn Smith", "Currently a student in the University of Missouri School of Medicine",
