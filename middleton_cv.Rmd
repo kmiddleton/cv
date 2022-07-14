@@ -36,7 +36,8 @@ include_refs <- TRUE
 ```{r, echo=FALSE}
 tribble(
   ~ Position, ~ University, ~ Location, ~ Dates,
-  "Associate Professor, Department of Pathology & Anatomical Sciences", "University of Missouri", "Columbia, MO", "2012 - Present",
+  "Associate Professor, Division of Biological Sciences", "University of Missouri", "Columbia, MO", "2022 - Present",
+  "Associate Professor, Department of Pathology & Anatomical Sciences", "University of Missouri", "Columbia, MO", "2012 - 2022",
   "Assistant to Associate Professor, Department of Biology", "CSU San Bernardino", "San Bernardino, CA", "2007 - 2012",
   "NIH NRSA Postdoctoral Fellow", "Brown University and University of California, Riverside", "Providence, RI and Riverside, CA", "2005 - 2007",
   "Postdoctoral Research Associate, Department of Ecology and Evolutionary Biology", "Brown University", "Providence, RI", "2003 - 2005"
@@ -97,17 +98,17 @@ tribble(
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
+        "2022-2023", 
+        "Biomechanics of Grasping in Primates",
+        "Leakey Foundation",
+        "Carol Ward, Casey Holliday, and \\textbf{Kevin Middleton} (co-PI) \\\\ \\$25,000",
+        "This project will use contrast-enhanced µCT imagery combined with machine learning and computational biology to visualize, quantify, and compare the musculoskeletal anatomy and biomechanical potential associated with the hands and feet of humans and our closest living relatives, chimpanzees and gorillas, in 3D and in situ for the first time. This will provide the first-ever 3D digital archives of the intact soft tissue anatomy of chimpanzee, gorilla and human hands and feet. (\\$24,995)",
+        
         "2021-2023", 
         "Maturation-based prediction of craniofacial growth",
         "University of Missouri TRIUMPH",
         "RJ Sherwood and D Duren (Multiple PI) \\\\ \\textbf{Kevin Middleton}: co-Investigator (5\\% salary support)",
-        "This project leverages the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters. (\\$100,000)",
-        
-        "2015--2022",
-        "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
-        "NIH NIDCR",
-        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)",
-        "We have identified landmarks on over 25,000 lateral cephalographs from 5,247 individuals age 0-27 years from eight growth studies. This research will 1) estimate population- and individual-level timing of pubertal growth and adult size for multiple craniofacial traits, 2) provide diagnostic reference charts for craniofacial measures, 3) develop prognostic tools to predict remaining growth/change and the timing of the pubertal growth spurt for craniofacial traits, 4) make these valuable resources available to clinicians and researchers via an easy-to-use free web-based application.") |> 
+        "This project leverages the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters. (\\$100,000)") |> 
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -122,14 +123,10 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "2022",
-        "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
+        "R01 - Improved craniofacial growth standards: skeletal maturation-based models",
         "NIH NIDCR",
-        "Richard Sherwood, \\textbf{Kevin Middleton}, Heesoo Oh, Kieran McNulty (Multiple PI)",
+        "Richard Sherwood (PI), Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I). (\\$2,555,040)"
         
-        "2022", 
-        "Biomechanics of Grasping in Primates",
-        "Leakey Foundation",
-        "Carol Ward, Casey Holliday, and \\textbf{Kevin Middleton} (co-PI) \\\\ \\$25,000"
 ) |> 
   detailed_entries(when = Dates,
                    what = Title,
@@ -146,12 +143,8 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "TBS 2022",
         "R01 - Connecting the Genome to Structure and Function of Wing Morphology and Flight Performance in \\emph{Drosophila}",
         "NIH NIGMS",
-        "Elizabeth King and \\textbf{Kevin Middleton} (Multiple PI)",
-        
-        "TBS 2022", 
-        "R01 - Maturation-based Prediction of Craniofacial Growth",
-        "NIH NIDCR",
-        "Richard Sherwood, Dana Duren, and \\textbf{Kevin Middleton} (Multiple PI)") |> 
+        "Elizabeth King and \\textbf{Kevin Middleton} (Multiple PI)"
+) |> 
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -164,6 +157,12 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
+        "2015--2022",
+        "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
+        "NIH NIDCR",
+        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)",
+        "We have identified landmarks on over 25,000 lateral cephalographs from 5,247 individuals age 0-27 years from eight growth studies. This research will 1) estimate population- and individual-level timing of pubertal growth and adult size for multiple craniofacial traits, 2) provide diagnostic reference charts for craniofacial measures, 3) develop prognostic tools to predict remaining growth/change and the timing of the pubertal growth spurt for craniofacial traits, 4) make these valuable resources available to clinicians and researchers via an easy-to-use free web-based application.",
+        
         "2019--2020",
         "Administrative Supplement to \\emph{Craniofacial Growth Prediction in Different Facial Types}",
         "NIH NIDCR",
@@ -248,7 +247,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "Kevin Middleton, PI",
         "Grant in support of doctoral dissertation research"
         
-        ) |> 
+) |> 
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -376,7 +375,7 @@ tribble(
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
   "2015-2019", "Sarah Peacock", "Ph.D. University of Missouri", "Currently Assistant Teaching Professor at Northeastern University",
-  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently an Assistant Teaching Professor at Roanoke College",
+  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently an Assistant Professor at St. Norbert College",
   "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Completed doctoral studies at University of California, Riverside",
   "2010-2012", "Brittney Coats", "M.S., CSUSB", "Completed doctoral studies at the University of Chicago",
   "2008-2012", "Susan Lujan", "M.S., CSUSB", "Currently a lecturer at California State University, San Bernardino"
@@ -397,7 +396,6 @@ tribble(
   ~ Dates, ~ Name, ~ Degree,
   "2021-Present", "Mara Fields", "Ph.D.; Pathobiology",
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology",
-  "2020-Present", "Gabriel Jacobs", "Ph.D.; Geological Sciences",
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
   "2018-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
   "2018-Present", "Austin Lawrence", "Ph.D.; Pathobiology",
@@ -414,8 +412,9 @@ tribble(
 ```{r, past_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2020-2022", "Gabriel Jacobs", "Ph.D.; Geological Sciences", "Currently lecturer, Cornell College",
   "2018-2022", "Sean Greer", "Ph.D.; Pathobiology", "Currently lecturer, University of Missouri",
-  "2018-2022", "Emily Lessner", "Ph.D.; Pathobiology", "",
+  "2018-2022", "Emily Lessner", "Ph.D.; Pathobiology", "Currently at Petrified National Forest",
   "2016-2022", "Elizabeth Cho", "Ph.D.; Anthropology", "Currently postdoctoral researcher, UNTHSC",
   "2016-2021", "Deise Cruz", "Ph.D.; Biological Sciences", "",
   "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, Rocky Vista University",
@@ -484,8 +483,8 @@ tribble(
 # Add
 # AAA 2022
 Abstracts <- bib_entries |>
-    filter(str_detect(keyword, "CV/Abstracts")) |>
-    arrange(issued, author)
+  filter(str_detect(keyword, "CV/Abstracts")) |>
+  arrange(desc(issued), author)
 ```
 
 
@@ -494,23 +493,23 @@ Abstracts <- bib_entries |>
 ```{r abstracts}
 if (include_refs) {
   Abstracts |> 
-    slice_tail(n = 20)
+    slice_head(n = 20)
 }
 ```
 
 <!--
 ```{r}
 Other <- bib_entries |>
-    filter(str_detect(keyword, "CV/Other presentations")) |>
-    arrange(issued, author)
+filter(str_detect(keyword, "CV/Other presentations")) |>
+arrange(issued, author)
 ```
 
 ## Other Presentations (most recent 20 of `r nrow(Other)`)
 
 ```{r other}
 if (include_refs) {
-  Other |> 
-    slice(1:20)
+Other |> 
+slice(1:20)
 }
 ```
 -->
