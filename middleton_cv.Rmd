@@ -31,6 +31,13 @@ library(tidyverse)
 include_refs <- TRUE
 ```
 
+```{r include=FALSE}
+## FIXME Publications
+# SVP 2022
+# SICB 2023
+# AABA 2023
+```
+
 # Professional Experience
 
 ```{r, echo=FALSE}
@@ -255,11 +262,6 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
                    why = Notes,
                    .protect = FALSE)
 ```
-
-```{r include=FALSE}
-## FIXME Publications
-```
-
 
 # Publications
 
