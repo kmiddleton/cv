@@ -32,10 +32,10 @@ include_refs <- TRUE
 
 ```{r include=FALSE}
 ## FIXME Publications
-# SVP 2022
 # SICB 2023
 # AABA 2023
 ```
+
 
 # Professional Experience
 
@@ -53,6 +53,7 @@ tribble(
                    where = University,
                    with = Location)
 ```
+
 
 # Education
 
@@ -418,8 +419,8 @@ tribble(
   "2018-2022", "Emily Lessner", "Ph.D.; Pathobiology", "Currently at Petrified National Forest",
   "2016-2022", "Elizabeth Cho", "Ph.D.; Anthropology", "Currently postdoctoral researcher, UNTHSC",
   "2016-2021", "Deise Cruz", "Ph.D.; Biological Sciences", "",
-  "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, Rocky Vista University",
-  "2017-2021", "Faye McGechie", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Chicago",
+  "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Chicago",
+  "2017-2021", "Faye McGechie", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Arizona",
   "2017-2020", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology", "Currently pursuing certificate in nutrition, University of Missouri",
   "2019-2020", "Mikaela Pulsipher", "M.S.; Geological Sciences", "Currently doctoral student at University of Missouri",
   "2019-2020", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Currently doctoral student at University of Chicago",
@@ -689,6 +690,7 @@ tribble(
 ```{r, current_service}
 tribble(
   ~ Dates, ~ Service,
+  "2022-Present", "DBS Graduate Education Committee",
   "2020-Present", "MUSOM MedPrep 2 Interviewer",
   "2012-Present", "MU Doctoral Faculty",
   "2012-Present", "MU Graduate Faculty",
