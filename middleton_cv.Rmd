@@ -17,6 +17,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::hyndman
 headcolor: 10069B
 papersize: letterpaper
+bib: "cell-numeric.csl"
 ---
 
 \renewcommand{\labelitemi}{\textbullet}
@@ -126,6 +127,10 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
 
 
 # Grants in Review
+
+- Spine Growth
+- CBCT
+- Growth plate
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
@@ -490,12 +495,12 @@ Abstracts <- bib_entries |>
 ```
 
 
-# Published Abstracts (most recent 20 of `r nrow(Abstracts)`)
+# Published Abstracts (most recent 40 of `r nrow(Abstracts)`)
 
 ```{r abstracts}
 if (include_refs) {
   Abstracts |> 
-    slice_head(n = 20)
+    slice_head(n = 40)
 }
 ```
 
