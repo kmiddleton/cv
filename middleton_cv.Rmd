@@ -488,19 +488,18 @@ tribble(
 ```{r}
 # Subset abstracts from bib_entries
 # Add
-# AAA 2022
 Abstracts <- bib_entries |>
   filter(str_detect(keyword, "CV/Abstracts")) |>
   arrange(desc(issued), author)
 ```
 
 
-# Published Abstracts (most recent 40 of `r nrow(Abstracts)`)
+# Published Abstracts (most recent 50 of `r nrow(Abstracts)`)
 
 ```{r abstracts}
 if (include_refs) {
   Abstracts |> 
-    slice_head(n = 40)
+    slice_head(n = 50)
 }
 ```
 
