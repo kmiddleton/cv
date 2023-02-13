@@ -77,7 +77,7 @@ My overall research focuses on form, physiology, and function of the skeletal an
 
 ## Development of Bayesian and machine learning models for the prediction of craniofacial growth in humans.
 
-- For orthodontic and craniofacial interventions, estimation of the timing of peak growth and/or the amount of remaining growth is is important for planning treatment. We are seeking to estimate these quantities for a wide range of traits in two- and three-dimensional imaging.
+- For orthodontic and craniofacial interventions, estimation of the timing of peak growth and/or the amount of remaining growth is important for planning treatment. We are seeking to estimate these quantities for a wide range of traits in two- and three-dimensional imaging.
 
 ## Evolution of the reptile head: integrating cranial biomechanics, muscle modeling, and brain evolution to understand cranial kinesis and diversity
 
