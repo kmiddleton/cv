@@ -128,17 +128,33 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
 
 # Grants in Review
 
-- Spine Growth
-- CBCT
-- Growth plate
-
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "2022",
         "R01 - Improved craniofacial growth standards: skeletal maturation-based models",
         "NIH NIDCR",
-        "Richard Sherwood (PI), Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I). (\\$2,555,040)"
+        "Richard Sherwood (PI), Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I). (\\$2,555,040)",
         
+        "2022",
+        "Upgrade of the X-ray tomographic microscope to expand operations at the University of Missouri X-ray Microanalysis Laboratory",
+        "NSF",
+        "James Schiffbauer (PI), Sarah Jacquet (Co-PI), Casey Holliday (Co-PI), \\textbf{Kevin Middleton} (Co-PI), Tara Selly (Co-PI). (\\$599,996)",
+        
+        "2022",
+        "R01 - Maturation-based modeling of segmental spinal growth",
+        "NIH NIAMS",
+        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), John Shepherd (CO-I), Babette Zemel (Co-I). (\\$3,053,893)",
+
+        "2023",
+        "R01 - Mechanistic Role of Microstructure on the Mechanical Properties of the Maturing Growth Plate",
+        "NIH NIAMS",
+        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), Maria Serrat (CO-I), Antonis Stylianou (Co-I). (\\$1,689,908)",
+
+         "2023",
+        "R01 - Evidence-based optimization of treatment timing in the craniofacial complex",
+        "NIH NIDCR",
+        "Richard Sherwood (PI), Dana Duren (co-I), Kieran McNulty (co-PI), \\textbf{Kevin Middleton} (Co-PI), Heesoo Oh (co-PI), Manish Valiathan (co-PI). (\\$3,487,078)"
+       
 ) |> 
   detailed_entries(when = Dates,
                    what = Title,
@@ -147,12 +163,16 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
                    .protect = FALSE)
 ```
 
-
 # Grants in Preparation
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
-        "TBS 2022",
+        "TBS 2023",
+        "Functional morphology of the mammal hand and foot using contrast-enhanced 3D imaging",
+        "NSF",
+        "Casey Holliday (co-PI), \\textbf{Kevin Middleton} (Co-PI), Carol Ward (co-PI)",
+        
+        "TBS 2024",
         "R01 - Connecting the Genome to Structure and Function of Wing Morphology and Flight Performance in \\emph{Drosophila}",
         "NIH NIGMS",
         "Elizabeth King and \\textbf{Kevin Middleton} (Multiple PI)"
@@ -698,6 +718,7 @@ tribble(
   "2023-Present", "Division of Biological Sciences Graduate Faculty",
   "2022-Present", "DBS Graduate Education Committee",
   "2020-Present", "MUSOM MedPrep 2 Interviewer",
+  "2013-2016, 2019-Present", "SOM Summer Research Internship in Medical Sciences Selection Committee",
   "2012-Present", "MU Doctoral Faculty",
   "2012-Present", "MU Graduate Faculty",
   "2012-Present", "Pathobiology Area Doctoral Program Graduate Faculty"
@@ -718,7 +739,6 @@ tribble(
   "2020-2022", "SOM Block 4 Planning Committee",
   "2018-2022", "SOM Faculty Committee for Diversity and Inclusion",
   "2015-2022", "SOM Advice Support and Career (ASC) Preclerkship Advisor",
-  "2013-2016, 2019-2022", "SOM Summer Research Internship in Medical Sciences Selection Committee",
   "2014-2019", "SOM eResources Committee",
   "2014-2019", "SOM Block 2 Planning Committee",
   "2013, 2015-2019", "PAS Assistant Teaching Professor Search Committee",
@@ -763,9 +783,7 @@ tribble(
 - American Association of Anatomists
 - International Association of Dental Research
 - International Society of Vertebrate Morphology
-- Society of Avian Paleontology and Evolution
 - Society of Integrative and Comparative Biology
-- Society of Vertebrate Paleontology
 
 
 # Televised Outreach
