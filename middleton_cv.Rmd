@@ -421,6 +421,7 @@ tribble(
 ```{r, current_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree,
+  "2023-Present", "Esdras Tuyshimire", "Ph.D.; Biologcal Sciences",
   "2021-Present", "Mara Fields", "Ph.D.; Pathobiology",
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology",
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
