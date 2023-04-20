@@ -509,6 +509,8 @@ tribble(
 ```{r}
 # Subset abstracts from bib_entries
 # Add
+# AABA 2023: Steer, Fields, Lawrence
+#
 Abstracts <- bib_entries |>
   filter(str_detect(keyword, "CV/Abstracts")) |>
   arrange(desc(issued), author)
