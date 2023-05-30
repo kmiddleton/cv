@@ -421,6 +421,7 @@ tribble(
 ```{r, current_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree,
+  "2023-Present", "Christopher Zobek", "Ph.D.; Pathobiology",
   "2023-Present", "Esdras Tuyshimire", "Ph.D.; Biologcal Sciences",
   "2021-Present", "Mara Fields", "Ph.D.; Pathobiology",
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology",
@@ -509,7 +510,6 @@ tribble(
 ```{r}
 # Subset abstracts from bib_entries
 # Add
-# AABA 2023: Steer, Fields, Lawrence
 #
 Abstracts <- bib_entries |>
   filter(str_detect(keyword, "CV/Abstracts")) |>
