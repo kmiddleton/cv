@@ -33,8 +33,8 @@ include_refs <- TRUE
 
 ```{r include=FALSE}
 ## FIXME Publications
-# SICB 2023
-# AABA 2023
+
+
 ```
 
 
@@ -106,6 +106,12 @@ tribble(
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
+        "2023-2025",
+        "EA: Upgrade of the X-ray tomographic microscope to expand operations at the University of Missouri X-ray Microanalysis Laboratory",
+        "NSF EAR",
+        "Tara Selly (PI), \\textbf{Kevin Middleton} (Co-PI), Casey Holliday (Co-PI), James Schiffbauer (Co-PI), Sarah Jacquet (Co-PI).",
+        "This instrumentation grant will support enhancements and upgrades to the X-ray microsope facility a tthe University of Missouri (\\$624,996)",
+        
         "2022-2023", 
         "Biomechanics of Grasping in Primates",
         "Leakey Foundation",
@@ -130,17 +136,12 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
-        "2022",
+        "2023",
         "R01 - Improved craniofacial growth standards: skeletal maturation-based models",
         "NIH NIDCR",
         "Richard Sherwood (PI), Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I). (\\$2,555,040)",
         
-        "2022",
-        "Upgrade of the X-ray tomographic microscope to expand operations at the University of Missouri X-ray Microanalysis Laboratory",
-        "NSF",
-        "James Schiffbauer (PI), Sarah Jacquet (Co-PI), Casey Holliday (Co-PI), \\textbf{Kevin Middleton} (Co-PI), Tara Selly (Co-PI). (\\$599,996)",
-        
-        "2022",
+        "2023",
         "R01 - Maturation-based modeling of segmental spinal growth",
         "NIH NIAMS",
         "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), John Shepherd (CO-I), Babette Zemel (Co-I). (\\$3,053,893)",
@@ -162,6 +163,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
                    where = PIs,
                    .protect = FALSE)
 ```
+
 
 # Grants in Preparation
 
