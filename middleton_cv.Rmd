@@ -423,6 +423,7 @@ tribble(
 ```{r, current_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree,
+  "2023-Present", "Olivia Bongiovi", "Ph.D.; Natural Resources",
   "2023-Present", "Christopher Zobek", "Ph.D.; Pathobiology",
   "2023-Present", "Esdras Tuyshimire", "Ph.D.; Biologcal Sciences",
   "2021-Present", "Mara Fields", "Ph.D.; Pathobiology",
