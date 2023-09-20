@@ -390,7 +390,7 @@ if (include_refs) {
 ```{r postdoc}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
-  "2015-2018", "Alida Bailleul, PhD", "Currently an Assistant Professor at the Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
+  "2015-2018", "Alida Bailleul, PhD", "Currently an Assistant Professor, Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
 ) |> 
   detailed_entries(when = Dates,
                    what = Name,
@@ -404,10 +404,10 @@ tribble(
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
   "2015-2019", "Sarah Peacock", "Ph.D. University of Missouri", "Currently Assistant Teaching Professor at Northeastern University",
-  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently an Assistant Professor at St. Norbert College",
+  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently Assistant Professor at St. Norbert College",
   "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Completed doctoral studies at University of California, Riverside",
   "2010-2012", "Brittney Coats", "M.S., CSUSB", "Completed doctoral studies at the University of Chicago",
-  "2008-2012", "Susan Lujan", "M.S., CSUSB", "Currently a lecturer at California State University, San Bernardino"
+  "2008-2012", "Susan Lujan", "M.S., CSUSB", ""
 ) |> 
   detailed_entries(when = Dates,
                    what = Name,
@@ -430,7 +430,6 @@ tribble(
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology",
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
   "2018-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
-  "2018-Present", "Austin Lawrence", "Ph.D.; Pathobiology",
   "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
 ) |> 
   detailed_entries(when = Dates,
@@ -444,11 +443,12 @@ tribble(
 ```{r, past_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2018-2023", "Austin Lawrence", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Chicago",
   "2020-2022", "Gabriel Jacobs", "Ph.D.; Geological Sciences", "Currently lecturer, Cornell College",
   "2018-2022", "Sean Greer", "Ph.D.; Pathobiology", "Currently lecturer, University of Missouri",
   "2018-2022", "Emily Lessner", "Ph.D.; Pathobiology", "Currently at Petrified National Forest",
   "2016-2022", "Elizabeth Cho", "Ph.D.; Anthropology", "Currently postdoctoral researcher, UNTHSC",
-  "2016-2021", "Deise Cruz", "Ph.D.; Biological Sciences", "",
+  "2016-2021", "Deise Cruz", "Ph.D.; Biological Sciences", " ",
   "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Chicago",
   "2017-2021", "Faye McGechie", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Arizona",
   "2017-2020", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology", "Currently pursuing certificate in nutrition, University of Missouri",
