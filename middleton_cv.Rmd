@@ -116,13 +116,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "Biomechanics of Grasping in Primates",
         "Leakey Foundation",
         "Carol Ward, Casey Holliday, and \\textbf{Kevin Middleton} (co-PI) \\\\ \\$25,000",
-        "This project will use contrast-enhanced µCT imagery combined with machine learning and computational biology to visualize, quantify, and compare the musculoskeletal anatomy and biomechanical potential associated with the hands and feet of humans and our closest living relatives, chimpanzees and gorillas, in 3D and in situ for the first time. This will provide the first-ever 3D digital archives of the intact soft tissue anatomy of chimpanzee, gorilla and human hands and feet. (\\$24,995)",
-        
-        "2021-2023", 
-        "Maturation-based prediction of craniofacial growth",
-        "University of Missouri TRIUMPH",
-        "RJ Sherwood and D Duren (Multiple PI) \\\\ \\textbf{Kevin Middleton}: co-Investigator (5\\% salary support)",
-        "This project leverages the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters. (\\$100,000)") |> 
+        "This project will use contrast-enhanced µCT imagery combined with machine learning and computational biology to visualize, quantify, and compare the musculoskeletal anatomy and biomechanical potential associated with the hands and feet of humans and our closest living relatives, chimpanzees and gorillas, in 3D and in situ for the first time. This will provide the first-ever 3D digital archives of the intact soft tissue anatomy of chimpanzee, gorilla and human hands and feet. (\\$24,995)") |> 
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -144,18 +138,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "2023",
         "R01 - Maturation-based modeling of segmental spinal growth",
         "NIH NIAMS",
-        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), John Shepherd (CO-I), Babette Zemel (Co-I). (\\$3,053,893)",
-
-        "2023",
-        "R01 - Mechanistic Role of Microstructure on the Mechanical Properties of the Maturing Growth Plate",
-        "NIH NIAMS",
-        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), Maria Serrat (CO-I), Antonis Stylianou (Co-I). (\\$1,689,908)",
-
-         "2023",
-        "R01 - Evidence-based optimization of treatment timing in the craniofacial complex",
-        "NIH NIDCR",
-        "Richard Sherwood (PI), Dana Duren (co-I), Kieran McNulty (co-PI), \\textbf{Kevin Middleton} (Co-PI), Heesoo Oh (co-PI), Manish Valiathan (co-PI). (\\$3,487,078)"
-       
+        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), John Shepherd (CO-I), Babette Zemel (Co-I). (\\$3,053,893)"
 ) |> 
   detailed_entries(when = Dates,
                    what = Title,
@@ -169,15 +152,20 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
-        "TBS 2023",
+        "TBS 2024",
         "Functional morphology of the mammal hand and foot using contrast-enhanced 3D imaging",
         "NSF",
         "Casey Holliday (co-PI), \\textbf{Kevin Middleton} (Co-PI), Carol Ward (co-PI)",
-        
+
+         "TBS 2024",
+        "R01 - Evidence-based optimization of treatment timing in the craniofacial complex",
+        "NIH NIDCR",
+        "Richard Sherwood (PI), Dana Duren (co-I), Kieran McNulty (co-PI), \\textbf{Kevin Middleton} (Co-PI), Heesoo Oh (co-PI), Manish Valiathan (co-PI). (\\$3,487,078)",
+
         "TBS 2024",
-        "R01 - Connecting the Genome to Structure and Function of Wing Morphology and Flight Performance in \\emph{Drosophila}",
-        "NIH NIGMS",
-        "Elizabeth King and \\textbf{Kevin Middleton} (Multiple PI)"
+        "R01 - Mechanistic Role of Microstructure on the Mechanical Properties of the Maturing Growth Plate",
+        "NIH NIAMS",
+        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), Maria Serrat (CO-I), Antonis Stylianou (Co-I). (\\$1,689,908)"
 ) |> 
   detailed_entries(when = Dates,
                    what = Title,
@@ -191,6 +179,12 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
+        "2021--2023", 
+        "Maturation-based prediction of craniofacial growth",
+        "University of Missouri TRIUMPH",
+        "RJ Sherwood and D Duren (Multiple PI) \\\\ \\textbf{Kevin Middleton}: co-Investigator (5\\% salary support)",
+        "This project leverages the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters. (\\$100,000)",
+        
         "2015--2022",
         "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
         "NIH NIDCR",
@@ -297,10 +291,12 @@ A full list of my published work can be found at: \href{https://www.ncbi.nlm.nih
 
 ## Dissertation
 
-```{r dissertation}
+```{r}
 # Load bib file
 bib_entries <- bibliography_entries("Paperpile.bib")
+```
 
+```{r doctoral-dissertation, eval=TRUE}
 if (include_refs) {
   bib_entries |>
     filter(str_detect(keyword, "CV/Dissertation"))
@@ -428,9 +424,7 @@ tribble(
   "2023-Present", "Esdras Tuyshimire", "Ph.D.; Biologcal Sciences",
   "2021-Present", "Mara Fields", "Ph.D.; Pathobiology",
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology",
-  "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences",
-  "2018-Present", "Samuel Sullivan", "Ph.D.; Pathobiology",
-  "2015-Present", "Rob'yn Johnston", "Ph.D.; Anthropology"
+  "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences"
 ) |> 
   detailed_entries(when = Dates,
                    what = Name,
@@ -443,6 +437,7 @@ tribble(
 ```{r, past_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2015-2023", "Rob'yn Johnston", "Ph.D.; Anthropology", "Currently employed as a consultant",
   "2018-2023", "Austin Lawrence", "Ph.D.; Pathobiology", "Currently postdoctoral researcher, University of Chicago",
   "2020-2022", "Gabriel Jacobs", "Ph.D.; Geological Sciences", "Currently lecturer, Cornell College",
   "2018-2022", "Sean Greer", "Ph.D.; Pathobiology", "Currently lecturer, University of Missouri",
