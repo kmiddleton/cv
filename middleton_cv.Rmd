@@ -128,12 +128,12 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "2023",
         "R01 - Improved craniofacial growth standards: skeletal maturation-based models",
         "NIH NIDCR",
-        "Richard Sherwood (PI), Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I). (\\$2,555,040)",
+        "Richard Sherwood (PI), Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I). (\\$2,746,185)",
         
         "2023",
         "R01 - Maturation-based modeling of segmental spinal growth",
         "NIH NIAMS",
-        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), John Shepherd (CO-I), Babette Zemel (Co-I). (\\$3,053,893)"
+        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), John Shepherd (CO-I), Babette Zemel (Co-I). (\\$3,883,957)"
 ) |> 
   detailed_entries(when = Dates,
                    what = Title,
