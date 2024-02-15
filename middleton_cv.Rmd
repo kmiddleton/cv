@@ -110,13 +110,8 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
         "EA: Upgrade of the X-ray tomographic microscope to expand operations at the University of Missouri X-ray Microanalysis Laboratory",
         "NSF EAR",
         "Tara Selly (PI), \\textbf{Kevin Middleton} (Co-PI), Casey Holliday (Co-PI), James Schiffbauer (Co-PI), Sarah Jacquet (Co-PI).",
-        "This instrumentation grant will support enhancements and upgrades to the X-ray microsope facility a tthe University of Missouri (\\$624,996)",
-        
-        "2022-2023", 
-        "Biomechanics of Grasping in Primates",
-        "Leakey Foundation",
-        "Carol Ward, Casey Holliday, and \\textbf{Kevin Middleton} (co-PI) \\\\ \\$25,000",
-        "This project will use contrast-enhanced µCT imagery combined with machine learning and computational biology to visualize, quantify, and compare the musculoskeletal anatomy and biomechanical potential associated with the hands and feet of humans and our closest living relatives, chimpanzees and gorillas, in 3D and in situ for the first time. This will provide the first-ever 3D digital archives of the intact soft tissue anatomy of chimpanzee, gorilla and human hands and feet. (\\$24,995)") |> 
+        "This instrumentation grant will support enhancements and upgrades to the X-ray microsope facility a tthe University of Missouri (\\$624,996)"
+        ) |> 
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -179,6 +174,12 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
+        "2022-2023", 
+        "Biomechanics of Grasping in Primates",
+        "Leakey Foundation",
+        "Carol Ward, Casey Holliday, and \\textbf{Kevin Middleton} (co-PI) \\\\ \\$25,000",
+        "This project will use contrast-enhanced µCT imagery combined with machine learning and computational biology to visualize, quantify, and compare the musculoskeletal anatomy and biomechanical potential associated with the hands and feet of humans and our closest living relatives, chimpanzees and gorillas, in 3D and in situ for the first time. This will provide the first-ever 3D digital archives of the intact soft tissue anatomy of chimpanzee, gorilla and human hands and feet. (\\$24,995)",
+        
         "2021--2023", 
         "Maturation-based prediction of craniofacial growth",
         "University of Missouri TRIUMPH",
@@ -326,6 +327,17 @@ if (include_refs) {
 ```
 
 
+## Preprints
+
+```{r preprints, eval=TRUE}
+if (include_refs) {
+  bib_entries |>
+    filter(str_detect(keyword, "CV/Preprints")) |>
+    arrange(issued, author)
+}
+```
+
+
 ## Book Chapters
 
 ```{r book-chapters, eval=TRUE}
@@ -419,9 +431,11 @@ tribble(
 ```{r, current_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree,
+  "2024-Present", "Nadine Steer", "Ph.D.; Pathobiology",
+  "2024-Present", "Tom Burges", "Ph.D.; Biological Sciences",
   "2023-Present", "Olivia Bongiovi", "Ph.D.; Natural Resources",
   "2023-Present", "Christopher Zobek", "Ph.D.; Pathobiology",
-  "2023-Present", "Esdras Tuyshimire", "Ph.D.; Biologcal Sciences",
+  "2023-Present", "Esdras Tuyishimire", "Ph.D.; Biologcal Sciences",
   "2021-Present", "Mara Fields", "Ph.D.; Pathobiology",
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology",
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences"
@@ -515,12 +529,12 @@ Abstracts <- bib_entries |>
 ```
 
 
-# Published Abstracts (most recent 50 of `r nrow(Abstracts)`)
+# Published Abstracts (most recent 20 of `r nrow(Abstracts)`)
 
 ```{r abstracts}
 if (include_refs) {
   Abstracts |> 
-    slice_head(n = 50)
+    slice_head(n = 20)
 }
 ```
 
