@@ -432,6 +432,7 @@ tribble(
 tribble(
   ~ Dates, ~ Name, ~ Degree,
   "2024-Present", "Nadine Steer", "Ph.D.; Pathobiology",
+  "2024-Present", "Peyton Warren", "Ph.D.; Biological Sciences",
   "2024-Present", "Tom Burges", "Ph.D.; Biological Sciences",
   "2023-Present", "Olivia Bongiovi", "Ph.D.; Natural Resources",
   "2023-Present", "Christopher Zobek", "Ph.D.; Pathobiology",
