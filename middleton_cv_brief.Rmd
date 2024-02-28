@@ -5,7 +5,7 @@ position: |
   | Division of Biological Sciences
   | University of Missouri
 address: |
-  | 222 Tucker Hall
+  | 224 Tucker Hall
   | Columbia, MO 65211
 www: middletonlab.org
 email: "middletonk@missouri.edu"
@@ -81,7 +81,7 @@ My overall research focuses on form, physiology, and function of the skeletal an
 
 ## Evolution of the reptile head: integrating cranial biomechanics, muscle modeling, and brain evolution to understand cranial kinesis and diversity
 
-- Computational modelling of cranial function has allowed us to estimate all the forces acting on the jaws and skull. We are developing techniques to apply contrast-enhanced imaging to refine muscle force estimates and generate a complete picture of head function.
+- e are developing techniques to apply contrast-enhanced imaging to refine muscle force estimates and generate a complete picture of head function.
 
 ## Effects of exercise and genetic background on skeletal form, physiology, and biomechanics using high activity mice as a model organism
 
@@ -216,20 +216,6 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
 A full list of my published work can be found at: \href{https://www.ncbi.nlm.nih.gov/myncbi/kevin.middleton.1/bibliography/public/}{\color[HTML]{000090}{NIH PubMed}}
 
 
-## Recent Research Papers
-
-```{r research-papers, eval=TRUE}
-bib_entries <- bibliography_entries("Paperpile.bib")
-
-if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/Papers")) |>
-    arrange(issued, author) |> 
-    slice_head(n = 15)
-}
-```
-
-
 # Undergraduate Mentoring
 
 University of Missouri only. 23 additional students at CSU San Bernardino, Brown University, and UC Riverside (2003--2012).
@@ -349,6 +335,7 @@ tribble(
 ```{r, seminars}
 tribble(
   ~ Dates, ~ Location,
+  "2023", "New Mexico State University",
   "2022", "MU Undergraduate Summer Research Program",
   "2021", "MU Division of Biological Sciences",
   "2018", "MU Department of Pathology and Anatomical Sciences",
@@ -374,133 +361,6 @@ tribble(
 ) |> 
   detailed_entries(when = Dates,
                    what = Location)
-```
-
-
-# Professional Service
-
-## Referee
-
-- Acta Anatomica
-- Acta Palaeontologica Polonica
-- Acta Zoologica Sinica
-- Ameghiniana
-- American Journal of Physical Anthropology
-- Anatomical Record
-- Biology Letters
-- Comparative Biochemistry and Physiology
-- Current Biology
-- Evolution
-- IEEE Visualization & Graphics
-- Integrative Organismal Biology
-- International Journal of Primatology
-- Journal of Anatomy
-- Journal of Morphology
-- Journal of Vertebrate Paleontology
-- Journal of Zoology
-- Nature
-- Nature Communications
-- Naturwissenschaften
-- Palaeontology
-- Paleobiology
-- Paleobios
-- PeerJ
-- PLoS One
-- Proceedings of the National Academy of Sciences USA
-- Proceedings of the Royal Society (Biological Sciences)
-- Quarterly Review of Biology
-- Restoration Ecology
-- Royal Society Open Science
-- Zoological Journal of the Linnean Society
-- Zoology
-
-
-## NSF Panel Service
-
-```{r, NSF_Panel}
-tribble(
-  ~ Dates, ~ Service,
-  "2012", "Division of Evolutionary Biology -- Systematics and Biodiversity Science"
-) |> 
-  detailed_entries(when = Dates,
-                   what = Service)
-```
-
-
-## NSF Ad Hoc Reviewer
-
-```{r, NSF_ad_hoc}
-tribble(
-  ~ Dates, ~ Service,
-  "2009", "National Science Foundation -- IOB",
-  "2010", "National Science Foundation -- DEB",
-  "2012", "National Science Foundation -- IOB",
-  "2017", "National Science Foundation -- IOB",
-  "2019", "National Science Foundation -- IOB"
-) |> 
-  detailed_entries(when = Dates,
-                   what = Service)
-```
-
-
-## University of Missouri Research Board
-
-```{r, research_board}
-tribble(
-  ~ Dates, ~ Service,
-  "2015", "Ad hoc reviewer"
-) |> 
-  detailed_entries(when = Dates,
-                   what = Service)
-```
-
-
-## Reviewer (Textbooks)
-
-```{r, textbooks}
-tribble(
-  ~ Dates, ~ Author, ~Title, ~ Publisher,
-  "2003", "Miller, KR and JS Levine", "\\emph{Biology}", "Pearson-Prentice Hall",
-  "2010", "Tate, P", "\\emph{Anatomy and Physiology}", "McGraw Hill",
-  "2010", "Biological Sciences Curriculum Studies", "\\emph{BSCS Biology: A Human Approach}, 4th Ed.", "Kendall Hunt Publishing"
-) |> 
-  detailed_entries(when = Dates,
-                   where = Author,
-                   what = Title,
-                   with = Publisher,
-                   .protect = FALSE)
-```
-
-
-## Reviewer for Deutsche Forschungsgemeinschaft (German Research Foundation)
-
-```{r}
-tribble(
-  ~ Dates, ~ Service,
-  "2018", "Life Sciences 1: Molecular and Organismic Biology"
-) |> 
-  detailed_entries(when = Dates,
-                   what = Service)
-```
-
-
-# Department and University Service
-
-## Current
-
-```{r, current_service}
-tribble(
-  ~ Dates, ~ Service,
-  "2023-Present", "Division of Biological Sciences Graduate Faculty",
-  "2022-Present", "DBS Graduate Education Committee",
-  "2020-Present", "MUSOM MedPrep 2 Interviewer",
-  "2013-2016, 2019-Present", "SOM Summer Research Internship in Medical Sciences Selection Committee",
-  "2012-Present", "MU Doctoral Faculty",
-  "2012-Present", "MU Graduate Faculty",
-  "2012-Present", "Pathobiology Area Doctoral Program Graduate Faculty"
-) |> 
-  detailed_entries(when = Dates,
-                   what = Service)
 ```
 
 
