@@ -1,0 +1,531 @@
+---
+name: Kevin Middleton, Ph.D.
+position: |
+  | Associate Professor
+  | Division of Biological Sciences
+  | University of Missouri
+address: |
+  | 222 Tucker Hall
+  | Columbia, MO 65211
+www: middletonlab.org
+email: "middletonk@missouri.edu"
+pubmed: kevin.middleton.1
+orcid: 0000-0003-4704-1064
+github: kmiddleton
+scholar: Ziha7x8AAAAJ
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::hyndman
+headcolor: 10069B
+papersize: letterpaper
+bib: "cell-numeric.csl"
+---
+
+\renewcommand{\labelitemi}{\textbullet}
+
+```{r setup, include=FALSE}
+#remotes::install_github("kmiddleton/vitae")
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+
+include_refs <- TRUE
+```
+
+```{r include=FALSE}
+## FIXME Publications
+
+
+```
+
+
+# Professional Experience
+
+```{r, echo=FALSE}
+tribble(
+  ~ Position, ~ University, ~ Location, ~ Dates,
+  "Associate Professor, Division of Biological Sciences", "University of Missouri", "Columbia, MO", "2022 - Present",
+  "Associate Professor, Department of Pathology & Anatomical Sciences", "University of Missouri", "Columbia, MO", "2012 - 2022",
+  "Assistant to Associate Professor, Department of Biology", "CSU San Bernardino", "San Bernardino, CA", "2007 - 2012",
+  "NIH NRSA Postdoctoral Fellow", "Brown University and University of California, Riverside", "Providence, RI and Riverside, CA", "2005 - 2007",
+  "Postdoctoral Research Associate, Department of Ecology and Evolutionary Biology", "Brown University", "Providence, RI", "2003 - 2005"
+) |> 
+  detailed_entries(what = Position,
+                   when = Dates,
+                   where = University,
+                   with = Location)
+```
+
+
+# Education
+
+```{r, echo=FALSE}
+tribble(
+  ~ Degree, ~ University, ~ Location, ~ Dates,
+  "PhD Ecology and Evolutionary Biology", "Brown University", "Providence, RI", "1996 - 2003",
+  "BS Biology, Summa Cum Laude", "Wake Forest University", "Winston-Salem, NC", "1992 - 1995"
+) |> 
+  detailed_entries(when = Dates,
+                   what = University,
+                   where = Degree,
+                   with = Location)
+```
+
+
+# Research Interests and Current Projects
+
+My overall research focuses on form, physiology, and function of the skeletal and muscular systems in the contexts of growth, locomotion, feeding, and evolution. In my work, I integrate studies across multiple scales from micro-scale structural materials of bone to macro-scale whole bone and multi-element cranial morphology to evolutionary changes across taxa and with comparisons to extinct organisms.
+
+## Development of Bayesian and machine learning models for the prediction of craniofacial growth in humans.
+
+- For orthodontic and craniofacial interventions, estimation of the timing of peak growth and/or the amount of remaining growth is important for planning treatment. We are seeking to estimate these quantities for a wide range of traits in two- and three-dimensional imaging.
+
+## Evolution of the reptile head: integrating cranial biomechanics, muscle modeling, and brain evolution to understand cranial kinesis and diversity
+
+- Computational modelling of cranial function has allowed us to estimate all the forces acting on the jaws and skull. We are developing techniques to apply contrast-enhanced imaging to refine muscle force estimates and generate a complete picture of head function.
+
+## Effects of exercise and genetic background on skeletal form, physiology, and biomechanics using high activity mice as a model organism
+
+- Although "exercise builds strong bones", genetics play a large part in bone's response to exercise. I have developed an animal model to investigate the relative roles of these two key determinants of skeletal form. 
+
+
+# Awards
+
+```{r awards, results="asis"}
+tribble(
+  ~ Year, ~ Award,
+  2019, "Gold Chalk Award for Graduate Teaching",
+  2017, "School of Medicine Award for Outstanding Preclinical Faculty Education",
+  2017, "Ann K. Covington Award for Undergraduate Mentoring"
+) |>
+  detailed_entries(when = Year,
+                   what = Award)
+```
+
+
+# Current Support
+
+```{r}
+tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
+        "2023-2025",
+        "EA: Upgrade of the X-ray tomographic microscope to expand operations at the University of Missouri X-ray Microanalysis Laboratory",
+        "NSF EAR",
+        "Tara Selly (PI), \\textbf{Kevin Middleton} (Co-PI), Casey Holliday (Co-PI), James Schiffbauer (Co-PI), Sarah Jacquet (Co-PI).",
+        "This instrumentation grant will support enhancements and upgrades to the X-ray microsope facility a tthe University of Missouri (\\$624,996)"
+        ) |> 
+  detailed_entries(when = Dates,
+                   what = Title,
+                   with = Agency,
+                   where = PIs,
+                   why = Notes,
+                   .protect = FALSE)
+```
+
+
+# Grants in Review
+
+```{r}
+tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
+        "2024",
+        "R01 - Improved craniofacial growth standards: skeletal maturation-based models",
+        "NIH NIDCR",
+        "Richard Sherwood (PI), Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I). (\\$2,746,185)",
+        
+        "2024",
+        "R01 - Maturation-based modeling of segmental spinal growth",
+        "NIH NIAMS",
+        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), John Shepherd (CO-I), Babette Zemel (Co-I). (\\$3,883,957)"
+) |> 
+  detailed_entries(when = Dates,
+                   what = Title,
+                   with = Agency,
+                   where = PIs,
+                   .protect = FALSE)
+```
+
+
+# Past Grants and Fellowships
+
+```{r}
+tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
+        "2022-2023", 
+        "Biomechanics of Grasping in Primates",
+        "Leakey Foundation",
+        "Carol Ward, Casey Holliday, and \\textbf{Kevin Middleton} (co-PI) \\\\ \\$25,000",
+        "This project will use contrast-enhanced µCT imagery combined with machine learning and computational biology to visualize, quantify, and compare the musculoskeletal anatomy and biomechanical potential associated with the hands and feet of humans and our closest living relatives, chimpanzees and gorillas, in 3D and in situ for the first time. This will provide the first-ever 3D digital archives of the intact soft tissue anatomy of chimpanzee, gorilla and human hands and feet. (\\$24,995)",
+        
+        "2021--2023", 
+        "Maturation-based prediction of craniofacial growth",
+        "University of Missouri TRIUMPH",
+        "RJ Sherwood and D Duren (Multiple PI) \\\\ \\textbf{Kevin Middleton}: co-Investigator (5\\% salary support)",
+        "This project leverages the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters. (\\$100,000)",
+        
+        "2015--2022",
+        "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
+        "NIH NIDCR",
+        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)",
+        "We have identified landmarks on over 25,000 lateral cephalographs from 5,247 individuals age 0-27 years from eight growth studies. This research will 1) estimate population- and individual-level timing of pubertal growth and adult size for multiple craniofacial traits, 2) provide diagnostic reference charts for craniofacial measures, 3) develop prognostic tools to predict remaining growth/change and the timing of the pubertal growth spurt for craniofacial traits, 4) make these valuable resources available to clinicians and researchers via an easy-to-use free web-based application.",
+        
+        "2019--2020",
+        "Administrative Supplement to \\emph{Craniofacial Growth Prediction in Different Facial Types}",
+        "NIH NIDCR",
+        "RJ Sherwood (PI) \\\\ \\textbf{Kevin Middleton} co-I 10\\% salary support",
+        "This administrative supplement leveraged the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters.  (\\$116,169)",
+        
+        "2017",
+        "Differential Gene Expression of Bone in Response to Experimental Loading Regimes",
+        "MU DNA Core Facility NextGen Sequencing Pilot Award",
+        "\\textbf{Kevin Middleton} PI",
+        "This award supported preliminary research into the differential expression of genes in bone: RNA sequencing and analysis of data. (\\$10,760)",
+        
+        "2015--2019",
+        "Collaborative Research: Dinosaur Jaw Muscle Evolution and\\\\the Origins of Avian Cranial Kinesis",
+        "NSF -- Integrative Organismal Systems",
+        "Casey Holliday, Lead PI, \\\\ \\textbf{Kevin Middleton}, co-PI, \\\\ Julian Davis (Sounthern Indiana University), co-PI, \\\\ Lawrence Witmer (Ohio University), co-PI",
+        "This project focused on the evolution and function of intra-cranial mobility (cranial kinesis) in dinosaurs and birds. We developed novel techniques for imaging muscle structure via contrast-enhanced micro-CT, new finite-element computational models for estimating cranial loads in extant and extinct animals, and visualization techniques for representing 3D data in two-dimensional space. (\\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1457319}{NSF IOS 1457319}; \\$606,705).",
+        
+        "2010--2015",
+        "Collaborative Research: Wings to flippers - phylogenetics, character acquisition,\\\\and feather biomechanics in the evolution of wing-propelled diving",
+        "NSF -- Systematic Biology",
+        "Julia Clarke (University of Texas, Austin), Lead PI \\\\ \\textbf{Kevin Middleton}, co-PI \\\\ Daniel Ksepka (North Carolina State University), co-PI",
+        "The goal of this project was to integrate studies of phylogenetics, sensory systems evolution, bone microstructure, feather function, and wing biomechanics across multiple transitions from aerial ﬂight to underwater wing-propelled diving. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0949945}{NSF DEB 0949945}; \\$471,717).",
+        
+        "2009--2014",
+        "Collaborative Research: LiT: Effects of environmental oxygen on growth and physiological performance in the American alligator: A case study in experimental paleophysiology",
+        "NSF -- Integrative Organismal Systems",
+        "James Hicks (University of California, Irvine), Lead PI \\\\ \\textbf{Kevin Middleton}, co-PI \\\\ Bryan Rourke (CSU Long Beach) , co-PI",
+        "This project studied the effects of altered environmental oxygen level on alligator physiology (growth, locomotor ability, muscle and bone structure). We used a long-term experiment of raising American alligators in varying levels of atmospheric oxygen for 24 months. We found that overall growth rates as well as skeletal morphology was largely unaltered by changes in available oxygen. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0922576}{NSF IOS 0922576}; \\$517,931)",
+        
+        "2011--2014",
+        "Maturation of an S-STEM scholarship program at a Hispanic,\\\\minority serving institution",
+        "NSF -- Division of Undergraduate Education",
+        "Kimberley Cousins, Lead PI \\\\ \\textbf{Kevin Middleton}, co-PI",
+        "This project supported four years of continued funding and expansion of CSUSB Math and Science Scholars scholarship program designed to encourage minority, under-represented, and economically disadvantaged students to enter STEM disciplines. This grant was awarded while I was a faculty member at California State University San Bernardino, but I resigned as co-PI on moving to the University of Missouri. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1060632}{NSF DUE 1060632}; co-PI; \\$591,231)"
+        
+) |> 
+  detailed_entries(when = Dates,
+                   what = Title,
+                   with = Agency,
+                   where = PIs,
+                   why = Notes,
+                   .protect = FALSE)
+```
+
+
+# Publications
+
+A full list of my published work can be found at: \href{https://www.ncbi.nlm.nih.gov/myncbi/kevin.middleton.1/bibliography/public/}{\color[HTML]{000090}{NIH PubMed}}
+
+
+## Recent Research Papers
+
+```{r research-papers, eval=TRUE}
+bib_entries <- bibliography_entries("Paperpile.bib")
+
+if (include_refs) {
+  bib_entries |>
+    filter(str_detect(keyword, "CV/Papers")) |>
+    arrange(issued, author) |> 
+    slice_head(n = 15)
+}
+```
+
+
+# Undergraduate Mentoring
+
+University of Missouri only. 23 additional students at CSU San Bernardino, Brown University, and UC Riverside (2003--2012).
+
+```{r, UG_mentoring}
+tribble(
+  ~ Dates, ~ Name, ~ Notes,
+  "2023-Present", "Gabriella Ramirez", "Mu Discovery Fellow",
+  "2021-2023", "Adam Albright", "MU A&S Summer Scholar",
+  "2021-2022", "Kayla Robinson", "MU DBS Honors Student",
+  "2020-2022", "Madison LaChance", "MU Cherng Summer Scholar",
+  "2019-2022", "Joshua Fajardo", "",
+  "2018", "Kendra Lewis", "MU School of Medicine Summer Research Intern from Washington University in St. Louis",
+  "2016-2019", "Alec Wilken", "Currently doctoral student at the University of Chicago",
+  "2016-2018", "Caitlyn Smith", "Currently a student in the University of Missouri School of Medicine",
+  "2016-2018", "Rebecca Meyer", "Currently in medical school at the Kentucky College of Medicine",
+  "2016-2017", "Nicholas Ferrari", "",
+  "2016", "Jake Cooper", "NSF Inside Dinosaurs Research Fellow",
+  "2016", "Eva Herbst", "NSF Inside Dinosaurs Research Fellow",
+  "2014-2018", "Nicholas Bira", "C3 Hughes Research Fellow",
+  "2015", "Kyle Kirkland", "MU School of Medicine Summer Research Intern from Michigan State University",
+  "2014-2015", "Imran Rashid", "",
+  "2014-2015", "Michael Sojka", "C3 Hughes Research Fellow, MU School of Journalism",
+  "2014", "Tarrin Casey, MD", "Graduate from the University of Missouri School of Medicine",
+  "2013", "Diana Salas", "MU School of Medicine Summer Research Intern from Indiana University"
+) |> 
+  detailed_entries(when = Dates,
+                   what = Name,
+                   where = Notes)
+```
+
+# Graduate Advisor
+
+```{r, grad_advisor}
+tribble(
+  ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2015-2019", "Sarah Peacock", "Ph.D. University of Missouri", "Currently Assistant Teaching Professor at Northeastern University",
+  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently Assistant Professor at St. Norbert College",
+  "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Completed doctoral studies at University of California, Riverside",
+  "2010-2012", "Brittney Coats", "M.S., CSUSB", "Completed doctoral studies at the University of Chicago",
+  "2008-2012", "Susan Lujan", "M.S., CSUSB", ""
+) |> 
+  detailed_entries(when = Dates,
+                   what = Name,
+                   with = Degree,
+                   where = Notes)
+```
+
+
+# Graduate Committee Member
+
+## Current
+
+```{r, current_committee}
+tribble(
+  ~ Dates, ~ Name, ~ Degree,
+  "2024-Present", "Nadine Steer", "Ph.D.; Pathobiology",
+  "2024-Present", "Peyton Warren", "Ph.D.; Biological Sciences",
+  "2024-Present", "Tom Burges", "Ph.D.; Biological Sciences",
+  "2023-Present", "Olivia Bongiovi", "Ph.D.; Natural Resources",
+  "2023-Present", "Christopher Zobek", "Ph.D.; Pathobiology",
+  "2023-Present", "Esdras Tuyishimire", "Ph.D.; Biologcal Sciences",
+  "2021-Present", "Mara Fields", "Ph.D.; Pathobiology",
+  "2021-Present", "John Fortner", "Ph.D.; Pathobiology",
+  "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences"
+) |> 
+  detailed_entries(when = Dates,
+                   what = Name,
+                   with = Degree)
+```
+
+
+## Past
+
+```{r, past_committee}
+tribble(
+  ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2015-2023", "Rob'yn Johnston", "Ph.D.; Anthropology", "Currently employed in industry",
+  "2018-2023", "Austin Lawrence", "Ph.D.; Pathobiology", "Postdoctoral researcher, University of Chicago",
+  "2020-2022", "Gabriel Jacobs", "Ph.D.; Geological Sciences", "Lecturer, Cornell College",
+  "2018-2022", "Sean Greer", "Ph.D.; Pathobiology", "Lecturer, University of Missouri",
+  "2018-2022", "Emily Lessner", "Ph.D.; Pathobiology", "Petrified National Forest",
+  "2016-2022", "Elizabeth Cho", "Ph.D.; Anthropology", "Assistant professor, UNTHSC",
+  "2016-2021", "Deise Cruz", "Ph.D.; Biological Sciences", " ",
+  "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Postdoctoral researcher, University of Chicago",
+  "2017-2021", "Faye McGechie", "Ph.D.; Pathobiology", "Assistant professor, University of Arizona",
+  "2017-2020", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology", " ",
+  "2019-2020", "Mikaela Pulsipher", "M.S.; Geological Sciences", " ",
+  "2019-2020", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Doctoral student, University of Chicago",
+  "2016-2020", "Melanie Boeyer", "Ph.D.; Pathobiology", "Research assistant professor, University of Missouri",
+  "2015-2020", "Sharon Kuo", "Ph.D.; Pathobiology", "Assistant professor, University of Minnesota Duluth",
+  "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences", "Teaching high school science",
+  "2015-2019", "Ian Cost", "Ph.D.; Pathobiology", "Assistant professor, Albright College",
+  "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "Fulbright Fellow",
+  "2017-2018", "Stephanie Rosbach", "M.S.; Geological Sciences", "",
+  "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "Research assistant professor, University of Missouri",
+  "2015-2017", "Edward Ramirez", "M.S.; Biological Sciences", "",
+  "2015-2017", "Steven Hanson", "Ph.D.; Pathobiology", "",
+  "2014-2017", "Luésoni Johnson", "M.S.; Biological Sciences", "Doctoral student, University of Illinois School of information Science",
+  "2013-2016", "Elizabeth Moffett", "Ph.D.; Biological Sciences", "Assistant professor, Rocky Vista University",
+  "2014-2015", "Kaleb Sellers", "M.S.; Pathology", "PhD, University of Missoui",
+  "2012-2015", "Henry Tsai", "Ph.D.; Pathobiology", "Assistant Professor, Southern Connecticut State University",
+  "2009-2012", "Kandee Bain", "M.S.; Biology, CSUSB", "",
+  "2008-2012", "Kim Scott", "M.S.; Biology, CSUSB", "",
+  "2007-2008", "Adam Huttenlocker", "M.S.; Biology, CSUSB", "Assistant Professor, University of Southern California",
+  "2007-2008", "Candace Reno", "M.S.; Biology, CSUSB", ""
+) |> 
+  detailed_entries(when = Dates,
+                   what = Name,
+                   with = Degree,
+                   where = Notes)
+```
+
+
+# Invited Seminars
+
+```{r, seminars}
+tribble(
+  ~ Dates, ~ Location,
+  "2022", "MU Undergraduate Summer Research Program",
+  "2021", "MU Division of Biological Sciences",
+  "2018", "MU Department of Pathology and Anatomical Sciences",
+  "2017", "MU Saturday Morning Science",
+  "2014", "MU LSUROP Evening Seminar Speaker",
+  "2014", "MU Math in Life Sciences Freshman Interest Group",
+  "2014", "Northeast Ohio Medical University",
+  "2013", "MU Division of Biological Sciences",
+  "2013", "Saint Louis University",
+  "2013", "University of Texas at Austin",
+  "2013", "MU Evolutionary Studies EvoBlitz",
+  "2012", "Grinnell College",
+  "2012", "La Sierra College",
+  "2011", "University of Missouri",
+  "2010", "CSU, Northridge",
+  "2010", "Grove High School, Redlands, CA",
+  "2007", "Loma Linda University",
+  "2007", "CSU, Fullerton",
+  "2007", "University of California, Riverside",
+  "2007", "CSU, San Bernardino",
+  "2001", "American Museum of Natural History",
+  "2001", "University of Chicago"
+) |> 
+  detailed_entries(when = Dates,
+                   what = Location)
+```
+
+
+# Professional Service
+
+## Referee
+
+- Acta Anatomica
+- Acta Palaeontologica Polonica
+- Acta Zoologica Sinica
+- Ameghiniana
+- American Journal of Physical Anthropology
+- Anatomical Record
+- Biology Letters
+- Comparative Biochemistry and Physiology
+- Current Biology
+- Evolution
+- IEEE Visualization & Graphics
+- Integrative Organismal Biology
+- International Journal of Primatology
+- Journal of Anatomy
+- Journal of Morphology
+- Journal of Vertebrate Paleontology
+- Journal of Zoology
+- Nature
+- Nature Communications
+- Naturwissenschaften
+- Palaeontology
+- Paleobiology
+- Paleobios
+- PeerJ
+- PLoS One
+- Proceedings of the National Academy of Sciences USA
+- Proceedings of the Royal Society (Biological Sciences)
+- Quarterly Review of Biology
+- Restoration Ecology
+- Royal Society Open Science
+- Zoological Journal of the Linnean Society
+- Zoology
+
+
+## NSF Panel Service
+
+```{r, NSF_Panel}
+tribble(
+  ~ Dates, ~ Service,
+  "2012", "Division of Evolutionary Biology -- Systematics and Biodiversity Science"
+) |> 
+  detailed_entries(when = Dates,
+                   what = Service)
+```
+
+
+## NSF Ad Hoc Reviewer
+
+```{r, NSF_ad_hoc}
+tribble(
+  ~ Dates, ~ Service,
+  "2009", "National Science Foundation -- IOB",
+  "2010", "National Science Foundation -- DEB",
+  "2012", "National Science Foundation -- IOB",
+  "2017", "National Science Foundation -- IOB",
+  "2019", "National Science Foundation -- IOB"
+) |> 
+  detailed_entries(when = Dates,
+                   what = Service)
+```
+
+
+## University of Missouri Research Board
+
+```{r, research_board}
+tribble(
+  ~ Dates, ~ Service,
+  "2015", "Ad hoc reviewer"
+) |> 
+  detailed_entries(when = Dates,
+                   what = Service)
+```
+
+
+## Reviewer (Textbooks)
+
+```{r, textbooks}
+tribble(
+  ~ Dates, ~ Author, ~Title, ~ Publisher,
+  "2003", "Miller, KR and JS Levine", "\\emph{Biology}", "Pearson-Prentice Hall",
+  "2010", "Tate, P", "\\emph{Anatomy and Physiology}", "McGraw Hill",
+  "2010", "Biological Sciences Curriculum Studies", "\\emph{BSCS Biology: A Human Approach}, 4th Ed.", "Kendall Hunt Publishing"
+) |> 
+  detailed_entries(when = Dates,
+                   where = Author,
+                   what = Title,
+                   with = Publisher,
+                   .protect = FALSE)
+```
+
+
+## Reviewer for Deutsche Forschungsgemeinschaft (German Research Foundation)
+
+```{r}
+tribble(
+  ~ Dates, ~ Service,
+  "2018", "Life Sciences 1: Molecular and Organismic Biology"
+) |> 
+  detailed_entries(when = Dates,
+                   what = Service)
+```
+
+
+# Department and University Service
+
+## Current
+
+```{r, current_service}
+tribble(
+  ~ Dates, ~ Service,
+  "2023-Present", "Division of Biological Sciences Graduate Faculty",
+  "2022-Present", "DBS Graduate Education Committee",
+  "2020-Present", "MUSOM MedPrep 2 Interviewer",
+  "2013-2016, 2019-Present", "SOM Summer Research Internship in Medical Sciences Selection Committee",
+  "2012-Present", "MU Doctoral Faculty",
+  "2012-Present", "MU Graduate Faculty",
+  "2012-Present", "Pathobiology Area Doctoral Program Graduate Faculty"
+) |> 
+  detailed_entries(when = Dates,
+                   what = Service)
+```
+
+
+# Professional Organizations
+
+- American Association of Anatomists
+- International Association of Dental Research
+- International Society of Vertebrate Morphology
+- Society of Integrative and Comparative Biology
+
+
+\vfill
+
+\vspace{3 mm}
+
+\hrule
+
+\vspace{3 mm}
+
+\begin{centering}
+
+Last updated: `r format(Sys.time(), '%d %B %Y')`
+
+Source: \href{http://github.com/kmiddleton/cv}{\tt http://github.com/kmiddleton/cv}
+
+Typeset with \href{https://github.com/mitchelloharawild/vitae}{vitae}
+
+\end{centering}
