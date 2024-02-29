@@ -125,12 +125,12 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
 
 ```{r}
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
-        "2023",
+        "2024",
         "R01 - Improved craniofacial growth standards: skeletal maturation-based models",
         "NIH NIDCR",
         "Richard Sherwood (PI), Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I). (\\$2,746,185)",
         
-        "2023",
+        "2024",
         "R01 - Maturation-based modeling of segmental spinal growth",
         "NIH NIAMS",
         "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), John Shepherd (CO-I), Babette Zemel (Co-I). (\\$3,883,957)"
@@ -155,12 +155,12 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
          "TBS 2024",
         "R01 - Evidence-based optimization of treatment timing in the craniofacial complex",
         "NIH NIDCR",
-        "Richard Sherwood (PI), Dana Duren (co-I), Kieran McNulty (co-PI), \\textbf{Kevin Middleton} (Co-PI), Heesoo Oh (co-PI), Manish Valiathan (co-PI). (\\$3,487,078)",
+        "Richard Sherwood (PI), Dana Duren (co-I), Kieran McNulty (co-PI), \\textbf{Kevin Middleton} (Co-PI), Heesoo Oh (co-PI), Manish Valiathan (co-PI).",
 
         "TBS 2024",
         "R01 - Mechanistic Role of Microstructure on the Mechanical Properties of the Maturing Growth Plate",
         "NIH NIAMS",
-        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), Maria Serrat (CO-I), Antonis Stylianou (Co-I). (\\$1,689,908)"
+        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), Maria Serrat (CO-I), Antonis Stylianou (Co-I)."
 ) |> 
   detailed_entries(when = Dates,
                    what = Title,
@@ -431,9 +431,9 @@ tribble(
 ```{r, current_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree,
+  "2024-Present", "Tom Burges", "Ph.D.; Biological Sciences",
   "2024-Present", "Nadine Steer", "Ph.D.; Pathobiology",
   "2024-Present", "Peyton Warren", "Ph.D.; Biological Sciences",
-  "2024-Present", "Tom Burges", "Ph.D.; Biological Sciences",
   "2023-Present", "Olivia Bongiovi", "Ph.D.; Natural Resources",
   "2023-Present", "Christopher Zobek", "Ph.D.; Pathobiology",
   "2023-Present", "Esdras Tuyishimire", "Ph.D.; Biologcal Sciences",
@@ -496,7 +496,8 @@ University of Missouri only. 23 additional students at CSU San Bernardino, Brown
 ```{r, UG_mentoring}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
-  "2021-Present", "Adam Albright", "MU A&S Summer Scholar",
+  "2024-Present", "Gabriella Ramirez", "MU Discovery Fellow",
+  "2021-2023", "Adam Albright", "MU A&S Summer Scholar",
   "2021-2022", "Kayla Robinson", "MU DBS Honors Student",
   "2020-2022", "Madison LaChance", "MU Cherng Summer Scholar",
   "2019-2022", "Joshua Fajardo", "",
@@ -589,6 +590,7 @@ tribble(
 ```{r, seminars}
 tribble(
   ~ Dates, ~ Location,
+  "2023", "New Mexico State University",
   "2022", "MU Undergraduate Summer Research Program",
   "2021", "MU Division of Biological Sciences",
   "2018", "MU Department of Pathology and Anatomical Sciences",
