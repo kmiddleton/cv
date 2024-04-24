@@ -81,7 +81,7 @@ My overall research focuses on form, physiology, and function of the skeletal an
 
 ## Evolution of the reptile head: integrating cranial biomechanics, muscle modeling, and brain evolution to understand cranial kinesis and diversity
 
-- e are developing techniques to apply contrast-enhanced imaging to refine muscle force estimates and generate a complete picture of head function.
+- We are developing techniques to apply contrast-enhanced imaging to refine muscle force estimates and generate a complete picture of head function.
 
 ## Effects of exercise and genetic background on skeletal form, physiology, and biomechanics using high activity mice as a model organism
 
