@@ -5,7 +5,7 @@ position: |
   | Division of Biological Sciences
   | University of Missouri
 address: |
-  | 222 Tucker Hall
+  | 224 Tucker Hall
   | Columbia, MO 65211
 www: middletonlab.org
 email: "middletonk@missouri.edu"
@@ -491,7 +491,7 @@ tribble(
 
 # Undergraduate Mentoring
 
-University of Missouri only. 23 additional students at CSU San Bernardino, Brown University, and UC Riverside (2003--2012).
+University of Missouri only. 33 additional students at CSU San Bernardino, Brown University, and UC Riverside (2003--2012).
 
 ```{r, UG_mentoring}
 tribble(
