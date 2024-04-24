@@ -143,9 +143,9 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
 ```
 
 
-# Grants in Preparation
 
-```{r}
+```{r, eval=FALSE}
+# Grants in Preparation
 tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
         "TBS 2024",
         "Functional morphology of the mammal hand and foot using contrast-enhanced 3D imaging",
@@ -491,7 +491,7 @@ tribble(
 
 # Undergraduate Mentoring
 
-University of Missouri only. 33 additional students at CSU San Bernardino, Brown University, and UC Riverside (2003--2012).
+33 additional students at University of Missouri, CSU San Bernardino, Brown University, and UC Riverside.
 
 ```{r, UG_mentoring}
 tribble(
