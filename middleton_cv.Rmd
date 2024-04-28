@@ -27,6 +27,7 @@ bib: "cell-numeric.csl"
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 library(tidyverse)
+library(readxl)
 
 include_refs <- TRUE
 ```
@@ -41,14 +42,7 @@ include_refs <- TRUE
 # Professional Experience
 
 ```{r, echo=FALSE}
-tribble(
-  ~ Position, ~ University, ~ Location, ~ Dates,
-  "Associate Professor, Division of Biological Sciences", "University of Missouri", "Columbia, MO", "2022 - Present",
-  "Associate Professor, Department of Pathology & Anatomical Sciences", "University of Missouri", "Columbia, MO", "2012 - 2022",
-  "Assistant to Associate Professor, Department of Biology", "CSU San Bernardino", "San Bernardino, CA", "2007 - 2012",
-  "NIH NRSA Postdoctoral Fellow", "Brown University and University of California, Riverside", "Providence, RI and Riverside, CA", "2005 - 2007",
-  "Postdoctoral Research Associate, Department of Ecology and Evolutionary Biology", "Brown University", "Providence, RI", "2003 - 2005"
-) |> 
+read_csv("Professional_Experience.csv", show_col_types = FALSE) |> 
   detailed_entries(what = Position,
                    when = Dates,
                    where = University,
@@ -59,11 +53,7 @@ tribble(
 # Education
 
 ```{r, echo=FALSE}
-tribble(
-  ~ Degree, ~ University, ~ Location, ~ Dates,
-  "PhD Ecology and Evolutionary Biology", "Brown University", "Providence, RI", "1996 - 2003",
-  "BS Biology, Summa Cum Laude", "Wake Forest University", "Winston-Salem, NC", "1992 - 1995"
-) |> 
+read_csv("Education.csv", show_col_types = FALSE) |> 
   detailed_entries(when = Dates,
                    what = University,
                    where = Degree,
@@ -105,13 +95,7 @@ tribble(
 # Current Support
 
 ```{r}
-tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
-        "2023-2025",
-        "EA: Upgrade of the X-ray tomographic microscope to expand operations at the University of Missouri X-ray Microanalysis Laboratory",
-        "NSF EAR",
-        "Tara Selly (PI), \\textbf{Kevin Middleton} (Co-PI), Casey Holliday (Co-PI), James Schiffbauer (Co-PI), Sarah Jacquet (Co-PI).",
-        "This instrumentation grant will support enhancements and upgrades to the X-ray microsope facility a tthe University of Missouri (\\$624,996)"
-        ) |> 
+read_csv("Current_Support.csv", show_col_types = FALSE) |> 
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -124,17 +108,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
 # Grants in Review
 
 ```{r}
-tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
-        "2024",
-        "R01 - Improved craniofacial growth standards: skeletal maturation-based models",
-        "NIH NIDCR",
-        "Richard Sherwood (PI), Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I). (\\$2,746,185)",
-        
-        "2024",
-        "R01 - Maturation-based modeling of segmental spinal growth",
-        "NIH NIAMS",
-        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), John Shepherd (CO-I), Babette Zemel (Co-I). (\\$3,883,957)"
-) |> 
+read_csv("Grants_in_Review.csv", show_col_types = FALSE) |> 
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -146,22 +120,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
 
 ```{r, eval=FALSE}
 # Grants in Preparation
-tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
-        "TBS 2024",
-        "Functional morphology of the mammal hand and foot using contrast-enhanced 3D imaging",
-        "NSF",
-        "Casey Holliday (co-PI), \\textbf{Kevin Middleton} (Co-PI), Carol Ward (co-PI)",
-
-         "TBS 2024",
-        "R01 - Evidence-based optimization of treatment timing in the craniofacial complex",
-        "NIH NIDCR",
-        "Richard Sherwood (PI), Dana Duren (co-I), Kieran McNulty (co-PI), \\textbf{Kevin Middleton} (Co-PI), Heesoo Oh (co-PI), Manish Valiathan (co-PI).",
-
-        "TBS 2024",
-        "R01 - Mechanistic Role of Microstructure on the Mechanical Properties of the Maturing Growth Plate",
-        "NIH NIAMS",
-        "Dana Duren (PI), \\textbf{Kevin Middleton} (Co-I), Maria Serrat (CO-I), Antonis Stylianou (Co-I)."
-) |> 
+read_csv("Grants_in_Preparation.csv", show_col_types = FALSE) |> 
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -173,110 +132,7 @@ tribble(~ Dates, ~ Title, ~ Agency, ~ PIs,
 # Past Grants and Fellowships
 
 ```{r}
-tribble(~ Dates, ~ Title, ~ Agency, ~ PIs, ~ Notes,
-        "2022-2023", 
-        "Biomechanics of Grasping in Primates",
-        "Leakey Foundation",
-        "Carol Ward, Casey Holliday, and \\textbf{Kevin Middleton} (co-PI) \\\\ \\$25,000",
-        "This project will use contrast-enhanced µCT imagery combined with machine learning and computational biology to visualize, quantify, and compare the musculoskeletal anatomy and biomechanical potential associated with the hands and feet of humans and our closest living relatives, chimpanzees and gorillas, in 3D and in situ for the first time. This will provide the first-ever 3D digital archives of the intact soft tissue anatomy of chimpanzee, gorilla and human hands and feet. (\\$24,995)",
-        
-        "2021--2023", 
-        "Maturation-based prediction of craniofacial growth",
-        "University of Missouri TRIUMPH",
-        "RJ Sherwood and D Duren (Multiple PI) \\\\ \\textbf{Kevin Middleton}: co-Investigator (5\\% salary support)",
-        "This project leverages the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters. (\\$100,000)",
-        
-        "2015--2022",
-        "R01 - Craniofacial Growth Prediction in Diﬀerent Facial Types",
-        "NIH NIDCR",
-        "RJ Sherwood and HS Oh (Multiple PI) \\\\ \\textbf{Kevin Middleton} co-I (Lead data scientist; 10\\% salary support)",
-        "We have identified landmarks on over 25,000 lateral cephalographs from 5,247 individuals age 0-27 years from eight growth studies. This research will 1) estimate population- and individual-level timing of pubertal growth and adult size for multiple craniofacial traits, 2) provide diagnostic reference charts for craniofacial measures, 3) develop prognostic tools to predict remaining growth/change and the timing of the pubertal growth spurt for craniofacial traits, 4) make these valuable resources available to clinicians and researchers via an easy-to-use free web-based application.",
-        
-        "2019--2020",
-        "Administrative Supplement to \\emph{Craniofacial Growth Prediction in Different Facial Types}",
-        "NIH NIDCR",
-        "RJ Sherwood (PI) \\\\ \\textbf{Kevin Middleton} co-I 10\\% salary support",
-        "This administrative supplement leveraged the considerable resources from the parent project to create Bayesian models of craniofacial growth timing and use machine learning approaches to accurately predict facial growth parameters.  (\\$116,169)",
-        
-        "2017",
-        "Differential Gene Expression of Bone in Response to Experimental Loading Regimes",
-        "MU DNA Core Facility NextGen Sequencing Pilot Award",
-        "\\textbf{Kevin Middleton} PI",
-        "This award supported preliminary research into the differential expression of genes in bone: RNA sequencing and analysis of data. (\\$10,760)",
-        
-        "2015--2019",
-        "Collaborative Research: Dinosaur Jaw Muscle Evolution and\\\\the Origins of Avian Cranial Kinesis",
-        "NSF -- Integrative Organismal Systems",
-        "Casey Holliday, Lead PI, \\\\ \\textbf{Kevin Middleton}, co-PI, \\\\ Julian Davis (Sounthern Indiana University), co-PI, \\\\ Lawrence Witmer (Ohio University), co-PI",
-        "This project focused on the evolution and function of intra-cranial mobility (cranial kinesis) in dinosaurs and birds. We developed novel techniques for imaging muscle structure via contrast-enhanced micro-CT, new finite-element computational models for estimating cranial loads in extant and extinct animals, and visualization techniques for representing 3D data in two-dimensional space. (\\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1457319}{NSF IOS 1457319}; \\$606,705).",
-        
-        "2010--2015",
-        "Collaborative Research: Wings to flippers - phylogenetics, character acquisition,\\\\and feather biomechanics in the evolution of wing-propelled diving",
-        "NSF -- Systematic Biology",
-        "Julia Clarke (University of Texas, Austin), Lead PI \\\\ \\textbf{Kevin Middleton}, co-PI \\\\ Daniel Ksepka (North Carolina State University), co-PI",
-        "The goal of this project was to integrate studies of phylogenetics, sensory systems evolution, bone microstructure, feather function, and wing biomechanics across multiple transitions from aerial ﬂight to underwater wing-propelled diving. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0949945}{NSF DEB 0949945}; \\$471,717).",
-        
-        "2009--2014",
-        "Collaborative Research: LiT: Effects of environmental oxygen on growth and physiological performance in the American alligator: A case study in experimental paleophysiology",
-        "NSF -- Integrative Organismal Systems",
-        "James Hicks (University of California, Irvine), Lead PI \\\\ \\textbf{Kevin Middleton}, co-PI \\\\ Bryan Rourke (CSU Long Beach) , co-PI",
-        "This project studied the effects of altered environmental oxygen level on alligator physiology (growth, locomotor ability, muscle and bone structure). We used a long-term experiment of raising American alligators in varying levels of atmospheric oxygen for 24 months. We found that overall growth rates as well as skeletal morphology was largely unaltered by changes in available oxygen. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0922576}{NSF IOS 0922576}; \\$517,931)",
-        
-        "2011--2014",
-        "Maturation of an S-STEM scholarship program at a Hispanic,\\\\minority serving institution",
-        "NSF -- Division of Undergraduate Education",
-        "Kimberley Cousins, Lead PI \\\\ \\textbf{Kevin Middleton}, co-PI",
-        "This project supported four years of continued funding and expansion of CSUSB Math and Science Scholars scholarship program designed to encourage minority, under-represented, and economically disadvantaged students to enter STEM disciplines. This grant was awarded while I was a faculty member at California State University San Bernardino, but I resigned as co-PI on moving to the University of Missouri. (\\href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1060632}{NSF DUE 1060632}; co-PI; \\$591,231)",
-        
-        "2008--2009",
-        "Extramural Associates Research Development Award (EARDA) pilot grant:\\\\ \\emph{Establishment of an Inbred Strain of ``Mini-muscle'' Phenotype, High-activity Mice}",
-        "NIH NIAMS",
-        "Kevin Middleton, PI",
-        "Award to establish an inbred strain of mice. (\\$15,000; sub-award from NIH 5G11HD052368-03)",
-        
-        "2005--2007",
-        "Effects of Genetics, Exercise, and Age on Bone Mechanics",
-        "NIH Ruth Kirschstein National Research Service Award",
-        "Kevin Middleton, PI",
-        "Postdoctoral fellowhsip (NIH 1F32AR053008-01)",
-        
-        "2002",
-        "Honorable Mention, Alfred Sherwood Romer Prize",
-        "Society of Vertebrate Paleontology",
-        "",
-        "Award for outstanding graduate research",
-        
-        "2000--2003",
-        "Dissertation Improvement Grant: Evolution and Functional Morphology of the Theropod Foot",
-        "NSF",
-        "Kevin Middleton co-PI",
-        "Grant in support of doctoral dissertation research",
-        
-        "1999",
-        "Grant-in-Aid of Paleontological Research",
-        "Paleontological Society",
-        "Kevin Middleton, PI",
-        "Award for Outstanding Student Scholarship Proposal",
-        
-        "1999",
-        "Student Research Grant",
-        "Geological Society of America",
-        "Kevin Middleton PI",
-        "Award for Exceptional Merit in Conception and Presentation",
-        
-        "1999",
-        "Grant in Aid of Research",
-        "Sigma Xi",
-        "Kevin Middleton, PI",
-        "Grant in support of doctoral dissertation research",
-        
-        "1997",
-        "Honorable Mention, Graduate Research Fellowship",
-        "NSF",
-        "Kevin Middleton, PI",
-        "Grant in support of doctoral dissertation research"
-        
-) |> 
+read_csv("Past_Grants.csv", show_col_types = FALSE) |> 
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
