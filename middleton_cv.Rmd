@@ -287,6 +287,8 @@ tribble(
 ```{r, current_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree,
+  "2024-Present", "Elyssa McCulloch", "Ph.D.; School of Natural Resources",
+  "2024-Present", "Emma Cooney", "M.S.; Pathology and Anatomical Sciences",
   "2024-Present", "Tom Burges", "Ph.D.; Biological Sciences",
   "2024-Present", "Nadine Steer", "Ph.D.; Pathobiology",
   "2024-Present", "Peyton Warren", "Ph.D.; Biological Sciences",
