@@ -295,7 +295,6 @@ tribble(
   "2023-Present", "Olivia Bongiovi", "Ph.D.; Natural Resources",
   "2023-Present", "Christopher Zobek", "Ph.D.; Pathobiology",
   "2023-Present", "Esdras Tuyishimire", "Ph.D.; Biologcal Sciences",
-  "2021-Present", "Mara Fields", "Ph.D.; Pathobiology",
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology",
   "2020-Present", "Christian Perez", "Ph.D.; Biological Sciences"
 ) |> 
