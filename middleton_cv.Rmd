@@ -155,8 +155,7 @@ bib_entries <- bibliography_entries("Paperpile.bib")
 
 ```{r doctoral-dissertation, eval=TRUE}
 if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/Dissertation"))
+  bibliography_entries("Dissertation.bib")
 }
 ```
 
@@ -165,9 +164,7 @@ if (include_refs) {
 
 ```{r research-papers, eval=TRUE}
 if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/Papers")) |>
-    arrange(issued, author)
+  bibliography_entries("Papers.bib") |> arrange(issued)
 }
 ```
 
@@ -176,9 +173,7 @@ if (include_refs) {
 
 ```{r in-review, eval=TRUE}
 if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/In review")) |> 
-    arrange(author)
+  bibliography_entries("In_review.bib")
 }
 ```
 
@@ -187,9 +182,7 @@ if (include_refs) {
 
 ```{r preprints, eval=TRUE}
 if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/Preprints")) |>
-    arrange(issued, author)
+  bibliography_entries("Preprints.bib")
 }
 ```
 
@@ -198,9 +191,7 @@ if (include_refs) {
 
 ```{r book-chapters, eval=TRUE}
 if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/Book chapters")) |>
-    arrange(issued, author)
+  bibliography_entries("Book_chapters.bib")
 }
 ```
 
@@ -209,9 +200,7 @@ if (include_refs) {
 
 ```{r invited-reviews, eval=TRUE}
 if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/Reviews")) |>
-    arrange(issued, author)
+  bibliography_entries("Reviews.bib")
 }
 ```
 
@@ -220,9 +209,7 @@ if (include_refs) {
 
 ```{r book-reviews, eval=TRUE}
 if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/Book reviews")) |>
-    arrange(issued, author)
+  bibliography_entries("Book_reviews.bib")
 }
 ```
 
@@ -231,9 +218,7 @@ if (include_refs) {
 
 ```{r datasets, eval=TRUE}
 if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/Datasets")) |>
-    arrange(issued, author)
+  bibliography_entries("Datasets.bib") |> arrange(issued)
 }
 ```
 
@@ -242,9 +227,7 @@ if (include_refs) {
 
 ```{r in-prep, eval=TRUE}
 if (include_refs) {
-  bib_entries |>
-    filter(str_detect(keyword, "CV/In prep")) |>
-    arrange(author)
+  bibliography_entries("In_prep.bib")
 }
 ```
 
@@ -293,6 +276,7 @@ tribble(
   "2024-Present", "Nadine Steer", "Ph.D.; Pathobiology",
   "2024-Present", "Peyton Warren", "Ph.D.; Biological Sciences",
   "2023-Present", "Olivia Bongiovi", "Ph.D.; Natural Resources",
+  "2023-Present", "Amy Lagorio", "Ph.D.; Pathobiology",
   "2023-Present", "Christopher Zobek", "Ph.D.; Pathobiology",
   "2023-Present", "Esdras Tuyishimire", "Ph.D.; Biologcal Sciences",
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology",
@@ -309,6 +293,7 @@ tribble(
 ```{r, past_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2021-2024", "Mara Fields", "M.S.; Pathology and Anatomical Sciences", "Currently employed in industry",
   "2015-2023", "Rob'yn Johnston", "Ph.D.; Anthropology", "Currently employed in industry",
   "2018-2023", "Austin Lawrence", "Ph.D.; Pathobiology", "Postdoctoral researcher, University of Chicago",
   "2020-2022", "Gabriel Jacobs", "Ph.D.; Geological Sciences", "Lecturer, Cornell College",
@@ -353,7 +338,7 @@ tribble(
 ```{r, UG_mentoring}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
-  "2024-Present", "Gabriella Ramirez", "MU Discovery Fellow",
+  "2024-Present", "Gabriella Ramirez", "MU Discovery Fellow; NIH MARC Fellow",
   "2021-2023", "Adam Albright", "MU A&S Summer Scholar; UMKC School of Dentistry",
   "2021-2022", "Kayla Robinson", "MU DBS Honors Student",
   "2020-2022", "Madison LaChance", "MU Cherng Summer Scholar",
@@ -383,18 +368,16 @@ tribble(
 # Subset abstracts from bib_entries
 # Add
 #
-Abstracts <- bib_entries |>
-  filter(str_detect(keyword, "CV/Abstracts")) |>
-  arrange(desc(issued), author)
+Abstracts <-   bibliography_entries("Abstracts.bib")
 ```
 
 
-# Published Abstracts (most recent 20 of `r nrow(Abstracts)`)
+# Published Abstracts (most recent 30 of `r nrow(Abstracts)`)
 
 ```{r abstracts}
 if (include_refs) {
   Abstracts |> 
-    slice_head(n = 20)
+    slice_head(n = 30)
 }
 ```
 
