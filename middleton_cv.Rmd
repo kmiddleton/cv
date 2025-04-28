@@ -274,11 +274,13 @@ tribble(
   "2025-Present", "Sebastian Curaca", "M.S.; Biological Sciences",
   "2024-Present", "Elyssa McCulloch", "Ph.D.; School of Natural Resources",
   "2024-Present", "Tom Burges", "Ph.D.; Biological Sciences",
+  "2024-Present", "Nik Bueschke", "Ph.D.; Biological Sciences",
+  "2024-Present", "Sanchita Das", "Ph.D.; Biological Sciences",
   "2024-Present", "Nadine Steer", "Ph.D.; Pathobiology",
   "2024-Present", "Peyton Warren", "Ph.D.; Biological Sciences",
   "2023-Present", "Olivia Bongiovi", "Ph.D.; Natural Resources",
   "2023-Present", "Amy Lagorio", "Ph.D.; Pathobiology",
-  "2023-Present", "Christopher Zobek", "Ph.D.; Pathobiology",
+  "2023-Present", "Chris Zobek", "Ph.D.; Pathobiology",
   "2023-Present", "Esdras Tuyishimire", "Ph.D.; Biologcal Sciences",
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology"
 ) |> 
