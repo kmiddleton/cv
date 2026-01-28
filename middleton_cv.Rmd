@@ -104,7 +104,7 @@ read_csv("Current_Support.csv", show_col_types = FALSE) |>
                    .protect = FALSE)
 ```
 
-
+<!--
 # Grants in Review
 
 ```{r}
@@ -115,7 +115,7 @@ read_csv("Grants_in_Review.csv", show_col_types = FALSE) |>
                    where = PIs,
                    .protect = FALSE)
 ```
-
+-->
 
 
 ```{r, eval=FALSE}
@@ -250,8 +250,8 @@ tribble(
 ```{r, grad_advisor}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
-  "2015-2019", "Sarah Peacock", "Ph.D. University of Missouri", "Currently Assistant Teaching Professor at Northeastern University",
-  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently Assistant Professor at St. Norbert College",
+  "2015-2019", "Sarah Peacock", "Ph.D. University of Missouri", "Currently Associate Teaching Professor at Northeastern University",
+  "2013-2018", "Amanda Smolinsky", "Ph.D. University of Missouri", "Currently Assistant Professor at Rocky Vista University",
   "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Completed doctoral studies at University of California, Riverside",
   "2010-2012", "Brittney Coats", "M.S., CSUSB", "Completed doctoral studies at the University of Chicago",
   "2008-2012", "Susan Lujan", "M.S., CSUSB", ""
@@ -483,6 +483,7 @@ tribble(
 - Integrative Organismal Biology
 - International Journal of Primatology
 - Journal of Anatomy
+- Journal of Experimental Biology
 - Journal of Morphology
 - Journal of Vertebrate Paleontology
 - Journal of Zoology
