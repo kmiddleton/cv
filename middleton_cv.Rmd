@@ -42,7 +42,7 @@ include_refs <- TRUE
 # Professional Experience
 
 ```{r, echo=FALSE}
-read_csv("Professional_Experience.csv", show_col_types = FALSE) |> 
+read_csv("Professional_Experience.csv", show_col_types = FALSE) |>
   detailed_entries(what = Position,
                    when = Dates,
                    where = University,
@@ -53,7 +53,7 @@ read_csv("Professional_Experience.csv", show_col_types = FALSE) |>
 # Education
 
 ```{r, echo=FALSE}
-read_csv("Education.csv", show_col_types = FALSE) |> 
+read_csv("Education.csv", show_col_types = FALSE) |>
   detailed_entries(when = Dates,
                    what = University,
                    where = Degree,
@@ -75,7 +75,7 @@ My overall research focuses on form, physiology, and function of the skeletal an
 
 ## Effects of exercise and genetic background on skeletal form, physiology, and biomechanics using high activity mice as a model organism
 
-- Although "exercise builds strong bones", genetics play a large part in bone's response to exercise. I have developed an animal model to investigate the relative roles of these two key determinants of skeletal form. 
+- Although "exercise builds strong bones", genetics play a large part in bone's response to exercise. I have developed an animal model to investigate the relative roles of these two key determinants of skeletal form.
 
 
 # Awards
@@ -95,7 +95,7 @@ tribble(
 # Current Support
 
 ```{r}
-read_csv("Current_Support.csv", show_col_types = FALSE) |> 
+read_csv("Current_Support.csv", show_col_types = FALSE) |>
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -108,7 +108,7 @@ read_csv("Current_Support.csv", show_col_types = FALSE) |>
 # Grants in Review
 
 ```{r}
-read_csv("Grants_in_Review.csv", show_col_types = FALSE) |> 
+read_csv("Grants_in_Review.csv", show_col_types = FALSE) |>
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -120,7 +120,7 @@ read_csv("Grants_in_Review.csv", show_col_types = FALSE) |>
 
 ```{r, eval=FALSE}
 # Grants in Preparation
-read_csv("Grants_in_Preparation.csv", show_col_types = FALSE) |> 
+read_csv("Grants_in_Preparation.csv", show_col_types = FALSE) |>
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -132,7 +132,7 @@ read_csv("Grants_in_Preparation.csv", show_col_types = FALSE) |>
 # Past Grants and Fellowships
 
 ```{r}
-read_csv("Past_Grants.csv", show_col_types = FALSE) |> 
+read_csv("Past_Grants.csv", show_col_types = FALSE) |>
   detailed_entries(when = Dates,
                    what = Title,
                    with = Agency,
@@ -237,8 +237,9 @@ if (include_refs) {
 ```{r postdoc}
 tribble(
   ~ Dates, ~ Name, ~ Notes,
-  "2015-2018", "Alida Bailleul, PhD", "Currently an Assistant Professor, Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
-) |> 
+  "2015-2018", "Alida Bailleul, PhD",
+  "Currently an Assistant Professor, Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
+) |>
   detailed_entries(when = Dates,
                    what = Name,
                    where = Notes)
@@ -255,7 +256,7 @@ tribble(
   "2011-2012", "Katherine Johnson", "M.S., CSUSB", "Completed doctoral studies at University of California, Riverside",
   "2010-2012", "Brittney Coats", "M.S., CSUSB", "Completed doctoral studies at the University of Chicago",
   "2008-2012", "Susan Lujan", "M.S., CSUSB", ""
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Name,
                    with = Degree,
@@ -270,6 +271,9 @@ tribble(
 ```{r, current_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree,
+  "2026-Present", "Skylar Ciccolini", "Ph.D.; Natural Resources",
+  "2025-Present", "Evan Alger-Meyer", "Ph.D.; Pathobiology",
+  "2025-Present", "Alex Sidare", "Ph.D.; Biological Sciences",
   "2025-Present", "Diane Cordero", "Ph.D.; Biological Sciences",
   "2025-Present", "Sebastian Curaca", "M.S.; Biological Sciences",
   "2024-Present", "Elyssa McCulloch", "Ph.D.; School of Natural Resources",
@@ -281,9 +285,9 @@ tribble(
   "2023-Present", "Olivia Bongiovi", "Ph.D.; Natural Resources",
   "2023-Present", "Amy Lagorio", "Ph.D.; Pathobiology",
   "2023-Present", "Chris Zobek", "Ph.D.; Pathobiology",
-  "2023-Present", "Esdras Tuyishimire", "Ph.D.; Biologcal Sciences",
+  "2023-Present", "Esdras Tuyishimire", "Ph.D.; Biological Sciences",
   "2021-Present", "John Fortner", "Ph.D.; Pathobiology"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Name,
                    with = Degree)
@@ -306,29 +310,29 @@ tribble(
   "2018-2022", "Emily Lessner", "Ph.D.; Pathobiology", "Denver Museum of Natural History",
   "2016-2022", "Elizabeth Cho", "Ph.D.; Anthropology", "Assistant professor, UNTHSC",
   "2016-2021", "Deise Cruz", "Ph.D.; Biological Sciences", "",
-  "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Postdoctoral researcher, University of Chicago",
+  "2016-2021", "Kaleb Sellers", "Ph.D.; Pathobiology", "Assistant professor, University of Illinois-Chicago",
   "2017-2021", "Faye McGechie", "Ph.D.; Pathobiology", "Assistant professor, University of Arizona",
   "2017-2020", "Rebecca Dirkes", "Ph.D.; Nutrition & Exercise Physiology", "",
-  "2019-2020", "Mikaela Pulsipher", "M.S.; Geological Sciences", " ",
-  "2019-2020", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Doctoral student, University of Chicago",
+  "2019-2020", "Mikaela Pulsipher", "M.S.; Geological Sciences", "",
+  "2019-2020", "Alec Wilken", "M.S.; Pathology and Anatomical Sciences", "Assistant Teaching Professor, University of Missouri",
   "2016-2020", "Melanie Boeyer", "Ph.D.; Pathobiology", "Research assistant professor, University of Missouri",
   "2015-2020", "Sharon Kuo", "Ph.D.; Pathobiology", "Assistant professor, University of Minnesota-Duluth",
   "2018-2019", "Ellee Cook", "Ph.D.; Biological Sciences", "Teaching high school science",
   "2015-2019", "Ian Cost", "Ph.D.; Pathobiology", "Assistant professor, Albright College",
   "2017-2018", "Landry Konan", "M.S.; Pathology and Anatomical Sciences", "",
   "2017-2018", "Stephanie Rosbach", "M.S.; Geological Sciences", "",
-  "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "Research assistant professor, University of Missouri",
+  "2016-2018", "Tara Selly", "Ph.D.; Geological Sciences", "Research associate professor, University of Missouri",
   "2015-2017", "Edward Ramirez", "M.S.; Biological Sciences", "",
   "2015-2017", "Steven Hanson", "Ph.D.; Pathobiology", "",
   "2014-2017", "Luésoni Johnson", "M.S.; Biological Sciences", "Doctoral student, University of Illinois School of information Science",
   "2013-2016", "Elizabeth Moffett", "Ph.D.; Biological Sciences", "Assistant professor, Rocky Vista University",
-  "2014-2015", "Kaleb Sellers", "M.S.; Pathology", "PhD, University of Missoui",
-  "2012-2015", "Henry Tsai", "Ph.D.; Pathobiology", "Assistant Professor, Southern Connecticut State University",
+  "2014-2015", "Kaleb Sellers", "M.S.; Pathology", "PhD, University of Missouri",
+  "2012-2015", "Henry Tsai", "Ph.D.; Pathobiology", "Assistant professor, Missouri State University",
   "2009-2012", "Kandee Bain", "M.S.; Biology, CSUSB", "",
   "2008-2012", "Kim Scott", "M.S.; Biology, CSUSB", "",
   "2007-2008", "Adam Huttenlocker", "M.S.; Biology, CSUSB", "Assistant Professor, University of Southern California",
   "2007-2008", "Candace Reno", "M.S.; Biology, CSUSB", ""
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Name,
                    with = Degree,
@@ -362,7 +366,7 @@ tribble(
   "2014-2015", "Michael Sojka", "C3 Hughes Research Fellow, MU School of Journalism",
   "2014", "Tarrin Casey, MD", "University of Missouri School of Medicine",
   "2013", "Diana Salas", "MU School of Medicine Summer Research Intern from Indiana University"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Name,
                    where = Notes)
@@ -381,7 +385,7 @@ Abstracts <-   bibliography_entries("Abstracts.bib")
 
 ```{r abstracts}
 if (include_refs) {
-  Abstracts |> 
+  Abstracts |>
     slice_head(n = 30)
 }
 ```
@@ -397,7 +401,7 @@ arrange(issued, author)
 
 ```{r other}
 if (include_refs) {
-Other |> 
+Other |>
 slice(1:20)
 }
 ```
@@ -409,7 +413,7 @@ slice(1:20)
 ## University of Missouri
 
 ```{r}
-read_csv("MU_Teaching.csv", col_types = c("ccc")) |> 
+read_csv("MU_Teaching.csv", col_types = c("ccc")) |>
   detailed_entries(when = Dates, what = Course, where = Notes)
 ```
 
@@ -425,7 +429,7 @@ tribble(
   "2008, 2010, 2012", "Graduate Seminar",
   "2008-2011", "Biology Seminar",
   "2008", "Advanced Vertebrate Morphology"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Course)
 ```
@@ -459,7 +463,7 @@ tribble(
   "2007", "CSU, San Bernardino",
   "2001", "American Museum of Natural History",
   "2001", "University of Chicago"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Location)
 ```
@@ -510,7 +514,7 @@ tribble(
 tribble(
   ~ Dates, ~ Service,
   "2012", "Division of Evolutionary Biology -- Systematics and Biodiversity Science"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Service)
 ```
@@ -527,7 +531,7 @@ tribble(
   "2017", "National Science Foundation -- IOB",
   "2019", "National Science Foundation -- IOB",
   "2025", "National Science Foundation -- Anthropology"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Service)
 ```
@@ -539,7 +543,7 @@ tribble(
 tribble(
   ~ Dates, ~ Service,
   "2015", "Ad hoc reviewer"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Service)
 ```
@@ -553,7 +557,7 @@ tribble(
   "2003", "Miller, KR and JS Levine", "\\emph{Biology}", "Pearson-Prentice Hall",
   "2010", "Tate, P", "\\emph{Anatomy and Physiology}", "McGraw Hill",
   "2010", "Biological Sciences Curriculum Studies", "\\emph{BSCS Biology: A Human Approach}, 4th Ed.", "Kendall Hunt Publishing"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    where = Author,
                    what = Title,
@@ -568,7 +572,7 @@ tribble(
 tribble(
   ~ Dates, ~ Service,
   "2018", "Life Sciences 1: Molecular and Organismic Biology"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Service)
 ```
@@ -593,7 +597,7 @@ tribble(
   "2012-Present", "MU Doctoral Faculty",
   "2012-Present", "MU Graduate Faculty",
   "2012-Present", "Pathobiology Area Doctoral Program Graduate Faculty"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Service)
 ```
@@ -626,7 +630,7 @@ tribble(
   "2014-2018", "MU Life Sciences Week poster competition judge",
   "2013-2019", "PAS Lecturer Search Committee",
   "2013-2014", "SOM Block 4 Planning Committee"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Service)
 ```
@@ -643,7 +647,7 @@ tribble(
   "2007-2012", "Health Professions Advisory Committee",
   "2007-2012", "Biology Department Webmaster",
   "2009", "College of Natural Sciences Outstanding Students Evaluation Committee"
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Service)
 ```
@@ -666,7 +670,7 @@ tribble(
   "2009", "Discovery Channel -- Megabeasts", "Discovery Channel's Megabeasts also features an episode on Terror Birds",
   "2008", "Coastline Community College", "On-camera expert on skeletal biology for an Anatomy & Physiology course produced by Coastline Community College (Orange County, CA). This course will be utilized by 2-year colleges and 4-year universities as well as broadcast locally by PBS.",
   "2008", "CBC Television Canada -- Project X", "The Project X episode 'Flight' showcases collaborative work with Drs. Sharon Swartz, Kenneth Breuer, Daniel Riskin, and Jose Iriarte-Diaz on the aeromechanics of bat flight."
-) |> 
+) |>
   detailed_entries(when = Dates,
                    what = Title,
                    where = Notes)
