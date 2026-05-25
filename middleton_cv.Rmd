@@ -276,7 +276,6 @@ tribble(
   "2025-Present", "Evan Alger-Meyer", "Ph.D.; Pathobiology",
   "2025-Present", "Alex Sidare", "Ph.D.; Biological Sciences",
   "2025-Present", "Diane Cordero", "Ph.D.; Biological Sciences",
-  "2025-Present", "Sebastian Curaca", "M.S.; Biological Sciences",
   "2024-Present", "Elyssa McCulloch", "Ph.D.; School of Natural Resources",
   "2024-Present", "Tom Burges", "Ph.D.; Biological Sciences",
   "2024-Present", "Nik Bueschke", "Ph.D.; Biological Sciences",
@@ -299,6 +298,7 @@ tribble(
 ```{r, past_committee}
 tribble(
   ~ Dates, ~ Name, ~ Degree, ~ Notes,
+  "2025-2026", "Sebastian Curaca", "M.S.; Biological Sciences", "",
   "2023-2026", "Esdras Tuyishimire", "Ph.D.; Biological Sciences", "Post-doc at Clemson University",
   "2024-2025", "Audrey Williams", "M.S.; Geology; Missouri S&T", "Doctoral student at Ohio University",
   "2024-2025", "Emma Cooney", "M.S.; Pathology and Anatomical Sciences", "",
